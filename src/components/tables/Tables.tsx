@@ -1,14 +1,13 @@
 import Table from "react-bootstrap/Table";
 import { useEffect, useState } from "react";
-import GetAPI from "../../services/GetAPI";
+import { Preregister, getPreregisters, transformAvatarToUrl} from "../../services/api";
 import "./Tables.css";
 
 function Tables() {
-  const [data, setData]: any[] = useState([]);
+  const [data, setData]= useState<Preregister[]>([]);
   useEffect(() => {
-    GetAPI().then((apiData) => {
-      console.log(apiData);
-      setData(apiData);
+    getPreregisters().then((apiData) => {
+      if(apiData) setData(apiData);
     });
   }, []);
   return (
@@ -19,13 +18,13 @@ function Tables() {
             <td>No items Found</td>
           </tr>
         )}
-        {data.map((item: any) => (
+        {data.map((item) => (
           <tr key={item.id}>
             <td>
               {item.avatar ? (
                 <img
                   className="img"
-                  src={`http://localhost:8000/v1/preregisters/avatar/${item.avatar}`}
+                  src={transformAvatarToUrl(item.avatar)}
                 />
               ) : null}
             </td>
