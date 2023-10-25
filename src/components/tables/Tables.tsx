@@ -1,6 +1,6 @@
 import Table from "react-bootstrap/Table";
 import { useEffect, useState } from "react";
-import GetAPI from "../services/GetAPI";
+import GetAPI from "../../services/GetAPI";
 import "./Tables.css";
 
 function Tables() {

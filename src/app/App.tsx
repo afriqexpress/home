@@ -1,5 +1,4 @@
-import Tables from "./components/Tables";
-import GetAPI from "./services/GetAPI";
+import Tables from "../components/tables/Tables";
 
 function App() {
   return (
