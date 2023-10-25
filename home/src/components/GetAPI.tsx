@@ -4,8 +4,8 @@ import { useEffect } from "react";
 
 function GetAPI() {
   const [quote, setQuote] = useState("");
+  const url = "http://api.quotable.io/random";
   useEffect(() => {
-    const url = "http://api.quotable.io/random";
     axios
       .get(url)
       .then((response) => {
