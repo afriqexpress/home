@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Tables from "../components/tables/Tables";
-import Forms from "../components/form/Forms";
+
+import PreregisterSection from "../components/preregister/preregistersection";
 
 const Home = () => {
   return (
@@ -9,8 +9,7 @@ const Home = () => {
       <Link to="/AfriQPay">AfriQPay</Link>
       <h1>Home</h1>
 
-      <Tables />
-      <Forms />
+      <PreregisterSection />
     </>
   );
 };
