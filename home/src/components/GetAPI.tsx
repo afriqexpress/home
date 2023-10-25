@@ -1,22 +1,19 @@
 import axios from "axios";
-import { useState } from "react";
 import { useEffect } from "react";
 
 function GetAPI() {
-  const [quote, setQuote] = useState("");
-  const url = "http://localhost:8000";
+  const url = "http://localhost:8000/v1/preregisters";
   useEffect(() => {
     axios
       .get(url)
       .then((response) => {
-        console.log(response.data.content);
-        setQuote(response.data.content);
+        console.log(response.data);
       })
       .catch((err) => {
         console.log(err);
       });
   });
-  return <div>{quote ? <p>{quote}</p> : null}</div>;
+  return <div>Hello World</div>;
 }
 
 export default GetAPI;
