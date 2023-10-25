@@ -1,9 +1,10 @@
-import GetAPI from "./components/GetAPI";
+import Tables from "./components/Tables";
+import GetAPI from "./services/GetAPI";
 
 function App() {
   return (
     <div>
-      <GetAPI />
+      <Tables />
     </div>
   );
 }
