@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 import PreregisterSection from "../components/preregister/preregistersection";
+import React from "react";
 
 const Home = () => {
   return (

@@ -1,6 +1,7 @@
 import Form from "react-bootstrap/Form";
 import UploadButton from "../Button";
 import FormGroup from "react-bootstrap/esm/FormGroup";
+import ButtonGroup from "react-bootstrap/esm/ButtonGroup";
 import { useRef } from "react";
 import { postPreregisters } from "../../services/api";
 import { useNavigate } from "react-router-dom";
@@ -42,14 +43,14 @@ function Forms() {
 
   return (
     <Form>
-      <Form.Group controlId="companyName">
+      <FormGroup controlId="companyName">
         <Form.Label>Company Name</Form.Label>
         <Form.Control
           ref={companyNameRef}
           type="text"
           placeholder="Enter Company Name"
         />
-      </Form.Group>
+      </FormGroup>
       <Form.Group controlId="telephoneNumber">
         <Form.Label>Telephone Number</Form.Label>
         <Form.Control
@@ -58,29 +59,12 @@ function Forms() {
           placeholder="Enter Telephone Number"
         />
       </Form.Group>
-      <FormGroup>
-        <Form.Label>Select Service</Form.Label>
-        {["radio"].map((type) => (
-          <div key={`inline-${type}`} className="mb-3">
-            <Form.Check
-              inline
-              label="AfriQExpress"
-              value="AFRIQEXPRESS"
-              name="group1"
-              type={type}
-              id={`inline-${type}-1`}
-            />
-            <Form.Check
-              inline
-              label="AfriQPay"
-              value="AFRIQPAY"
-              name="group1"
-              type={type}
-              id={`inline-${type}-2`}
-            />
-          </div>
-        ))}
-      </FormGroup>
+      <ButtonGroup>
+        <input type="radio" value="AfriQExpress" id="AfriQExpress"></input>
+        <label>AfriQExpress</label>
+        <input type="radio" value="AfriQPay" id="AfriQPay"></input>
+        <label>AfriQPay</label>
+      </ButtonGroup>
       <input ref={avatarRef} type="file" style={{ display: "none" }} />
       <UploadButton
         onClickCB={onUploadPressed}
