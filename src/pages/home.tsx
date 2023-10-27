@@ -1,15 +1,12 @@
-import { Link } from "react-router-dom";
+import Navbar from "../components/navbar/Navbar";
 
 import PreregisterSection from "../components/preregister/preregistersection";
-import React from "react";
 
 const Home = () => {
   return (
     <>
-      <Link to="/AfriQExpress">AfriQExpress</Link>
-      <Link to="/AfriQPay">AfriQPay</Link>
+      <Navbar></Navbar>
       <h1>Home</h1>
-
       <PreregisterSection />
     </>
   );
