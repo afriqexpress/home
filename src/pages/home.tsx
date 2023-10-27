@@ -1,4 +1,5 @@
 import "./home.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../components/navbar/Navbar";
 
 import { Container, Row, Col } from "react-bootstrap";
@@ -8,7 +9,7 @@ import PreregisterSection from "../components/preregister/preregistersection";
 const Home = () => {
   return (
     <div className="Home">
-      <Container>
+      <Container fluid className="containers">
         <Row className="rows">
           <Col className="columns">
             <Navbar></Navbar>
