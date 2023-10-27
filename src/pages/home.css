@@ -1,0 +1,14 @@
+.Home {
+    border: 2px solid green;
+}
+
+.rows {
+    border: 2px solid red;
+    margin: 6px;
+}
+
+.columns {
+    border: 2px solid black;
+    text-align: center;
+    margin: 6px;
+}

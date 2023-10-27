@@ -1,3 +1,4 @@
+import "./preregistersection.css";
 import { useEffect, useState } from "react";
 import { Preregister, getPreregisters } from "../../services/api";
 import List from "./list/list";
