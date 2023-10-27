@@ -5,6 +5,7 @@ import ButtonGroup from "react-bootstrap/esm/ButtonGroup";
 import { useRef } from "react";
 import { postPreregisters } from "../../services/api";
 import { useNavigate } from "react-router-dom";
+import React from "react";
 
 function Forms() {
   const companyNameRef = useRef<HTMLInputElement>(null);
