@@ -1,0 +1,66 @@
+.navigation {
+    width: 100%;
+    background: rgba(255, 255, 255);
+    border-bottom: 0.1rem solid #e4e2e0;
+    position: fixed;
+    display: flex;
+    color: black;
+}
+
+.navigation__logo {
+    width: 10rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.navigation__list {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-weight: 400;
+    gap: 10rem;
+    cursor: pointer;
+    margin: 2rem;
+}
+
+.navigation__list a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation__list a:hover {
+    text-decoration: none;
+    color: #2557a7;
+    transition: 0.2s;
+    padding-bottom: 1rem;
+    border-bottom: 0.2rem solid #25a5a7;
+}
+
+.navigation__list--login {
+    background-color: #25a5a7;
+    font-size: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 11rem;
+    height: 3rem;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+}
+
+.navigation__list--login:hover {
+    background: rgb(47, 171, 199);
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 100rem) {
+    .navigation__logo {
+        width: 8rem;
+    }
+    .navigation__list {
+        font-size: 2rem;
+    }
+    
+}

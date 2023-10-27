@@ -1,0 +1,40 @@
+.header {
+    height: 100vh;
+    background: linear-gradient(#00000050,#00000050), url("");
+    width: 100%;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 2rem;
+    text-align: left;
+    padding: 8rem;
+}
+
+.header__h1 {
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.header__h2 {
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.header__button {
+    font-size: 2.5rem;
+    width: 15rem;
+    height: 8rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    background-color: #25a5a7;
+    color: white;
+    cursor: pointer;
+}
+
+.header__button:hover {
+    background: rgb(47, 181, 199);
+    transition: 0.5s;
+}
