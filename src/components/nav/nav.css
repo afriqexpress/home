@@ -2,55 +2,59 @@
     width: 100%;
     background: rgba(255, 255, 255);
     border-bottom: 0.1rem solid #e4e2e0;
+
     position: fixed;
+
     display: flex;
+    gap: 1rem;
+
+    height: 6rem;
+
+    padding: 0 1rem;
+
+    align-items: center;
+
     color: black;
 }
 
 .navigation__logo {
-    width: 10rem;
-    padding-left: 0.5rem;
-    padding-top: 0.5rem;
-}
+    height: 100%;
+    width: auto;
 
-.navigation__list {
+    aspect-ratio: 1 / 1;
+
     display: flex;
-    font-size: 2rem;
     align-items: center;
-    justify-content: center;
-    list-style: none;
-    font-weight: 400;
-    gap: 10rem;
-    cursor: pointer;
-    margin: 2rem;
+
+    margin-right: auto;
 }
 
-.navigation__list a {
+.navigation__item, .navigation__special {
+    font-size: 1.7rem;
     text-decoration: none;
     color: black;
-}
+} 
 
-.navigation__list a:hover {
-    text-decoration: none;
+.navigation__item:hover {
     color: #2557a7;
-    transition: 0.2s;
-    padding-bottom: 1rem;
+    
+    transition: padding 0.2s;
+    padding-bottom: 0.5rem;
     border-bottom: 0.2rem solid #25a5a7;
 }
 
-.navigation__list--login {
+
+.navigation__special {
     background-color: #25a5a7;
-    font-size: 2rem;
-    border: none;
+
     border-radius: 0.5rem;
-    width: 11rem;
-    height: 3rem;
-    justify-content: center;
-    cursor: pointer;
+
+    padding: 0.5rem 1rem;
+    
     color: white;
 }
 
-.navigation__list--login:hover {
+.navigation__special:hover {
     background: rgb(47, 171, 199);
     transition: 0.5s;
 }
@@ -62,5 +66,4 @@
     .navigation__list {
         font-size: 2rem;
     }
-    
 }
