@@ -2,65 +2,131 @@
     width: 100%;
     background: rgba(255, 255, 255);
     border-bottom: 0.1rem solid #e4e2e0;
+
     position: fixed;
+
     display: flex;
+    gap: 1rem;
+
+    height: 6rem;
+
+    padding: 0 1rem;
+
+    align-items: center;
+
     color: black;
+
+    z-index: 999;
 }
 
 .navigation__logo {
-    width: 10rem;
-    padding-left: 0.5rem;
-    padding-top: 0.5rem;
-}
+    height: 100%;
+    width: auto;
 
-.navigation__list {
+    aspect-ratio: 1 / 1;
+
     display: flex;
-    font-size: 2rem;
     align-items: center;
-    justify-content: center;
-    list-style: none;
-    font-weight: 400;
-    gap: 10rem;
-    cursor: pointer;
-    margin: 2rem;
+
+    padding: 0.5rem 0;
+    margin-right: auto;
 }
 
-.navigation__list a {
+.navigation__logo img {
+    height: 100%;
+}
+
+.navigation__item, .navigation__special {
+    font-size: 1.7rem;
     text-decoration: none;
     color: black;
-}
+} 
 
-.navigation__list a:hover {
-    text-decoration: none;
+.navigation__item:hover {
     color: #2557a7;
-    transition: 0.2s;
-    padding-bottom: 1rem;
+    
+    transition: padding 0.2s;
+    padding-bottom: 0.5rem;
     border-bottom: 0.2rem solid #25a5a7;
 }
 
-.navigation__list--login {
+
+.navigation__special {
     background-color: #25a5a7;
-    font-size: 2rem;
-    border: none;
+
     border-radius: 0.5rem;
-    width: 11rem;
-    height: 3rem;
-    justify-content: center;
-    cursor: pointer;
+
+    padding: 0.5rem 1rem;
+    
     color: white;
 }
 
-.navigation__list--login:hover {
+.navigation__special:hover {
     background: rgb(47, 171, 199);
     transition: 0.5s;
 }
 
-@media screen and (max-width: 100rem) {
-    .navigation__logo {
-        width: 8rem;
+.navigation__hamburg {
+    border: none;
+    background: none;
+
+    padding: 0.5rem 0;
+    height: 75%;
+    width: auto;
+
+    aspect-ratio: 1 / 1;
+
+    display: none;
+}
+
+.navigation__hamburg img {
+    height: 100%;
+}
+
+.hamburg_navigation {
+    position: absolute;
+
+    background: white;
+
+    top: 0;
+
+    width: 100%;
+    padding: 7rem 1rem 1rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    border-bottom: 0.1rem solid #e4e2e0;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transform: translateY(-100%);
+    transition: transform 1s, opacity 0s 1s;
+
+}
+
+.hamburg_navigation .navigation__item:hover {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+@media only screen and (max-width: 500px) {
+    .navigation__hamburg {
+        display: inherit;
     }
-    .navigation__list {
-        font-size: 2rem;
+
+    .navigation .navigation__item, .navigation .navigation__special {
+        display: none;
     }
-    
+
+    .hamburg_navigation--visible {
+        pointer-events: all;
+
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform 1s;
+    }
 }

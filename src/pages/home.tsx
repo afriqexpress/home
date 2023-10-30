@@ -9,13 +9,19 @@ import PreregisterSection from "../components/preregister/preregistersection";
 const Home = () => {
   return (
     <>
-      <Nav />
+      <Nav links={[
+        { link: "#Over", name: "About Us" },
+        { link: "#Features", name: "Features" },
+        { link: "#Contact", name: "Contact" },
+        { link: "/Login", name: "Preregister", special: true },
+      ]} />
+
       <Header
         bigTitle="What do we do?" 
         smallTitle="about us text"
         buttonTitle="Preregister Now!"
       />
-      <Features />
+      {/* <Features />
       <Footer />
       <Link to="/AfriQExpress">AfriQExpress</Link>
       <Link to="/AfriQPay">AfriQPay</Link>
