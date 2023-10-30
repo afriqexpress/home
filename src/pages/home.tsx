@@ -21,7 +21,7 @@ const Home = () => {
         smallTitle="about us text"
         buttonTitle="Preregister Now!"
       />
-      <Features />
+      {/* <Features />
       <Footer />
       <Link to="/AfriQExpress">AfriQExpress</Link>
       <Link to="/AfriQPay">AfriQPay</Link>
