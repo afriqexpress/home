@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-
 import Nav from "../components/nav/nav";
 import Header from "../components/homeheader/Header";
 import Features from "../components/service/Features";
@@ -21,12 +20,12 @@ const Home = () => {
         smallTitle="about us text"
         buttonTitle="Preregister Now!"
       />
-      {/* <Features />
-      <Footer />
-      <Link to="/AfriQExpress">AfriQExpress</Link>
-      <Link to="/AfriQPay">AfriQPay</Link>
-
+      <Features />
       <PreregisterSection />
+      <Footer />
+      {/* <Link to="/AfriQExpress">AfriQExpress</Link>
+      <Link to="/AfriQPay">AfriQPay</Link> */}
+
     </>
   );
 };
