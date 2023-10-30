@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Nav />
-      <Header
+      {/* <Header
         bigTitle="What do we do?" 
         smallTitle="about us text"
         buttonTitle="Preregister Now!"
@@ -20,7 +20,7 @@ const Home = () => {
       <Link to="/AfriQExpress">AfriQExpress</Link>
       <Link to="/AfriQPay">AfriQPay</Link>
 
-      <PreregisterSection />
+      <PreregisterSection /> */}
     </>
   );
 };
