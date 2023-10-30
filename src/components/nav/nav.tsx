@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import "./nav.css";
-import afriQExpressLogo from "./logo.svg";
+import afriQExpressLogo from "./logo.png";
 import hamburgIcon from "./menu.svg";
 import closeIcon from "./close.svg";
 
