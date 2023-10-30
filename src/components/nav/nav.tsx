@@ -5,27 +5,39 @@ import afriQExpressLogo from "./logo.svg";
 import hamburgIcon from "./menu.svg";
 import closeIcon from "./close.svg";
 
+interface Props {
+    links: {
+        special?: boolean,
+        name: string,
+        link: string
+    }[]
+}
 
-const Navigation = () => {
+const Navigation = ({ links }: Props) => {
     const [hamburgOpen, setHamburgOpen] = useState<boolean>(false);
+
+    const toggleHamburg = () => setHamburgOpen(current => !current);
 
     return (
         <>
             <nav className="navigation">
                 <a href='/' className="navigation__logo"><img src={afriQExpressLogo} alt="Brand Logo" /></a>
-                <a href="#Over" className="navigation__item">About Us</a>
-                <a href="#Features" className="navigation__item">Features</a>
-                <a href="#Contact" className="navigation__item">Contact</a>
-                <a href='/Login' className="navigation__special">preregister</a>
 
-                <button onClick={() => setHamburgOpen(current => !current)} className="navigation__hamburg"><img src={hamburgOpen ? closeIcon : hamburgIcon} alt="" /></button>
+                {links.map((link, index) => {
+                    return(
+                        <a key={index} href={link.link} className={link.special ? "navigation__special" : "navigation__item"} >{link.name}</a>
+                    );
+                })}
+
+                <button onClick={toggleHamburg} className="navigation__hamburg"><img src={hamburgOpen ? closeIcon : hamburgIcon} alt="" /></button>
             </nav>
 
             <nav className={hamburgOpen ? "hamburg_navigation hamburg_navigation--visible" : "hamburg_navigation"}>
-                <a href="#Over" className="navigation__item">About Us</a>
-                <a href="#Features" className="navigation__item">Features</a>
-                <a href="#Contact" className="navigation__item">Contact</a>
-                <a href='/Login' className="navigation__special">preregister</a>
+            {links.map((link, index) => {
+                    return(
+                        <a key={index} href={link.link} className={link.special ? "navigation__special" : "navigation__item"} onClick={toggleHamburg} >{link.name}</a>
+                    );
+                })}
             </nav>
         </>
 
