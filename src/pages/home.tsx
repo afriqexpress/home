@@ -3,7 +3,6 @@ import Features from "../components/service/Features";
 import Footer from "../components/footer/Footer";
 import App from "../components/app/app";
 import Card from "../components/card/card";
-import "./home.css";
 
 const Home = () => {
   return (
