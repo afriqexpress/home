@@ -1,7 +1,7 @@
 import Card from "../card/card";
 import { Container, Row, Col } from "react-bootstrap";
 
-const App = () => {
+const Apps = () => {
   return (
     <>
       <Container>
@@ -32,4 +32,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Apps;

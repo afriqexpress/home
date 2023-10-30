@@ -1,7 +1,7 @@
 import Nav from "../components/nav/nav";
 import Features from "../components/service/Features";
 import Footer from "../components/footer/Footer";
-import App from "../components/app/app";
+import App from "../components/apps/apps";
 import Card from "../components/card/card";
 
 const Home = () => {
