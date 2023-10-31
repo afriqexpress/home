@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Preregister, getPreregisters } from "../../services/api";
-import List from "./list/list";
+import List from "../preregisters/preregisters";
 import Form from "./form/form";
 
 const PreregisterSection = () => {

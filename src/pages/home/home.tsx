@@ -4,7 +4,7 @@ import Nav from "../../components/nav/nav";
 import Header from "../../components/header/Header";
 import Features from "../../components/service/Features";
 import Footer from "../../components/footer/Footer";
-import PreregisterSection from "../../components/preregister/preregistersection";
+import Preregisters from "../../components/preregisters/preregisters";
 
 import headerImage from "./header.jpg";
 
@@ -27,12 +27,13 @@ const Home = () => {
         buttonText="Preregister Now!"
       />
 
-      <Features />
+      {/* <Features /> */}
+
+      <Preregisters />
+
       <Footer />
       <Link to="/AfriQExpress">AfriQExpress</Link>
       <Link to="/AfriQPay">AfriQPay</Link>
-
-      <PreregisterSection />
     </>
   );
 };

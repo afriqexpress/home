@@ -1,0 +1,60 @@
+.preregisters {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.preregisters h2 {
+    font-size: 3.5rem;
+    color: #48c2c3;
+    padding: 1rem;
+}
+
+.preregisters__list {
+    list-style: none;
+
+    gap: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 2.5rem;
+    row-gap: 1rem;
+}
+
+.preregisters__item {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    width: 30rem;
+    overflow: hidden;
+
+    background: hsl(0, 0%, 95%);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.preregisters__item img {
+    width: 5rem;
+    height: 5rem;
+
+    border-radius: 50%;
+
+    margin-right: 10px;
+}
+
+.preregisters__item figure {
+    width: 5rem;
+    height: 5rem;
+
+    border-radius: 50%;
+
+    background-color: red;
+    margin: 0 10px 0 0;
+}
+
+.preregisters__item h3 {
+    font-weight: 400;
+}
