@@ -18,6 +18,13 @@
     color: black;
 
     z-index: 999;
+
+    transform: translateY(-100%);
+    transition: transform 500ms;
+}
+
+.navigation--visible {
+    transform: translateY(0);
 }
 
 .navigation__logo {
