@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 
 import Nav from "../../components/nav/nav";
-import Header from "../../components/header/Header";
-<<<<<<< HEAD
-=======
-import Features from "../../components/service/products";
->>>>>>> origin/dev
-import Footer from "../../components/footer/Footer";
 
+
+import Features from "../../components/service/products";
+
+import Footer from "../../components/footer/Footer";
+import Header from "../../components/header/Header";
 import headerImage from "./header.jpg";
 import Apps from "../../components/apps/apps";
 
@@ -28,17 +27,13 @@ const Home = () => {
         url="#"
         buttonText="Preregister"
       />
-<<<<<<< HEAD
-      <PreregisterSection />
-      <Footer />
-=======
+      
       <Apps />
       <Footer />
       <Link to="/AfriQExpress">AfriQExpress</Link>
       <Link to="/AfriQPay">AfriQPay</Link>
+</>
 
->>>>>>> origin/dev
-    </>
   );
 };
 
