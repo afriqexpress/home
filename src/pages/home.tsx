@@ -1,5 +1,5 @@
 import Nav from "../components/nav/nav";
-import Features from "../components/service/Features";
+import Features from "../components/service/products";
 import Footer from "../components/footer/Footer";
 import App from "../components/apps/apps";
 import Card from "../components/card/card";

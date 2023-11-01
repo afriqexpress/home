@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import Nav from "../../components/nav/nav";
 import Header from "../../components/header/Header";
-import Features from "../../components/service/Features";
+import Features from "../../components/service/products";
 import Footer from "../../components/footer/Footer";
 
 import headerImage from "./header.jpg";
@@ -11,14 +11,11 @@ import Apps from "../../components/apps/apps";
 const Home = () => {
   return (
     <>
-      <Nav
-        links={[
-          { link: "#Over", name: "About Us" },
-          { link: "#Features", name: "Features" },
-          { link: "#Contact", name: "Contact" },
-          { link: "/Login", name: "Preregister", special: true },
-        ]}
-      />
+      <Nav links={[
+        { link: "#Over", name: "About Us" },
+        { link: "#Features", name: "Products" },
+        { link: "#Contact", name: "Contact", special: true },
+      ]} />
 
       <Header
         image={headerImage}
