@@ -1,7 +1,8 @@
-import { useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { postPreregisters } from "../../services/api";
 import FormInput, { InputValue } from "./forminput/forminput";
 import FormButton from "./formButton/formButton";
+import FormAvatar from "./formAvatar/formAvatar";
 
 import "./preregisterForm.css";
 
@@ -15,9 +16,17 @@ const PreregistrerForm = ({ appName }: Props) => {
     const [companyName, setCompanyName] = useState<InputValue>({valid: false, value: ""});
     const [phoneNumber, setPhoneNumber] = useState<InputValue>({valid: false, value: ""});
     const [avatar, setAvatar] = useState<File | null>(null);
-    
-    const avatarRef = useRef<HTMLInputElement>(null);
+    const [error, setError] = useState<string | null>(null);
+    const [success, setSuccess] = useState<boolean>(false);
 
+    useEffect(() => {
+        if(!success) return;
+
+        setTimeout(() => {
+            setSuccess(false);
+        }, 5000);
+    }, [success]);
+    
     const onSubmitButtonClick = () => {
         const companyNameResult =  companyNameValidator(companyName.value);
         setCompanyName(companyNameResult);
@@ -30,20 +39,19 @@ const PreregistrerForm = ({ appName }: Props) => {
 
         postPreregisters(companyName.value, phoneNumber.value, appName, avatar).then(
             (result) => {
-              if ("error" in result) return console.log(result);
+              if ("error" in result) {
+                setError(result.error);
+                return;
+            }
+
+              setCompanyName({valid: false, value: ""});
+              setPhoneNumber({valid: false, value: ""});
+              setAvatar(null);
+              setError(null);
+
+              setSuccess(true);
             }
           );
-    }
-
-    const onAvatarButtonClick = () => {
-        avatarRef.current?.click();
-    }
-
-    const handleAvatarInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-        let avatar = e.target.files?.item(0);
-        if(avatar === undefined) avatar = null;
-
-        setAvatar(avatar);
     }
 
     const companyNameValidator = (value: string): InputValue => {
@@ -67,10 +75,11 @@ const PreregistrerForm = ({ appName }: Props) => {
             <FormInput state={companyName} setState={setCompanyName} name="Company Name" validator={companyNameValidator}/>
             <FormInput state={phoneNumber} setState={setPhoneNumber} name="Phone Number" validator={phoneNumberValidator}/>
 
-            <input ref={avatarRef} onChange={handleAvatarInput} type="file" style={{ display: "none" }} />
-            <FormButton name="Avatar" onClickCB={onAvatarButtonClick} />
+            <FormAvatar state={avatar} setState={setAvatar}/>
 
+            { error ? <p className="form__error">{error}</p> : null}
             <FormButton name="Submit" onClickCB={onSubmitButtonClick} />
+            { success ? <p className="form__success">Succesfully preregistered!</p> : null }
         </div>
     );
 }

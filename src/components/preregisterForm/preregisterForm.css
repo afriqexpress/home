@@ -18,3 +18,25 @@
 .preregisterForm p {
     font-size: 1.7rem;
 }
+
+.form__error {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+
+    color: red;
+}
+
+.form__success {
+    width: 100%;
+    padding: 2.5rem 0;
+
+    border-radius: 0.5rem;
+    background: linear-gradient(135deg, hsla(181, 65%, 20%, 0.9) 15%, hsla(181, 64%, 40%, 0.9));
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    color: white;
+}
