@@ -16,8 +16,16 @@
 
     gap: 1rem;
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 65rem;
+    width: 100%;
+
+    justify-content: center;
 
     column-gap: 2.5rem;
     row-gap: 1rem;
