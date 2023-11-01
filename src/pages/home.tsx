@@ -1,0 +1,24 @@
+import Nav from "../components/nav/nav";
+import Features from "../components/service/products";
+import Footer from "../components/footer/Footer";
+import App from "../components/apps/apps";
+import Card from "../components/card/card";
+
+const Home = () => {
+  return (
+    <>
+      {/* <Nav
+        links={[
+          { link: "#Over", name: "About Us" },
+          { link: "#Features", name: "Features" },
+          { link: "#Contact", name: "Contact" },
+          { link: "/Login", name: "Preregister", special: true },
+        ]}
+      /> */}
+      <App />
+      <Footer />
+    </>
+  );
+};
+
+export default Home;
