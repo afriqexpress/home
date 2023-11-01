@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Nav from "../components/nav/nav";
 import Header from "../components/afriqexpresspage/header/Header";
 import Footer from "../components/footer/Footer";
@@ -21,9 +20,8 @@ const AfriQExpress = () => {
                 buttonText="Preregister Now!"
             />
             <Features />
-            <Footer />
-            <Link to="/">Home</Link>
             <PreregistrerForm appName="AFRIQEXPRESS" />
+            <Footer />
         </>
     );
 }
