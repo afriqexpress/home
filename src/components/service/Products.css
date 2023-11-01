@@ -24,10 +24,17 @@
 .products__h3 {
     font-size: 3rem;
     display: flex;
+    /* border: 0.1rem solid red; */
 }
 
 .products__p {
     font-size: 2rem;
+    width: 90%;
+    height: 20rem;
+    text-overflow: clip;
+    /* border: 0.1rem solid red; */
+    margin: 0rem;
+    padding: 0rem;
 }
 
 .products__wrapper {
@@ -35,8 +42,9 @@
     padding: 2rem;
     gap: 0.5rem;
     min-width: 20rem;
-    min-height: 70rem;
+    /* min-height: 30rem; */
     flex-direction: column;
+    justify-content: space-between;
     border: 0.1rem solid #e4e2e0;
     border-radius: 1rem;
     padding-bottom: 2rem;
@@ -48,14 +56,15 @@
     justify-content: center;
     align-items: center;
     align-self: center;
-    width: 60%;
-    height: 60%;
+    width: 20rem;
+    height: 20rem;
+    /* border: 0.1rem solid red; */
     object-fit: cover;
 }
 
 .products__button {
     font-size: 2rem;
-    width: 12rem;
+    width: 14rem;
     height: 5rem;
     border-radius: 0.5rem;
     border-style: none;
