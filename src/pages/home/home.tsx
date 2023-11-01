@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import Nav from "../../components/nav/nav";
 import Header from "../../components/header/Header";
-import Features from "../../components/service/Features";
+import Features from "../../components/service/products";
 import Footer from "../../components/footer/Footer";
 import PreregisterSection from "../../components/preregister/preregistersection";
 
