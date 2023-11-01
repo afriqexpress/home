@@ -4,7 +4,7 @@ import { Preregister, getPreregisters, transformAvatarToUrl} from "../../service
 import "./Tables.css";
 
 function Tables() {
-  const [data, setData]= useState<Preregister[]>([]);
+  const [data, setData]= useState<Partial<Preregister>[]>([]);
   useEffect(() => {
     getPreregisters().then((apiData) => {
       if(apiData) setData(apiData);

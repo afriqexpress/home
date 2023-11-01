@@ -1,5 +1,3 @@
-import { useState, useEffect, useRef } from "react";
-import React from "react";
 
 interface Props {
   onClickCB: () => void;

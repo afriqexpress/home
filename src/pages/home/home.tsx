@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 import Nav from "../../components/nav/nav";
 import Header from "../../components/header/Header";
-import Features from "../../components/service/Features";
 import Footer from "../../components/footer/Footer";
 import PreregisterSection from "../../components/preregister/preregistersection";
 
@@ -24,17 +23,13 @@ const Home = () => {
       <Header
         image={headerImage}
         imageAlt=""
-        title="What do we do?"
-        text="Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi praesentium. Et natus magnam non optio alias sit quia ducimus est soluta optio nam deleniti natus?"
+        title="Your future is bright"
+        text="Start your online presence here. Bring innovation to your business and your business into the world wide web."
         url="#"
-        buttonText="Preregister Now!"
+        buttonText="Preregister"
       />
-      <Apps />
-      <Footer />
-      <Link to="/AfriQExpress">AfriQExpress</Link>
-      <Link to="/AfriQPay">AfriQPay</Link>
-
       <PreregisterSection />
+      <Footer />
     </>
   );
 };

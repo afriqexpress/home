@@ -57,6 +57,7 @@
 
 .footer{
     background-color: #2d2d32;
+    text-decoration: none;
 }
 
 .sb__footer{
@@ -86,6 +87,18 @@
 
 a{
     color: rgb(175, 175, 179);
+    text-decoration: none !important;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
     text-decoration: none;
 }
 
@@ -101,6 +114,7 @@ a{
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 0.9rem;
+    color: #5fb7c8;
 }
 
 .sb__footer-below{
