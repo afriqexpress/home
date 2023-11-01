@@ -2,6 +2,7 @@ import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import Features from "../components/afriqexpresspage/features/features";
 import Navigation from "../components/nav/nav";
+import PreregistrerForm from "../components/preregisterForm/preregisterForm";
 
 const AfriQPay = () => {
   return (
@@ -19,6 +20,7 @@ const AfriQPay = () => {
         buttonText="Preregister Now!"
       />
       <Features />
+      <PreregistrerForm appName="AFRIQPAY" />
       <Footer />
     </>
   );

@@ -21,9 +21,8 @@ const AfriQExpress = () => {
                 buttonText="Preregister Now!"
             />
             <Features />
-            <Footer />
-            <Link to="/">Home</Link>
             <PreregistrerForm appName="AFRIQEXPRESS" />
+            <Footer />
         </>
     );
 }

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./forminput.css";
 
 export interface InputValue {

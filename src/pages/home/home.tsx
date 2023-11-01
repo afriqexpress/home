@@ -1,12 +1,11 @@
-import { Link } from "react-router-dom";
 
 import Nav from "../../components/nav/nav";
 import Header from "../../components/header/Header";
-import Features from "../../components/service/products";
 import Footer from "../../components/footer/Footer";
+import Apps from "../../components/apps/apps";
+import Preregisters from "../../components/preregisters/preregisters";
 
 import headerImage from "./header.jpg";
-import Apps from "../../components/apps/apps";
 
 const Home = () => {
   return (
@@ -26,10 +25,8 @@ const Home = () => {
         buttonText="Preregister Now!"
       />
       <Apps />
+      <Preregisters />
       <Footer />
-      <Link to="/AfriQExpress">AfriQExpress</Link>
-      <Link to="/AfriQPay">AfriQPay</Link>
-
     </>
   );
 };
