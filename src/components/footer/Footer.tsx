@@ -1,7 +1,4 @@
 import "./Footer.css";
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
