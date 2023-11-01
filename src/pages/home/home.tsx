@@ -4,7 +4,6 @@ import Nav from "../../components/nav/nav";
 import Header from "../../components/header/Header";
 import Features from "../../components/service/Features";
 import Footer from "../../components/footer/Footer";
-import PreregisterSection from "../../components/preregister/preregistersection";
 
 import headerImage from "./header.jpg";
 import Apps from "../../components/apps/apps";
@@ -34,7 +33,6 @@ const Home = () => {
       <Link to="/AfriQExpress">AfriQExpress</Link>
       <Link to="/AfriQPay">AfriQPay</Link>
 
-      <PreregisterSection />
     </>
   );
 };

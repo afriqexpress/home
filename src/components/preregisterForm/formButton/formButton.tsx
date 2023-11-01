@@ -1,3 +1,5 @@
+import "./formButton.css";
+
 interface Props {
     onClickCB: () => void,
     name: string
@@ -5,7 +7,7 @@ interface Props {
 
 const FormButton = ({ onClickCB, name }: Props) => {
     return(
-        <button onClick={onClickCB}>{name}</button>
+        <button className="form__button" onClick={onClickCB}>{name}</button>
     );
 }
 

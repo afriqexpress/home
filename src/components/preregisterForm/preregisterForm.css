@@ -1,0 +1,20 @@
+.preregisterForm {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    max-width: 50rem;
+
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.preregisterForm h2 {
+    font-size: 3rem;
+    color: #25a5a7;
+    font-weight: bold;
+}
+
+.preregisterForm p {
+    font-size: 1.7rem;
+}

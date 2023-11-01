@@ -1,0 +1,24 @@
+.form__label {
+    font-size: 1.7rem;
+    font-weight: bold;
+    
+    color: #25a5a7;
+    margin-bottom: 0.5rem;
+}
+
+.form__field {
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    border: 2.5px solid #25a5a7;
+
+    margin-bottom: 1rem;
+}
+
+.form__error {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+
+    color: red;
+}

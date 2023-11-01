@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Nav from "../components/nav/nav";
+import PreregistrerForm from "../components/preregisterForm/preregisterForm";
 
 const AfriQExpress = () => {
     return(
@@ -11,6 +12,7 @@ const AfriQExpress = () => {
         
             <Link to="/">Home</Link>
             <h1>AfriQExpress</h1>
+            <PreregistrerForm appName="AFRIQEXPRESS" />
         </>
     );
 }
