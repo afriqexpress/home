@@ -1,4 +1,3 @@
-
 import Nav from "../../components/nav/nav";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
@@ -10,19 +9,21 @@ import headerImage from "./header.jpg";
 const Home = () => {
   return (
     <>
-      <Nav links={[
-        { link: "#Over", name: "About Us" },
-        { link: "#Features", name: "Products" },
-        { link: "#Contact", name: "Contact", special: true },
-      ]} />
+      <Nav
+        links={[
+          { link: "#Over", name: "About Us" },
+          { link: "#Features", name: "Products" },
+          { link: "#Contact", name: "Contact", special: true },
+        ]}
+      />
 
       <Header
         image={headerImage}
         imageAlt=""
-        title="What do we do?"
-        text="Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi praesentium. Et natus magnam non optio alias sit quia ducimus est soluta optio nam deleniti natus?"
+        title="The internet revolution"
+        text="Bring your business to the next level"
         url="#"
-        buttonText="Preregister Now!"
+        buttonText="Preregister"
       />
       <Apps />
       <Preregisters />
