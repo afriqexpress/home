@@ -1,7 +1,8 @@
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
-import Features from "../components/afriqexpresspage/features/features";
+import Features from "../components/afriqpaypage/payfeatures/payfeatures";
 import Navigation from "../components/nav/nav";
+import headerImage from "/img/afirqpaybackground.jpeg";
 
 const AfriQPay = () => {
   return (
@@ -11,8 +12,8 @@ const AfriQPay = () => {
                 { link: "#Contact", name: "Contact" },
             ]} />
       <Header
-        image=""
-        imageAlt=""
+        image={headerImage}
+        imageAlt="AfriQPay Logo"
         title="AfriQPay"
         text="Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi praesentium. Et natus magnam non optio alias sit quia ducimus est soluta optio nam deleniti natus?"
         url="#"
