@@ -25,7 +25,8 @@ const Home = () => {
         url="#"
         buttonText="Preregister Now!"
       />
-      <Apps />
+      <Features />
+      {/* <Apps /> */}
       <Footer />
       <Link to="/AfriQExpress">AfriQExpress</Link>
       <Link to="/AfriQPay">AfriQPay</Link>
