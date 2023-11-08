@@ -1,8 +1,8 @@
-import Header from "../components/header/Header";
+import Header from "../components/afriqpaypage/payheader/PayHeader";
 import Footer from "../components/footer/Footer";
 import Features from "../components/afriqpaypage/payfeatures/payfeatures";
 import Navigation from "../components/nav/nav";
-import headerImage from "/img/afirqpaybackground.jpeg";
+import headerImage from "/img/afriQPay.mp4";
 
 const AfriQPay = () => {
   return (

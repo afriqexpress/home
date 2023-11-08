@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Nav from "../components/nav/nav";
-import Header from "../components/afriqexpresspage/header/Header";
+import Header from "../components/afriqexpresspage/expressheader/ExpressHeader";
 import Footer from "../components/footer/Footer";
 import Features from "../components/afriqexpresspage/features/features";
 import PreregistrerForm from "../components/preregisterForm/preregisterForm";
-import imageHeader from "/img/afriQExpress-01background.png";
+import imageHeader from "/img/afriQHome.mp4";
 
 const AfriQExpress = () => {
     return(
@@ -22,9 +22,9 @@ const AfriQExpress = () => {
                 buttonText="Preregister Now!"
             />
             <Features />
-            <Footer />
-            <Link to="/">Home</Link>
             <PreregistrerForm appName="AFRIQEXPRESS" />
+            <Footer />
+            {/* <Link to="/">Home</Link> */}
         </>
     );
 }

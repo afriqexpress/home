@@ -17,4 +17,10 @@ export const PayFeaturesData = [
         title: "Pay with QRCode",
         text: "featuretext",
     },
+    {
+        id: 4,
+        image: "/img/noun-money-request.png",
+        title: "Request Money",
+        text: "featuretext",
+    },
 ]

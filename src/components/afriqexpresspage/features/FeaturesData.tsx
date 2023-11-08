@@ -17,4 +17,10 @@ export const FeaturesData = [
         title: "Be Visible",
         text: "featuretext",
     },
+    {
+        id: 4,
+        image: "../img/cash_delivery_icon.png",
+        title: "Online Payment and Delivery",
+        text: "featuretext",
+    },
 ]
