@@ -10,13 +10,14 @@
 }
 
 .preregisterForm h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #25a5a7;
     font-weight: bold;
 }
 
 .preregisterForm p {
     font-size: 1.7rem;
+    padding-bottom: 2rem;
 }
 
 .form__error {
