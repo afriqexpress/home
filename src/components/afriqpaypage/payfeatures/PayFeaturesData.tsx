@@ -1,20 +1,26 @@
 export const PayFeaturesData = [
     {
         id: 1,
-        image: "",
-        title: "Feature 1",
+        image: "/img/money-transfer.png",
+        title: "Money Transfer",
         text: "featuretext",
     },
     {
         id: 2,
-        image: "",
-        title: "Feature 2",
+        image: "/img/transaction.png",
+        title: "Have insight about your transactions",
         text: "featuretext",
     },
     {
         id: 3,
-        image: "",
-        title: "Feature 3",
+        image: "/img/qrcodepayment.png",
+        title: "Pay with QRCode",
+        text: "featuretext",
+    },
+    {
+        id: 4,
+        image: "/img/noun-money-request.png",
+        title: "Request Money",
         text: "featuretext",
     },
 ]

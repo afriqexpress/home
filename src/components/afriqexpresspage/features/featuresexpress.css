@@ -20,6 +20,10 @@
     padding: 2rem;
 }
 
+.features__h3 {
+    align-self: center;
+}
+
 .features__wrapper {
     display: flex;
     padding: 2rem;
@@ -34,9 +38,10 @@
 
 .features__image {
     display: flex;
-    width: 25%;
-    height: 25%;
+    width: 30%;
+    height: 30%;
     object-fit: cover;
+    align-self: center;
 }
 
 @media only screen and (max-width: 60rem) {

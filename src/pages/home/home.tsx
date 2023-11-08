@@ -25,8 +25,8 @@ const Home = () => {
         url="#"
         buttonText="Preregister"
       />
-      <Apps />
-      <Preregisters />
+      <Features />
+      {/* <Apps /> */}
       <Footer />
     </>
   );
