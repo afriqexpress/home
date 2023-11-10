@@ -9,7 +9,7 @@ export const FeaturesData = [
         id: 2,
         image: "../img/search-engine.png",
         title: "Search Engine",
-        text: "featuretext",
+        text: "featuretext Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.",
     },
     {
         id: 3,
