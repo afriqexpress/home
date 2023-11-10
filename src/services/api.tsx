@@ -1,6 +1,6 @@
 import axios, { AxiosError } from "axios";
 
-const baseUrl = "http://localhost:8000/v1";
+const baseUrl = "https://home-api.afriqexpress.net/v1";
 
 export interface Preregister {
   id: number;
