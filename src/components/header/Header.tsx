@@ -5,7 +5,6 @@ interface Props {
     imageAlt: string,
     title: string,
     text: string,
-
     url: string,
     buttonText: string
 }

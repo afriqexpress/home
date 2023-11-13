@@ -1,7 +1,7 @@
 .preregisters {
     display: flex;
     flex-direction: column;
-
+    margin-top: 8rem;
     align-items: center;
 }
 
@@ -9,6 +9,7 @@
     font-size: 3.5rem;
     color: #48c2c3;
     padding: 1rem;
+    margin-bottom: 8rem;
 }
 
 .preregisters__list {

@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    min-height: 90vh;
+    height: 95vh;
 
     padding: 7rem 1rem 1rem 1rem;
 
@@ -61,7 +61,7 @@
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     background-color: white;
-
+    
     color: #25a5a7;
     font-weight: 700;
     box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.555);
