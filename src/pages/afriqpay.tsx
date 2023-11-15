@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Header from "../components/afriqpaypage/payheader/PayHeader";
 import Footer from "../components/footer/Footer";
 import Features from "../components/afriqpaypage/payfeatures/payfeatures";
@@ -6,6 +7,11 @@ import headerImage from "/img/afriQPay.mp4";
 import PreregistrerForm from "../components/preregisterForm/preregisterForm";
 
 const AfriQPay = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Navigation
