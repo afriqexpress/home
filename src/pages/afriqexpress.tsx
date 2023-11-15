@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Nav from "../components/nav/nav";
 import Header from "../components/afriqexpresspage/expressheader/ExpressHeader";
 import Footer from "../components/footer/Footer";
@@ -6,6 +7,11 @@ import PreregistrerForm from "../components/preregisterForm/preregisterForm";
 import imageHeader from "/img/afriQHome.mp4";
 
 const AfriQExpress = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Nav
