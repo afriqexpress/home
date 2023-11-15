@@ -4,7 +4,7 @@ import "./Products.css";
 
 const Features = () => (
   <>
-    <h2 className="products__h2">Our Products</h2>
+    <h2 className="products__h2">Services</h2>
     <div className="products__wrapper2">
       {ProductsData.map((product) => (
         <section className="products" id="Features">

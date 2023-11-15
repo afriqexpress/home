@@ -3,7 +3,7 @@ import Header from "../../components/header/Header";
 import Features from "../../components/service/products";
 import Preregisters from "../../components/preregisters/preregisters";
 import Footer from "../../components/footer/Footer";
-import headerImage from "./header.jpg";
+import headerImage from "./header.svg";
 
 const Home = () => {
   return (
@@ -18,10 +18,8 @@ const Home = () => {
       <Header
         image={headerImage}
         imageAlt=""
-        title="The internet revolution"
-        text="Bring your business to the next level Bring your business to the next level Bring your business to the next level Bring your business to the next level"
-        url="#"
-        buttonText="Preregister"
+        title="Votre entreprise peut se développer grâce à la technologie"
+        text="Inscrivez-vous ci-dessous pour vous pré-inscrire à AfriQExpress et AfriQPay. Notre nouvelle plateforme pour le commerce et le paiement !"
       />
       <Features />
       <Preregisters />
