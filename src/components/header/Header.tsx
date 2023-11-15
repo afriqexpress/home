@@ -5,11 +5,11 @@ interface Props {
   imageAlt: string;
   title: string;
   text: string;
-  // url: string,
-  // buttonText: string
+  // url: string;
+  // buttonText: string;
 }
 
-const Header = ({ image, imageAlt, title, text, url, buttonText }: Props) => {
+const Header = ({ image, imageAlt, title, text }: Props) => {
   return (
     <header className="header">
       <div className="header__inner">
