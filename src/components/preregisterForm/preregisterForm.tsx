@@ -7,81 +7,109 @@ import FormAvatar from "./formAvatar/formAvatar";
 import "./preregisterForm.css";
 
 interface Props {
-    appName: string
+  appName: string;
 }
 
 const phoneNumberRegex = /^\+[1-9]\d{1,14}$/;
 
 const PreregistrerForm = ({ appName }: Props) => {
-    const [companyName, setCompanyName] = useState<InputValue>({valid: false, value: ""});
-    const [phoneNumber, setPhoneNumber] = useState<InputValue>({valid: false, value: ""});
-    const [avatar, setAvatar] = useState<File | null>(null);
-    const [error, setError] = useState<string | null>(null);
-    const [success, setSuccess] = useState<boolean>(false);
+  const [companyName, setCompanyName] = useState<InputValue>({
+    valid: false,
+    value: "",
+  });
+  const [phoneNumber, setPhoneNumber] = useState<InputValue>({
+    valid: false,
+    value: "",
+  });
+  const [avatar, setAvatar] = useState<File | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<boolean>(false);
 
-    useEffect(() => {
-        if(!success) return;
+  useEffect(() => {
+    if (!success) return;
 
-        setTimeout(() => {
-            setSuccess(false);
-        }, 5000);
-    }, [success]);
-    
-    const onSubmitButtonClick = () => {
-        const companyNameResult =  companyNameValidator(companyName.value);
-        setCompanyName(companyNameResult);
+    setTimeout(() => {
+      setSuccess(false);
+    }, 5000);
+  }, [success]);
 
-        const phoneNumberResult = phoneNumberValidator(phoneNumber.value);
-        setPhoneNumber(phoneNumberResult);
+  const onSubmitButtonClick = () => {
+    const companyNameResult = companyNameValidator(companyName.value);
+    setCompanyName(companyNameResult);
 
-        if(!companyNameResult.valid) return;
-        if(!phoneNumberResult.valid) return;
+    const phoneNumberResult = phoneNumberValidator(phoneNumber.value);
+    setPhoneNumber(phoneNumberResult);
 
-        postPreregisters(companyName.value, phoneNumber.value, appName, avatar).then(
-            (result) => {
-              if ("error" in result) {
-                setError(result.error);
-                return;
-            }
+    if (!companyNameResult.valid) return;
+    if (!phoneNumberResult.valid) return;
 
-              setCompanyName({valid: false, value: ""});
-              setPhoneNumber({valid: false, value: ""});
-              setAvatar(null);
-              setError(null);
+    postPreregisters(
+      companyName.value,
+      phoneNumber.value,
+      appName,
+      avatar
+    ).then((result) => {
+      if ("error" in result) {
+        setError(result.error);
+        return;
+      }
 
-              setSuccess(true);
-            }
-          );
-    }
+      setCompanyName({ valid: false, value: "" });
+      setPhoneNumber({ valid: false, value: "" });
+      setAvatar(null);
+      setError(null);
 
-    const companyNameValidator = (value: string): InputValue => {
-        if(value.length == 0) return { valid: false, error: "Company name is required!", value: value };
-        if(value.length > 25) return { valid: false, error: "Name is too long!", value: value };
+      setSuccess(true);
+    });
+  };
 
-        return { valid: true, value: value };
-    }
+  const companyNameValidator = (value: string): InputValue => {
+    if (value.length == 0)
+      return { valid: false, error: "Company name is required!", value: value };
+    if (value.length > 25)
+      return { valid: false, error: "Name is too long!", value: value };
 
-    const phoneNumberValidator = (value: string): InputValue => {
-        if(value.length == 0) return { valid: false, error: "Phone number is required!", value: value };
-        if(!phoneNumberRegex.test(value)) return { valid: false, error: "Malformed phone number.", value: value};
+    return { valid: true, value: value };
+  };
 
-        return { valid: true, value: value };
-    }
+  const phoneNumberValidator = (value: string): InputValue => {
+    if (value.length == 0)
+      return { valid: false, error: "Phone number is required!", value: value };
+    if (!phoneNumberRegex.test(value))
+      return { valid: false, error: "Malformed phone number.", value: value };
 
-    return(
-        <div className="preregisterForm">
-            <h2>Preregister</h2>
-            <p>Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi praesentium.</p>
-            <FormInput state={companyName} setState={setCompanyName} name="Company Name" validator={companyNameValidator}/>
-            <FormInput state={phoneNumber} setState={setPhoneNumber} name="Phone Number" validator={phoneNumberValidator}/>
+    return { valid: true, value: value };
+  };
 
-            <FormAvatar state={avatar} setState={setAvatar}/>
+  return (
+    <div className="preregisterForm">
+      <h2>Preregister</h2>
+      <p>
+        Pré-enregistrez votre entreprise maintenant ! Pour être ajouté à la
+        liste et montrer que vous participez
+      </p>
+      <FormInput
+        state={companyName}
+        setState={setCompanyName}
+        name="Company Name"
+        validator={companyNameValidator}
+      />
+      <FormInput
+        state={phoneNumber}
+        setState={setPhoneNumber}
+        name="Phone Number"
+        validator={phoneNumberValidator}
+      />
 
-            { error ? <p className="form__error">{error}</p> : null}
-            <FormButton name="Submit" onClickCB={onSubmitButtonClick} />
-            { success ? <p className="form__success">Succesfully preregistered!</p> : null }
-        </div>
-    );
-}
+      <FormAvatar state={avatar} setState={setAvatar} />
+
+      {error ? <p className="form__error">{error}</p> : null}
+      <FormButton name="Submit" onClickCB={onSubmitButtonClick} />
+      {success ? (
+        <p className="form__success">Succesfully preregistered!</p>
+      ) : null}
+    </div>
+  );
+};
 
 export default PreregistrerForm;

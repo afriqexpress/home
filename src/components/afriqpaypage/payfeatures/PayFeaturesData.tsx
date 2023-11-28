@@ -1,26 +1,26 @@
 export const PayFeaturesData = [
-    {
-        id: 1,
-        image: "/img/money-transfer.png",
-        title: "Money Transfer",
-        text: "featuretext",
-    },
-    {
-        id: 2,
-        image: "/img/transaction.png",
-        title: "Have insight about your transactions",
-        text: "featuretext Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.",
-    },
-    {
-        id: 3,
-        image: "/img/qrcodepayment.png",
-        title: "Pay with QRCode",
-        text: "featuretext",
-    },
-    {
-        id: 4,
-        image: "/img/noun-money-request.png",
-        title: "Request Money",
-        text: "featuretext Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.",
-    },
-]
+  {
+    id: 1,
+    image: "/img/money-transfer.png",
+    title: "Payer et recevoir",
+    text: "Envoyez et recevez vos transactions facilement",
+  },
+  {
+    id: 2,
+    image: "/img/transaction.png",
+    title: "Historique des transactions",
+    text: "Obtenez un bon aperçu de toutes les transactions entrantes et sortantes",
+  },
+  {
+    id: 3,
+    image: "/img/qrcodepayment.png",
+    title: "Paiement avec QR code",
+    text: "Payez facilement grâce à un code QR en magasin. Générez également un code QR pour recevoir des paiements",
+  },
+  {
+    id: 4,
+    image: "/img/noun-money-request.png",
+    title: "Demande de l'argent",
+    text: "Générez facilement des demandes de paiement et partagez-les avec un lien",
+  },
+];

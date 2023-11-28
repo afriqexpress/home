@@ -7,10 +7,10 @@ const Footer = () => {
         <div className="footer-links">
           <div className="footer-links_div">
             <h4>Links</h4>
-            <a href="/">
+            <a href="/afriqexpress">
               <p>AfriQExpress</p>
             </a>
-            <a href="/">
+            <a href="/afriqpay">
               <p>AfriQPay</p>
             </a>
           </div>
@@ -24,10 +24,10 @@ const Footer = () => {
         <div className="footer-below">
           <div className="footer-copyright">
             <p>
-              @{new Date().getFullYear()} AfriQExpress. All rights reserved.
+              @{new Date().getFullYear()} AfriQExpress. Tous droits réservés.
             </p>
           </div>
-          <div className="footer-below-links">
+          {/* <div className="footer-below-links">
             <a href="">
               <div>
                 <p>Terms & Conditions</p>
@@ -43,7 +43,7 @@ const Footer = () => {
                 <p>Cookies</p>
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

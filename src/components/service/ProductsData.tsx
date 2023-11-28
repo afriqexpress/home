@@ -10,7 +10,7 @@ export const ProductsData = [
     id: 2,
     image: "/img/afriqpay.png",
     title: "afriQPay",
-    text: "Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.",
+    text: "Notre plateforme de paiement en ligne pour payer et transférer facilement de l'argent à vos amis et à votre famille",
     button: "AfriQPay",
   },
 ];

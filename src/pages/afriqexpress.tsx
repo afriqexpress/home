@@ -7,7 +7,6 @@ import PreregistrerForm from "../components/preregisterForm/preregisterForm";
 import imageHeader from "/img/afriQHome.mp4";
 
 const AfriQExpress = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -24,7 +23,7 @@ const AfriQExpress = () => {
         image={imageHeader}
         imageAlt=""
         title="AfriQExpress"
-        text="Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi praesentium. Et natus magnam non optio alias sit quia ducimus est soluta optio nam deleniti natus?"
+        text="Préinscrivez-vous ci-dessous pour rejoindre la première plateforme de trading et faire passer votre entreprise au niveau supérieur"
         url="#"
         buttonText="Preregister Now!"
       />

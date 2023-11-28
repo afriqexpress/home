@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: center;
     padding: 3rem;
+    margin-top: 3rem;
 }
 
 .products__h3 {
@@ -30,7 +31,7 @@
 .products__p {
     font-size: 2rem;
     width: 90%;
-    height: 20rem;
+    height: 10rem;
     text-overflow: clip;
     /* border: 0.1rem solid red; */
     margin-bottom: 5rem;
