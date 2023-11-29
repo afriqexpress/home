@@ -27,7 +27,7 @@
     width: calc(100% - 2rem);
 
     margin: auto 1rem;
-
+    max-height: 50rem;
     border-radius: 0.5rem;
 
     /* box-shadow: 0 0 5rem black; */
