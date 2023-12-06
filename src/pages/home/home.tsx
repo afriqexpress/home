@@ -3,7 +3,8 @@ import Header from "../../components/header/Header";
 import Features from "../../components/service/products";
 import Preregisters from "../../components/preregisters/preregisters";
 import Footer from "../../components/footer/Footer";
-import headerImage from "./header.jpg";
+import headerImage from "/img/svg/tech.gif";
+import "./home.css";
 
 const Home = () => {
   return (

@@ -21,6 +21,8 @@
     grid-template-columns: 6fr 4fr;
 
     gap: 5rem;
+
+    background: none;
 }
 
 .header__image {
@@ -31,6 +33,7 @@
     border-radius: 0.5rem;
 
     box-shadow: 0 0 5rem black;
+    /* background: none; */
 }
 
 .header__content {
@@ -44,16 +47,19 @@
     padding: 0 1rem;
 
     color: white;
+    background: none;
 }
 
 .header__title {    
     font-size: 5rem;
     font-weight: 400;
+    background: none;
 }
 
 .header__text {
     font-size: 2rem;
     font-weight: 400;
+    background: none;
 }
 
 .header__button {

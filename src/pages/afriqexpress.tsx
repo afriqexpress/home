@@ -3,6 +3,7 @@ import Nav from "../components/nav/nav";
 import Header from "../components/afriqexpresspage/expressheader/ExpressHeader";
 import Footer from "../components/footer/Footer";
 import Features from "../components/afriqexpresspage/features/features";
+import Partners from "../components/afriqexpresspage/partners/partners";
 import PreregistrerForm from "../components/preregisterForm/preregisterForm";
 import imageHeader from "/img/afriQHome.mp4";
 
@@ -29,6 +30,7 @@ const AfriQExpress = () => {
         buttonText="Preregister Now!"
       />
       <Features />
+      <Partners />
       <PreregistrerForm appName="AFRIQEXPRESS" />
       <Footer />
     </>

@@ -5,6 +5,7 @@ import "./Products.css";
 const Features = () => (
   <>
     <h2 className="products__h2">Our Products</h2>
+    <p className="products__p1">Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.</p>
     <div className="products__wrapper2">
       {ProductsData.map((product) => (
         <section className="products" id="Features">

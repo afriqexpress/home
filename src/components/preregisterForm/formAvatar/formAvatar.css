@@ -1,13 +1,13 @@
 .form__avatar {
-    width: 100%;
+    width: 15%;
     display: flex;
+    flex-direction: column;
 
-    justify-content: center;
-    align-items: center;
     gap: 1rem;
 
 
     margin: 0 0 1rem 0;
+    background: none;
 }
 
 .form__avatar .form__button, .form__avatar figure {
@@ -15,7 +15,7 @@
 }
 
 .form__avatar__preview {
-    height: 5rem;
+    height: 20rem;
     width: auto;
 
     aspect-ratio: 1 / 1;

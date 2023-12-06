@@ -4,6 +4,7 @@ import { FeaturesData } from "./FeaturesData";
 const Features = () =>
     <>
         <h2 className="features__h2">Onze Features</h2>
+        <p className="features__p1">Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.</p>
         <div className="features__wrapper2">
             {FeaturesData.map((feature, index) => (
                 <section className="features" id={`Features${index}`} key={index}>

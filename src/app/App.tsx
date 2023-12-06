@@ -7,6 +7,7 @@ import {
 import Home from "../pages/home/home";
 import AfriQExpress from "../pages/afriqexpress";
 import AfriQPay from "../pages/afriqpay";
+import AfriQTrans from "../pages/afriqtrans";
 
 const router = createBrowserRouter([
   {
@@ -20,7 +21,12 @@ const router = createBrowserRouter([
   {
     path: "/AfriQExpress",
     element: <AfriQExpress />,
+  },
+  {
+    path: "/AfriQTrans",
+    element: <AfriQTrans />
   }
+
 ]);
 
 

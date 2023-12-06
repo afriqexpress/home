@@ -4,6 +4,7 @@
     
     color: #25a5a7;
     margin-bottom: 0.5rem;
+    background: none;
 }
 
 .form__field {
@@ -14,4 +15,7 @@
     border: 2.5px solid #25a5a7;
 
     margin-bottom: 1rem;
+    background: none;
+    width: 40rem;
+    align-self: flex-end;
 }
