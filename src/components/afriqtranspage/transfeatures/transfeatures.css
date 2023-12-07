@@ -77,4 +77,7 @@
     .transfeatures__p {
         white-space: pre-line;
     }
+    .transfeatures__p1 {
+        width: 90%;
+    }
   }

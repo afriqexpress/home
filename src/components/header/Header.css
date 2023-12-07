@@ -31,9 +31,8 @@
     margin: auto 1rem;
 
     border-radius: 0.5rem;
-
-    box-shadow: 0 0 5rem black;
-    /* background: none; */
+    background: none;
+    box-shadow: none;
 }
 
 .header__content {
