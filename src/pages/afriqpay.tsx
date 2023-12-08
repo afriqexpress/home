@@ -6,6 +6,7 @@ import Navigation from "../components/nav/nav";
 import headerImage from "/img/afriQPay.mp4";
 import PreregistrerForm from "../components/preregisterForm/preregisterForm";
 import Partners from "../components/afriqpaypage/partners/partners";
+import Preregisters from "../components/afriqpaypage/preregisters/preregisters";
 
 const AfriQPay = () => {
 
@@ -17,8 +18,8 @@ const AfriQPay = () => {
     <>
       <Navigation
         links={[
-          { link: "#Features", name: "Features" },
-          { link: "#Contact", name: "Contact" },
+          { link: "#PayFeatures", name: "Features" },
+          { link: "/Contact", name: "Contact" },
         ]}
       />
       <Header
@@ -31,6 +32,7 @@ const AfriQPay = () => {
       />
       <Features />
       <Partners />
+      <Preregisters />
       <PreregistrerForm appName="AFRIQPAY" />
       <Footer />
     </>

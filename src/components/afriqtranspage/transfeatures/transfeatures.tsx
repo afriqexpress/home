@@ -3,7 +3,7 @@ import { TransFeaturesData } from "./TransFeaturesData";
 
 const TransFeatures = () =>
     <>
-        <h2 className="transfeatures__h2">Onze Features</h2>
+        <h2 className="transfeatures__h2" id="TransFeatures">Onze Features</h2>
         <p className="transfeatures__p1">Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.</p>
         <div className="transfeatures__wrapper2">
             {TransFeaturesData.map((transfeature, index) => (

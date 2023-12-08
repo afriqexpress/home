@@ -6,6 +6,7 @@ import Features from "../components/afriqexpresspage/features/features";
 import Partners from "../components/afriqexpresspage/partners/partners";
 import PreregistrerForm from "../components/preregisterForm/preregisterForm";
 import imageHeader from "/img/afriQHome.mp4";
+import Preregisters from "../components/afriqexpresspage/preregisters/preregisters";
 
 const AfriQExpress = () => {
 
@@ -18,7 +19,7 @@ const AfriQExpress = () => {
       <Nav
         links={[
           { link: "#Features", name: "Features" },
-          { link: "#Contact", name: "Contact" },
+          { link: "/Contact", name: "Contact" },
         ]}
       />
       <Header
@@ -31,6 +32,7 @@ const AfriQExpress = () => {
       />
       <Features />
       <Partners />
+      <Preregisters />
       <PreregistrerForm appName="AFRIQEXPRESS" />
       <Footer />
     </>

@@ -30,7 +30,7 @@ const Footer = () => {
               @{new Date().getFullYear()} AfriQExpress. All rights reserved.
             </p>
           </div>
-          <div className="footer-below-links">
+          {/* <div className="footer-below-links">
             <a href="">
               <div className="footer-below-links-div">
                 <p className="footer-below-links-p">Terms & Conditions</p>
@@ -46,7 +46,7 @@ const Footer = () => {
                 <p className="footer-below-links-p">Cookies</p>
               </div>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

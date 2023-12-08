@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Preregister, getPreregisters, transformAvatarToUrl } from "../../services/api";
+import { Preregister, getPreregisters, transformAvatarToUrl } from "../../../services/api";
 import "./preregisters.css";
 
 const Preregisters = () => {

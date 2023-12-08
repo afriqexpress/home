@@ -11,14 +11,14 @@ interface Props {
 
 const Header = ({ image, title, text, url, buttonText }: Props) => {
     return(
-        <header className="header">
-            <div className="header__inner">
-                <video className="header__image" muted controls autoPlay={true} src={image} />
+        <header className="payheader">
+            <div className="payheader__inner">
+                <video className="payheader__image" muted controls autoPlay={true} src={image} />
 
-                <div className="header__content">
-                    <h1 className="header__title">{title}</h1>
-                    <p className="header__text">{text}</p>
-                    <a className="header__button" href={url}>{buttonText}</a>
+                <div className="payheader__content">
+                    <h1 className="payheader__title">{title}</h1>
+                    <p className="payheader__text">{text}</p>
+                    <a className="payheader__button" href={url}>{buttonText}</a>
                 </div>
             </div>
 
