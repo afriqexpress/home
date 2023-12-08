@@ -1,0 +1,128 @@
+.teammembers__wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(20rem, 0.25fr));
+    margin-bottom: 10rem;
+    justify-items: center;
+    justify-content: center;
+}
+
+.teammembers {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.teammembers__h2 {
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
+    background: none;
+}
+
+.teammembers__p1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 4rem;
+    width: 50%;
+    margin: 0 auto;
+    background: none;
+}
+
+.teammembers__h3 {
+    font-size: 3rem;
+    text-align: center;
+    background: none;
+}
+
+.teammembers__p {
+    font-size: 2rem;
+    height: 8rem;
+    text-overflow: clip;
+    text-align: center;
+    padding: 0rem;
+    background: none;
+}
+
+.teammembers__wrapper {
+    display: flex;
+    padding: 2rem;
+    max-width: 40rem;
+    flex-direction: column;
+    
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+    background: white;
+    box-shadow: 0.5rem 0.5rem  0.5rem rgba(135, 135, 135, 20%);
+}
+
+.teammembers__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    /* width: 20rem; */
+    height: 20rem;
+    /* border: 0.1rem solid red; */
+    object-fit: cover;
+    background: none;
+}
+
+.teammembers__button {
+    font-size: 2rem;
+    width: 14rem;
+    height: 5rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    background-color: #25a5a7;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.teammembers__button:hover {
+    background: rgb(47, 181, 199);
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 60rem) {
+    .teammembers__wrapper2 {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(20rem, 1fr));
+        justify-items: center;
+        margin-bottom: 10rem;
+    }
+
+    .teammembers__wrapper {
+        display: flex;
+        padding: 2rem;
+        gap: 0.5rem;
+        max-width: 40rem;
+        flex-direction: column;
+        border-radius: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .teammembers__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 100%;
+        object-fit: cover;
+        background: none;
+    }
+    .teammembers__p1 {
+        width: 90%;
+    }
+    .teammembers {
+        padding: 3rem;
+    }
+}

@@ -19,7 +19,7 @@ const AfriQPay = () => {
       <Navigation
         links={[
           { link: "#PayFeatures", name: "Features" },
-          { link: "/Contact", name: "Contact" },
+          { link: "#Contact", name: "Contact" },
         ]}
       />
       <Header

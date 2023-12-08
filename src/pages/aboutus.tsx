@@ -1,7 +1,7 @@
 import Nav from "../components/nav/nav";
-import Header from "../components/header/Header";
+import AboutUsSection from "../components/aboutuspage/aboutussection/aboutussection";
 import Footer from "../components/footer/Footer";
-import headerImage from "/img/svg/tech.gif";
+import TeamMembers from "../components/aboutuspage/teammembers/teammembers";
 
 
 const AboutUs = () => {
@@ -14,14 +14,8 @@ const AboutUs = () => {
           { link: "#Contact", name: "Contact", special: true },
         ]}
       />
-      <Header
-        image={headerImage}
-        imageAlt=""
-        title="The internet revolution"
-        text="Bring your business to the next level Bring your business to the next level Bring your business to the next level Bring your business to the next level"
-        url="#"
-        buttonText="Preregister"
-      />
+      <AboutUsSection />
+      <TeamMembers />
       <Footer />
     </>
   );

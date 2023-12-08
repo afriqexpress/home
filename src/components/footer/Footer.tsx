@@ -18,7 +18,7 @@ const Footer = () => {
             </a>
           </div>
           <div className="footer-links_div">
-            <h4 className="footer-below-links-h4">Contact</h4>
+            <h4 className="footer-below-links-h4" id="Contact">Contact</h4>
             <p>afriqxpress@gmail.com</p>
             <p>(+228) 70 559 093</p>
           </div>

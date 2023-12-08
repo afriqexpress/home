@@ -13,7 +13,7 @@ const Home = () => {
         links={[
           { link: "/AboutUs", name: "About Us" },
           { link: "#Features", name: "Products" },
-          { link: "/Contact", name: "Contact", special: true },
+          { link: "#Contact", name: "Contact", special: true },
         ]}
       />
       <Header
