@@ -15,7 +15,7 @@ const Partners = () => {
                     <section className="partners" id={`Features${index}`} key={index}>
                         <div className="partners__wrapper">
                             {partners.image ? (
-                                <img className="partners__image" src={partners.image} alt="Partner Logo" />
+                                <img className="partners__image" src={partners.image} alt="Logo of the partners" />
                             ) : (
                                 <FontAwesomeIcon icon={faQuestion} className="partners__icon" />
                             )}

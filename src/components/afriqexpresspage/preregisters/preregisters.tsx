@@ -21,7 +21,7 @@ const Preregisters = () => {
                     return (
                         <li className="preregisters__item" key={preregister.id}>
                             {preregister.avatar ? (
-                                <img src={transformAvatarToUrl(preregister.avatar)} alt="Avatar" />
+                                <img src={transformAvatarToUrl(preregister.avatar)} alt="Logo of the preregisters" />
                             ) : (
                                 <figure />
                             )}

@@ -24,7 +24,7 @@ const AfriQExpress = () => {
       />
       <Header
         image={imageHeader}
-        imageAlt=""
+        imageAlt="Video of a explanation what AfriQExpress does"
         title="AfriQExpress"
         text="Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi praesentium. Et natus magnam non optio alias sit quia ducimus est soluta optio nam deleniti natus?"
         url="#"

@@ -9,7 +9,7 @@ const Features = () =>
             {PayFeaturesData.map((payfeature, index) => (
                 <section className="payfeatures" id={`Features${index}`} key={index}>
                     <div className="payfeatures__wrapper">
-                        <img className="payfeatures__image" src={payfeature.image} alt="Prints" />
+                        <img className="payfeatures__image" src={payfeature.image} alt="Icons for the features" />
                         <h3 className="payfeatures__h3">{payfeature.title}</h3>
                         <p className="payfeatures__p">{payfeature.text}</p>
                     </div>

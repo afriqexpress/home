@@ -18,7 +18,7 @@ const Home = () => {
       />
       <Header
         image={headerImage}
-        imageAlt=""
+        imageAlt="GIF of tech solutions"
         title="The internet revolution"
         text="Bring your business to the next level Bring your business to the next level Bring your business to the next level Bring your business to the next level"
         url="#"

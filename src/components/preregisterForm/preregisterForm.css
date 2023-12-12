@@ -74,9 +74,6 @@
 @media only screen and (max-width: 60rem) {
     .preregisterForm {
         display: flex;
-        /* flex-direction: column; */
-    
-        /* width: 100%; */
         max-width: 40rem;
     
         margin: 0rem auto;
@@ -88,7 +85,6 @@
     }
     .forminput__group {
         width: 20rem;
-        /* margin-left: 20rem; */
         align-items: flex-start;
     }
     .preregisterForm h2 {

@@ -9,7 +9,7 @@ const TeamMembers = () => (
       {TeamMembersData.map((teammembers) => (
         <section className="teammembers">
           <div className="teammembers__wrapper">
-            <img className="teammembers__image" src={teammembers.image} alt="Profiel Foto" />
+            <img className="teammembers__image" src={teammembers.image} alt="Pictures of the Team Members." />
             <h3 className="teammembers__h3">{teammembers.title}</h3>
             <p className="teammembers__p">{teammembers.text}</p>
           </div>

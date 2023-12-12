@@ -43,7 +43,6 @@
     min-width: 15rem;
     min-height: 20rem;
     flex-direction: column;
-    /* border: 0.1rem solid #e4e2e0; */
     border-radius: 1rem;
     padding-bottom: 2rem;
 }
@@ -66,7 +65,6 @@
         display: grid;
         grid-template-columns: repeat(1,minmax(20rem,1fr));
         justify-items: center;
-        /* margin-bottom: 10rem; */
     }
     .partners__wrapper {
         display: flex;

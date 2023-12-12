@@ -9,7 +9,7 @@ const TransFeatures = () =>
             {TransFeaturesData.map((transfeature, index) => (
                 <section className="transfeatures" id={`Features${index}`} key={index}>
                     <div className="transfeatures__wrapper">
-                        <img className="transfeatures__image" src={transfeature.image} alt="Prints" />
+                        <img className="transfeatures__image" src={transfeature.image} alt="Icons for the features" />
                         <h3 className="transfeatures__h3">{transfeature.title}</h3>
                         <p className="transfeatures__p">{transfeature.text}</p>
                     </div>

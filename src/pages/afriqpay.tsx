@@ -24,7 +24,7 @@ const AfriQPay = () => {
       />
       <Header
         image={headerImage}
-        imageAlt="AfriQPay Logo"
+        imageAlt="Video of a explanation what AfriQPay does"
         title="AfriQPay"
         text="Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi praesentium. Et natus magnam non optio alias sit quia ducimus est soluta optio nam deleniti natus?"
         url="#"

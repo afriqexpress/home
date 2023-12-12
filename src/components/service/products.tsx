@@ -10,7 +10,7 @@ const Features = () => (
       {ProductsData.map((product) => (
         <section className="products">
           <div className="products__wrapper">
-            <img className="products__image" src={product.image} alt="Prints" />
+            <img className="products__image" src={product.image} alt="Logo of the product" />
             <h3 className="products__h3">{product.title}</h3>
             <p className="products__p">{product.text}</p>
             <Link to={`${product.button}`} className="products__button">
