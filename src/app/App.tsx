@@ -7,11 +7,22 @@ import {
 import Home from "../pages/home/home";
 import AfriQExpress from "../pages/afriqexpress";
 import AfriQPay from "../pages/afriqpay";
+import AfriQTrans from "../pages/afriqtrans";
+import AboutUs from "../pages/aboutus";
+import Contact from "../pages/contact";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/AboutUs",
+    element: <AboutUs />,
+  },
+  {
+    path: "/Contact",
+    element: <Contact />,
   },
   {
     path: "/AfriQPay",
@@ -20,7 +31,12 @@ const router = createBrowserRouter([
   {
     path: "/AfriQExpress",
     element: <AfriQExpress />,
-  }
+  },
+  {
+    path: "/AfriQTrans",
+    element: <AfriQTrans />,
+  },
+
 ]);
 
 

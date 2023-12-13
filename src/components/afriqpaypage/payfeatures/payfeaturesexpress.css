@@ -1,6 +1,6 @@
 .payfeatures__wrapper2 {
     display: grid;
-    grid-template-columns: repeat(3,minmax(10rem,1fr));
+    grid-template-columns: repeat(4,minmax(10rem,1fr));
     justify-items: center;
 }
 
@@ -8,7 +8,6 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
-    padding: 3rem;
     gap: 10rem;
 }
 
@@ -21,8 +20,16 @@
     padding: 2rem;
 }
 
+.payfeatures__p1 {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 4rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
 .payfeatures__p {
-    display: flex;
+    text-align: center;
 }
 
 .payfeatures__h3 {
@@ -36,7 +43,6 @@
     min-width: 30rem;
     min-height: 40rem;
     flex-direction: column;
-    border: 0.1rem solid #e4e2e0;
     border-radius: 1rem;
     padding-bottom: 2rem;
 }
@@ -62,12 +68,14 @@
         gap: 0.5rem;
         max-width: 30rem;
         flex-direction: column;
-        border: 0.1rem solid #e4e2e0;
         border-radius: 1rem;
         padding-bottom: 2rem;
         overflow-wrap: break-word;
     }
     .payfeatures__p {
         white-space: pre-line;
+    }
+    .payfeatures__p1 {
+        width: 90%;
     }
   }

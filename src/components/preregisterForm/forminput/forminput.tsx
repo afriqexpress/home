@@ -7,6 +7,7 @@ export interface InputValue {
 }
 
 interface Props {
+    className?: string;
     state: InputValue,
     setState: React.Dispatch<React.SetStateAction<InputValue>>,
     name: string

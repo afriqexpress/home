@@ -5,6 +5,8 @@ import Features from "../components/afriqpaypage/payfeatures/payfeatures";
 import Navigation from "../components/nav/nav";
 import headerImage from "/img/afriQPay.mp4";
 import PreregistrerForm from "../components/preregisterForm/preregisterForm";
+import Partners from "../components/afriqpaypage/partners/partners";
+import PayPreregisters from "../components/afriqpaypage/paypreregisters/paypreregisters";
 
 const AfriQPay = () => {
 
@@ -16,7 +18,7 @@ const AfriQPay = () => {
     <>
       <Navigation
         links={[
-          { link: "#Features", name: "Features" },
+          { link: "#PayFeatures", name: "Features" },
           { link: "#Contact", name: "Contact" },
         ]}
       />
@@ -29,6 +31,8 @@ const AfriQPay = () => {
         buttonText="Preregister Now!"
       />
       <Features />
+      <Partners />
+      <PayPreregisters />
       <PreregistrerForm appName="AFRIQPAY" />
       <Footer />
     </>

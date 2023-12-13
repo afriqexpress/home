@@ -10,7 +10,7 @@ const Home = () => {
     <>
       <Nav
         links={[
-          { link: "#Over", name: "About Us" },
+          { link: "/AboutUs", name: "About Us" },
           { link: "#Features", name: "Products" },
           { link: "#Contact", name: "Contact", special: true },
         ]}
