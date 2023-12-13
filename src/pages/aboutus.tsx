@@ -9,8 +9,6 @@ const AboutUs = () => {
     <>
       <Nav
         links={[
-          { link: "/AboutUs", name: "About Us" },
-          { link: "/", name: "Products" },
           { link: "#Contact", name: "Contact", special: true },
         ]}
       />

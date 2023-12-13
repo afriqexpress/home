@@ -3,10 +3,16 @@
     flex-direction: column;
     max-width: 180rem;
     margin: 0rem auto;
-    padding: 0 1rem;
+    padding: 4rem;
     background-color: white;
     border-radius: 1rem;
     align-items: flex-end;
+}
+
+.preregister__image {
+    align-self: flex-start;
+    order: -1;
+    background: none;
 }
 
 .form__content {
@@ -14,6 +20,8 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
+    align-items: center;
+   
 }
 
 .form-avatar-container {
@@ -91,7 +99,7 @@
         margin-left: 55rem;
         text-align: center
     }
-    .form__avatar {
-        margin-right: none;
+    .preregister__image {
+        display: none;
     }
 }

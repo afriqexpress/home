@@ -13,9 +13,9 @@ const Footer = () => {
             <a href="/AfriQPay">
               <p>AfriQPay</p>
             </a>
-            <a href="/AfriQTrans">
+            {/* <a href="/AfriQTrans">
               <p>AfriQTrans</p>
-            </a>
+            </a> */}
           </div>
           <div className="footer-links_div">
             <h4 className="footer-below-links-h4" id="Contact">Contact</h4>

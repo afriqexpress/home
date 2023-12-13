@@ -13,11 +13,11 @@ export const ProductsData = [
         text: "Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.",
         button: "AfriQPay"
     },
-    {
-        id: 3,
-        image: "",
-        title: "afriQTrans",
-        text: "Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.",
-        button: "AfriQTrans"
-    },
+    // {
+    //     id: 3,
+    //     image: "",
+    //     title: "afriQTrans",
+    //     text: "Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.",
+    //     button: "AfriQTrans"
+    // },
 ]

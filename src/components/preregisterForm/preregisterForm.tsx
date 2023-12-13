@@ -3,6 +3,7 @@ import { postPreregisters } from "../../services/api";
 import FormInput, { InputValue } from "./forminput/forminput";
 import FormButton from "./formButton/formButton";
 import FormAvatar from "./formAvatar/formAvatar";
+import preregisterillustration from "/img/svg/preregister.gif";
 
 import "./preregisterForm.css";
 
@@ -70,6 +71,7 @@ const PreregistrerForm = ({ appName }: Props) => {
 
     return (
         <div className="preregisterForm">
+            <img className="preregister__image" src={preregisterillustration} alt="Preregister Illustration" />
             <h2 className="preregisterForm__h2">Preregister</h2>
 
             <div className="form__content">
