@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "./nav.css";
-import afriQExpressLogo from "./logo.svg";
+import afriQExpressLogo from "./logo.png";
 import hamburgIcon from "./menu.svg";
 import closeIcon from "./close.svg";
 
@@ -15,12 +15,26 @@ interface Props {
 
 const Navigation = ({ links }: Props) => {
     const [hamburgOpen, setHamburgOpen] = useState<boolean>(false);
+    const [showNav, setShowNav] = useState<boolean>(true);
 
     const toggleHamburg = () => setHamburgOpen(current => !current);
 
+    useEffect(() => {
+        let oldPosition = document.documentElement.scrollTop;
+
+        document.addEventListener("scroll", () => {
+            const position = document.documentElement.scrollTop;
+
+            setShowNav(position < oldPosition);
+
+            oldPosition = position <= 0 ? 0 : position;
+        });
+
+    }, []);
+
     return (
         <>
-            <nav className="navigation">
+            <nav className={ showNav || hamburgOpen ? "navigation navigation--visible" : "navigation" }>
                 <a href='/' className="navigation__logo"><img src={afriQExpressLogo} alt="Brand Logo" /></a>
 
                 {links.map((link, index) => {

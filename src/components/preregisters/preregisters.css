@@ -1,0 +1,91 @@
+.preregisters {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8rem;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+
+.preregisters h2 {
+    font-size: 3.5rem;
+    color: #48c2c3;
+    padding: 1rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.preregisters__list {
+    list-style: none;
+
+    gap: 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(5, minmax(10rem, 1fr));
+
+    justify-content: center;
+
+    column-gap: 8rem;
+    row-gap: 1rem;
+}
+
+.preregisters__item {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    overflow: hidden;
+
+    background: hsl(0, 0%, 95%);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    
+}
+
+.preregisters__item img {
+    width: 10rem;
+    height: 10rem;
+
+    border-radius: 50%;
+
+    background: hsl(0, 0%, 75%);
+}
+
+.preregisters__item figure {
+    width: 10rem;
+    height: 10rem;
+
+    border-radius: 50%;
+}
+
+.formavatar__preview--empty {
+    background: hsl(0, 0%, 75%);
+    background-image: url("img/svg/company.svg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.preregisters__item h3 {
+    margin-left: 1rem;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 60rem) {
+    .preregisters__list {
+        list-style: none;
+
+        gap: 1rem;
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(10rem, 1fr));
+
+
+        max-width: 65rem;
+        width: 100%;
+
+        justify-content: center;
+
+        column-gap: 2.5rem;
+        row-gap: 1rem;
+    }
+}

@@ -1,9 +1,11 @@
 .navigation {
     width: 100%;
     background: rgba(255, 255, 255);
-    border-bottom: 0.1rem solid #e4e2e0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
 
-    position: fixed;
+
+    position: sticky;
+    top: 0;
 
     display: flex;
     gap: 1rem;
@@ -17,6 +19,13 @@
     color: black;
 
     z-index: 999;
+
+    transform: translateY(-100%);
+    transition: transform 500ms;
+}
+
+.navigation--visible {
+    transform: translateY(0);
 }
 
 .navigation__logo {
@@ -30,16 +39,19 @@
 
     padding: 0.5rem 0;
     margin-right: auto;
+    background: none;
 }
 
 .navigation__logo img {
     height: 100%;
+    background: none;
 }
 
 .navigation__item, .navigation__special {
     font-size: 1.7rem;
     text-decoration: none;
     color: black;
+    background: none;
 } 
 
 .navigation__item:hover {
@@ -98,7 +110,7 @@
     align-items: center;
     gap: 1rem;
 
-    border-bottom: 0.1rem solid #e4e2e0;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
 
     opacity: 0;
     pointer-events: none;
@@ -110,7 +122,6 @@
 
 .hamburg_navigation .navigation__item:hover {
     padding-bottom: 0;
-    border-bottom: none;
 }
 
 @media only screen and (max-width: 500px) {

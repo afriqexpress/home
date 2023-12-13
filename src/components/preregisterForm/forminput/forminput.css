@@ -1,0 +1,44 @@
+.form__label {
+    font-size: 1.7rem;
+    font-weight: bold;
+    
+    color: #25a5a7;
+    margin-bottom: 0.5rem;
+    background: none;
+}
+
+.form__field {
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    border: 2.5px solid #25a5a7;
+
+    margin-bottom: 1rem;
+    background: none;
+    width: 73rem;
+    align-self: flex-end;
+}
+
+@media only screen and (max-width: 100rem) {
+    .form__label{
+        display: flex;
+        text-align: center;
+        padding-left: 4rem;
+    }
+    .form__field {
+        width: 55rem;
+        align-self: center;
+    }
+}
+
+@media only screen and (max-width: 60rem) {
+    .form__label{
+        display: flex;
+        text-align: left;
+    }
+    .form__field {
+        width: 35rem;
+        align-self: center;
+    }
+}
