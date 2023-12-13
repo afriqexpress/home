@@ -1,9 +1,18 @@
 .products__wrapper2 {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(20rem, 0.25fr));
-    margin-bottom: 10rem;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+
     justify-content: center;
+
+    gap: 2.5rem;
+
+    /* max-width: 100rem; */
+    width: 100%;
+    height: auto;
+
+    margin: 0 auto;
+    
+    margin-bottom: 10rem;
 }
 
 .products {
@@ -91,13 +100,6 @@
 }
 
 @media only screen and (max-width: 60rem) {
-    .products__wrapper2 {
-        display: grid;
-        grid-template-columns: repeat(1, minmax(20rem, 1fr));
-        justify-items: center;
-        margin-bottom: 10rem;
-    }
-
     .products__wrapper {
         display: flex;
         padding: 2rem;
@@ -119,8 +121,5 @@
     }
     .products__p1 {
         width: 90%;
-    }
-    .products {
-        padding: 3rem;
     }
 }
