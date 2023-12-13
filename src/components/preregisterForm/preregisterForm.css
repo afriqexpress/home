@@ -74,7 +74,7 @@
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    color: white;
+    color: green;
 }
 
 @media only screen and (max-width: 100rem) {
@@ -85,15 +85,15 @@
         padding: 0 1rem;
         background-color: white;
         border-radius: 1rem;
-        height: 55rem;
+        height: 60rem;
         align-items: center;
+    }
+    .forminput__Container {
+        text-align: center;
     }
     .forminput__group {
         width: 20rem;
-        align-items: flex-start;
-    }
-    .preregisterForm h2 {
-        text-align: center;
+        
     }
     .preregister__image {
         display: none;
@@ -109,7 +109,7 @@
         padding: 0 1rem;
         background-color: white;
         border-radius: 1rem;
-        height: 55rem;
+        height: 60rem;
         align-items: center;
     }
     .forminput__group {

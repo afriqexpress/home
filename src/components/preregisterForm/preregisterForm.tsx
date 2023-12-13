@@ -91,8 +91,8 @@ const PreregistrerForm = ({ appName }: Props) => {
                     <FormAvatar state={avatar} setState={setAvatar} />
                 </div>
 
-                {error ? <p className="form__error">{error}</p> : null}
                 <FormButton name="Submit" onClickCB={onSubmitButtonClick} />
+                {error ? <p className="form__error">{error}</p> : null}
                 {success ? <p className="form__success">Successfully preregistered!</p> : null}
             </div>
         </div>
