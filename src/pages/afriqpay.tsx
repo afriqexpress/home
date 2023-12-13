@@ -6,7 +6,7 @@ import Navigation from "../components/nav/nav";
 import headerImage from "/img/afriQPay.mp4";
 import PreregistrerForm from "../components/preregisterForm/preregisterForm";
 import Partners from "../components/afriqpaypage/partners/partners";
-import Preregisters from "../components/afriqpaypage/preregisters/preregisters";
+import PayPreregisters from "../components/afriqpaypage/paypreregisters/paypreregisters";
 
 const AfriQPay = () => {
 
@@ -32,7 +32,7 @@ const AfriQPay = () => {
       />
       <Features />
       <Partners />
-      <Preregisters />
+      <PayPreregisters />
       <PreregistrerForm appName="AFRIQPAY" />
       <Footer />
     </>

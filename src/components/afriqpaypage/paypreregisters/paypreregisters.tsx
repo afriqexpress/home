@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Preregister, getPreregisters, transformAvatarToUrl } from "../../../services/api";
-import "./preregisters.css";
+import "./paypreregisters.css";
 
-const Preregisters = () => {
+const PayPreregisters = () => {
     const [preregisters, setPreregisters] = useState<Partial<Preregister>[]>([]);
 
     useEffect(() => {
@@ -14,24 +14,25 @@ const Preregisters = () => {
     const hasPreregisters = preregisters.length > 0;
 
     return hasPreregisters ? (
-        <div className="preregisters">
-            <h2>Preregistered companies</h2>
-            <ul className="preregisters__list">
-                {preregisters.map((preregister) => {
+        <div className="paypreregisters">
+            <h2>Preregistered Companies</h2>
+            <ul className="paypreregisters__list">
+                {preregisters.slice(0, 10).map((preregister) => {
                     return (
-                        <li className="preregisters__item" key={preregister.id}>
+                        <li className="paypreregisters__item" key={preregister.id}>
                             {preregister.avatar ? (
-                                <img src={transformAvatarToUrl(preregister.avatar)} alt="Logo of the preregisters" />
+                                <img src={transformAvatarToUrl(preregister.avatar)} alt="Avatar" />
                             ) : (
-                                <figure />
+                                <figure className="form__avatar__preview--empty" />
                             )}
                             <h3>{preregister.companyName}</h3>
                         </li>
                     );
                 })}
+                {preregisters.length > 10 && <li className="paypreregisters__item">and many more</li>}
             </ul>
         </div>
     ) : null;
 };
 
-export default Preregisters;
+export default PayPreregisters;

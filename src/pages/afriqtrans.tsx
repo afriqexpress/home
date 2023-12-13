@@ -5,7 +5,7 @@ import TransFeatures from "../components/afriqtranspage/transfeatures/transfeatu
 import Navigation from "../components/nav/nav";
 import PreregistrerForm from "../components/preregisterForm/preregisterForm";
 import Partners from "../components/afriqtranspage/partners/partners";
-import Preregisters from "../components/afriqtranspage/preregisters/preregisters";
+import TransPreregisters from "../components/afriqtranspage/transpreregisters/transpreregisters";
 
 const AfriQPay = () => {
 
@@ -31,7 +31,7 @@ const AfriQPay = () => {
       />
       <TransFeatures />
       <Partners />
-      <Preregisters />
+      <TransPreregisters />
       <PreregistrerForm appName="AFRIQTRANS" />
       <Footer />
     </>

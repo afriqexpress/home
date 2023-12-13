@@ -28,11 +28,10 @@
 }
 
 .form__avatar__preview--empty {
-    background-image: url("public/img/svg/company.svg");
+    background-image: url("img/svg/company.svg");
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: center center;
-    
 }
 
 @media only screen and (max-width: 60rem) {

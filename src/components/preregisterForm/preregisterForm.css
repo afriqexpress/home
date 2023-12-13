@@ -1,27 +1,30 @@
 .preregisterForm {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     max-width: 180rem;
     margin: 0rem auto;
     padding: 4rem;
     background-color: white;
     border-radius: 1rem;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .preregister__image {
-    align-self: flex-start;
-    order: -1;
     background: none;
+}
+
+.preregister__wrapper {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .form__content {
     background: none;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1rem;
-    align-items: center;
-   
 }
 
 .form-avatar-container {
@@ -48,7 +51,6 @@
     color: #25a5a7;
     font-weight: bold;
     background: none;
-    margin-right: 52.5rem;
 }
 
 .preregisterForm p {
@@ -60,30 +62,25 @@
 .form__error {
     font-size: 1rem;
     margin: 0.5rem 0;
-
     color: red;
 }
 
 .form__success {
     width: 100%;
     padding: 2.5rem 0;
-
     border-radius: 0.5rem;
     background: linear-gradient(135deg, hsla(181, 65%, 20%, 0.9) 15%, hsla(181, 64%, 40%, 0.9));
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-weight: 700;
     color: white;
 }
 
-@media only screen and (max-width: 60rem) {
+@media only screen and (max-width: 100rem) {
     .preregisterForm {
         display: flex;
-        max-width: 40rem;
-    
+        flex-direction: column;
         margin: 0rem auto;
         padding: 0 1rem;
         background-color: white;
@@ -96,8 +93,31 @@
         align-items: flex-start;
     }
     .preregisterForm h2 {
-        margin-left: 55rem;
-        text-align: center
+        text-align: center;
+    }
+    .preregister__image {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 60rem) {
+    .preregisterForm {
+        display: flex;
+        flex-direction: column;
+        max-width: 40rem;
+        margin: 0rem auto;
+        padding: 0 1rem;
+        background-color: white;
+        border-radius: 1rem;
+        height: 55rem;
+        align-items: center;
+    }
+    .forminput__group {
+        width: 20rem;
+        align-items: flex-start;
+    }
+    .preregisterForm h2 {
+        text-align: center;
     }
     .preregister__image {
         display: none;

@@ -15,20 +15,21 @@ const Preregisters = () => {
 
     return hasPreregisters ? (
         <div className="preregisters">
-            <h2>Preregistered companies</h2>
+            <h2>Preregistered Companies</h2>
             <ul className="preregisters__list">
-                {preregisters.map((preregister) => {
+                {preregisters.slice(0, 10).map((preregister) => {
                     return (
                         <li className="preregisters__item" key={preregister.id}>
                             {preregister.avatar ? (
                                 <img src={transformAvatarToUrl(preregister.avatar)} alt="Avatar" />
                             ) : (
-                                <figure />
+                                <figure className="form__avatar__preview--empty" />
                             )}
                             <h3>{preregister.companyName}</h3>
                         </li>
                     );
                 })}
+                {preregisters.length > 10 && <li className="preregisters__item">and many more</li>}
             </ul>
         </div>
     ) : null;

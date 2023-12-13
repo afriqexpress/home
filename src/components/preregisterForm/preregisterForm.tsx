@@ -72,27 +72,29 @@ const PreregistrerForm = ({ appName }: Props) => {
     return (
         <div className="preregisterForm">
             <img className="preregister__image" src={preregisterillustration} alt="Preregister Illustration" />
-            <h2 className="preregisterForm__h2">Preregister</h2>
+            <div className="preregister__wrapper">
+                <h2 className="preregisterForm__h2">Preregister</h2>
 
-            <div className="form__content">
+                <div className="form__content">
 
-                <div className="forminput__Container">
-                    <div className="forminput__group">
-                        <FormInput className="preregisterForm__input1" state={companyName} setState={setCompanyName} name="Company Name" validator={companyNameValidator} />
-                    </div>
+                    <div className="forminput__Container">
+                        <div className="forminput__group">
+                            <FormInput className="preregisterForm__input1" state={companyName} setState={setCompanyName} name="Company Name" validator={companyNameValidator} />
+                        </div>
 
-                    <div className="forminput__group">
-                        <FormInput state={phoneNumber} setState={setPhoneNumber} name="Phone Number" validator={phoneNumberValidator} />
+                        <div className="forminput__group">
+                            <FormInput state={phoneNumber} setState={setPhoneNumber} name="Phone Number" validator={phoneNumberValidator} />
+                        </div>
                     </div>
                 </div>
-            </div>
                 <div className="form-avatar-container">
                     <FormAvatar state={avatar} setState={setAvatar} />
                 </div>
 
-            {error ? <p className="form__error">{error}</p> : null}
-            <FormButton name="Submit" onClickCB={onSubmitButtonClick} />
-            {success ? <p className="form__success">Successfully preregistered!</p> : null}
+                {error ? <p className="form__error">{error}</p> : null}
+                <FormButton name="Submit" onClickCB={onSubmitButtonClick} />
+                {success ? <p className="form__success">Successfully preregistered!</p> : null}
+            </div>
         </div>
     );
 }
