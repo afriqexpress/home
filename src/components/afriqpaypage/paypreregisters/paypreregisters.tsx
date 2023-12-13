@@ -23,7 +23,7 @@ const PayPreregisters = () => {
                             {preregister.avatar ? (
                                 <img src={transformAvatarToUrl(preregister.avatar)} alt="Avatar" />
                             ) : (
-                                <figure className="form__avatar__preview--empty" />
+                                <figure className="payform__avatar__preview--empty" />
                             )}
                             <h3>{preregister.companyName}</h3>
                         </li>

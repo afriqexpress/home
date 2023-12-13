@@ -20,10 +20,6 @@
     gap: 1rem;
 
     display: flex;
-    flex-wrap: wrap;
-
-    max-width: 70rem;
-    width: 100%;
 
     justify-content: center;
 
@@ -41,6 +37,7 @@
     background: hsl(0, 0%, 95%);
     border-radius: 0.5rem;
     padding: 2rem;
+    
 }
 
 .preregisters__item img {
@@ -49,6 +46,7 @@
 
     border-radius: 50%;
 
+    background: hsl(0, 0%, 75%);
 }
 
 .preregisters__item figure {
@@ -58,29 +56,34 @@
     border-radius: 50%;
 }
 
-.form__avatar__preview--empty {
+.formavatar__preview--empty {
+    background: hsl(0, 0%, 75%);
     background-image: url("img/svg/company.svg");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .preregisters__item h3 {
+    margin-left: 1rem;
     font-weight: 400;
 }
 
 @media only screen and (max-width: 60rem) {
     .preregisters__list {
         list-style: none;
-    
+
         gap: 1rem;
-    
+
         display: grid;
-        grid-template-columns: repeat(2,minmax(10rem,1fr));
-        
-    
+        grid-template-columns: repeat(2, minmax(10rem, 1fr));
+
+
         max-width: 65rem;
         width: 100%;
-    
+
         justify-content: center;
-    
+
         column-gap: 2.5rem;
         row-gap: 1rem;
     }
