@@ -93,4 +93,9 @@
         max-width: 75rem;
         margin: 0;
     }
+
+    .header__content {
+        text-align: center;
+        width: 80%;
+    }
 }
