@@ -1,12 +1,13 @@
 import { useEffect } from "react";
-import Nav from "../components/nav/nav";
-import Header from "../components/afriqexpresspage/expressheader/ExpressHeader";
-import Footer from "../components/footer/Footer";
-import Features from "../components/afriqexpresspage/features/features";
-import Partners from "../components/afriqexpresspage/partners/partners";
-import PreregistrerForm from "../components/preregisterForm/preregisterForm";
+import Nav from "../../components/nav/nav";
+import Header from "../../components/afriqexpresspage/expressheader/ExpressHeader";
+import Footer from "../../components/footer/Footer";
+import Features from "../../components/afriqexpresspage/features/features";
+import Partners from "../../components/partners/partners";
+import PreregistrerForm from "../../components/preregisterForm/preregisterForm";
 import imageHeader from "/img/afriQHome.mp4";
-import ExpressPreregisters from "../components/afriqexpresspage/expresspreregisters/expresspreregisters";
+import ExpressPreregisters from "../../components/afriqexpresspage/expresspreregisters/expresspreregisters";
+import partners from "./partners.json"
 
 const AfriQExpress = () => {
   useEffect(() => {
@@ -30,7 +31,7 @@ const AfriQExpress = () => {
         buttonText="Preregister Now!"
       />
       <Features />
-      <Partners />
+      <Partners partners={partners}/>
       <ExpressPreregisters />
       <PreregistrerForm appName="AFRIQEXPRESS" />
       <Footer />

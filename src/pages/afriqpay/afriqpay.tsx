@@ -1,13 +1,13 @@
 import { useEffect } from "react";
-import Header from "../components/afriqpaypage/payheader/PayHeader";
-import Footer from "../components/footer/Footer";
-import Features from "../components/afriqpaypage/payfeatures/payfeatures";
-import Navigation from "../components/nav/nav";
+import Header from "../../components/afriqpaypage/payheader/PayHeader";
+import Footer from "../../components/footer/Footer";
+import Features from "../../components/afriqpaypage/payfeatures/payfeatures";
+import Navigation from "../../components/nav/nav";
 import headerImage from "/img/afriQPay.mp4";
-import PreregistrerForm from "../components/preregisterForm/preregisterForm";
-import Partners from "../components/afriqpaypage/partners/partners";
-import PayPreregisters from "../components/afriqpaypage/paypreregisters/paypreregisters";
-
+import PreregistrerForm from "../../components/preregisterForm/preregisterForm";
+import Partners from "../../components/partners/partners";
+import PayPreregisters from "../../components/afriqpaypage/paypreregisters/paypreregisters";
+import partners from "./partners.json"
 const AfriQPay = () => {
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const AfriQPay = () => {
         buttonText="Preregister Now!"
       />
       <Features />
-      <Partners />
+      <Partners partners={partners} />
       <PayPreregisters />
       <PreregistrerForm appName="AFRIQPAY" />
       <Footer />
