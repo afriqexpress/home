@@ -6,7 +6,7 @@ import Navigation from "../../components/nav/nav";
 import headerImage from "/img/afriQPay.mp4";
 import PreregistrerForm from "../../components/preregisterForm/preregisterForm";
 import Partners from "../../components/partners/partners";
-import PayPreregisters from "../../components/afriqpaypage/paypreregisters/paypreregisters";
+import Preregisters from "../../components/preregisters/preregisters";
 import partners from "./partners.json"
 import features from "./features.json"
 
@@ -35,7 +35,7 @@ const AfriQPay = () => {
       />
       <Features features={features} />
       <Partners partners={partners} />
-      <PayPreregisters />
+      <Preregisters />
       <PreregistrerForm appName="AFRIQPAY" />
       <Footer />
     </>

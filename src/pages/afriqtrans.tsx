@@ -1,11 +1,11 @@
 import { useEffect } from "react";
-import Header from "../components/afriqpaypage/payheader/PayHeader";
+import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import TransFeatures from "../components/afriqtranspage/transfeatures/transfeatures";
 import Navigation from "../components/nav/nav";
 import PreregistrerForm from "../components/preregisterForm/preregisterForm";
 import Partners from "../components/afriqtranspage/partners/partners";
-import TransPreregisters from "../components/afriqtranspage/transpreregisters/transpreregisters";
+import Preregisters from "../components/preregisters/preregisters";
 
 const AfriQPay = () => {
 
@@ -31,7 +31,7 @@ const AfriQPay = () => {
       />
       <TransFeatures />
       <Partners />
-      <TransPreregisters />
+      <Preregisters />
       <PreregistrerForm appName="AFRIQTRANS" />
       <Footer />
     </>

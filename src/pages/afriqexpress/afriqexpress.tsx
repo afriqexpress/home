@@ -6,7 +6,7 @@ import Features from "../../components/features/features";
 import Partners from "../../components/partners/partners";
 import PreregistrerForm from "../../components/preregisterForm/preregisterForm";
 import imageHeader from "/img/afriQHome.mp4";
-import ExpressPreregisters from "../../components/afriqexpresspage/expresspreregisters/expresspreregisters";
+import Preregisters from "../../components/preregisters/preregisters";
 import partners from "./partners.json"
 import features from "./features.json"
 
@@ -34,7 +34,7 @@ const AfriQExpress = () => {
       />
       <Features features={features}/>
       <Partners partners={partners}/>
-      <ExpressPreregisters />
+      <Preregisters />
       <PreregistrerForm appName="AFRIQEXPRESS" />
       <Footer />
     </>
