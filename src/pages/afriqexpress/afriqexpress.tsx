@@ -29,7 +29,7 @@ const AfriQExpress = () => {
         contentAlt="Video of a explanation what AfriQExpress does"
         title="AfriQExpress"
         text="Préinscrivez-vous ci-dessous pour rejoindre la première plateforme de trading et faire passer votre entreprise au niveau supérieur"
-        url="#"
+        url="#preregister"
         buttonText="Preregister Now!"
       />
       <Features features={features} text="Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi."/>

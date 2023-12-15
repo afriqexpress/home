@@ -30,7 +30,7 @@ const AfriQPay = () => {
         contentAlt="AfriQPay Logo"
         title="Paiement sûr et facile"
         text="Avec notre nouvelle plateforme de paiement. Votre portefeuille dans votre téléphone. Payer et transférer de l'argent facilement à votre famille et vos amis"
-        url="#"
+        url="#preregister"
         buttonText="Preregister Now!"
       />
       <Features features={features} text="Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi." />

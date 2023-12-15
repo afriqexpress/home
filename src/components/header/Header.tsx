@@ -19,7 +19,7 @@ const Header = ({ contentType, content, contentAlt, title, text, url, buttonText
     <header className="header">
       <div className="header__inner">
         { contentType == ContentType.IMAGE ?
-          <img className="header__content" src={content} alt={contentAlt} /> :
+          <img className="header__content header__image" src={content} alt={contentAlt} /> :
           <video className="header__content header__video" muted controls autoPlay={true} src={content} />
         }
 
