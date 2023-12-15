@@ -10,3 +10,19 @@ html {
     font-size: 62.5%; /* 1rem = 10px */
     font-family: 'Noto Sans', sans-serif;
 }
+
+h2, h3 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.5rem;
+}
+
+p {
+    font-size: 1.7rem;
+}

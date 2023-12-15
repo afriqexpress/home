@@ -33,7 +33,7 @@ const AfriQPay = () => {
         url="#"
         buttonText="Preregister Now!"
       />
-      <Features features={features} />
+      <Features features={features} text="Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi." />
       <Partners partners={partners} />
       <Preregisters />
       <PreregistrerForm appName="AFRIQPAY" />
