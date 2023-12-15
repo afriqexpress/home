@@ -1,63 +1,40 @@
-.preregisters {
-    display: flex;
-    flex-direction: column;
-    margin-top: 8rem;
-    align-items: center;
-    margin-bottom: 10rem;
-}
-
-.preregisters h2 {
-    font-size: 3.5rem;
-    color: #48c2c3;
-    padding: 1rem;
-    margin-bottom: 4rem;
+.preregisters__text {
     text-align: center;
 }
 
 .preregisters__list {
-    list-style: none;
+    width: 100%;
+    max-width: 90rem;
 
-    gap: 1rem;
+    margin: 0 auto;
+    margin-top: 5rem;
 
-    display: grid;
-    grid-template-columns: repeat(5, minmax(10rem, 1fr));
-
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
-    column-gap: 8rem;
-    row-gap: 1rem;
+    gap: 2.5rem 1rem;
 }
 
 .preregisters__item {
+    min-width: 10rem;
+    max-width: 15rem;
+    width: 100%;
+
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
     align-items: center;
-    overflow: hidden;
-
-    background: hsl(0, 0%, 95%);
-    border-radius: 0.5rem;
-    padding: 2rem;
-    
 }
 
-.preregisters__item img {
-    width: 10rem;
-    height: 10rem;
+.preregisters__item__logo {
+    width: 7.5rem;
 
-    border-radius: 50%;
+    border-radius: 100%;
 
-    background: hsl(0, 0%, 75%);
+    aspect-ratio: 1/1;
 }
 
-.preregisters__item figure {
-    width: 10rem;
-    height: 10rem;
-
-    border-radius: 50%;
-}
-
-.formavatar__preview--empty {
+.preregisters__item__logo--empty {
     background: hsl(0, 0%, 75%);
     background-image: url("img/svg/company.svg");
     background-size: 60%;
@@ -65,27 +42,12 @@
     background-position: center center;
 }
 
-.preregisters__item h3 {
-    margin-left: 1rem;
-    font-weight: 400;
-}
+.preregisters__item__name {
+    font-size: 2.25rem;
 
-@media only screen and (max-width: 60rem) {
-    .preregisters__list {
-        list-style: none;
-
-        gap: 1rem;
-
-        display: grid;
-        grid-template-columns: repeat(2, minmax(10rem, 1fr));
-
-
-        max-width: 65rem;
-        width: 100%;
-
-        justify-content: center;
-
-        column-gap: 2.5rem;
-        row-gap: 1rem;
-    }
+    width: 100%;
+    text-align: center;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

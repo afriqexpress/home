@@ -3,16 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    background: hsl(0, 0%, 95%);
 }
 
 html {
     font-size: 62.5%; /* 1rem = 10px */
     font-family: 'Noto Sans', sans-serif;
+    background: hsl(0, 0%, 95%);
 }
 
-h2, h3 {
+h1, h2, h3 {
     text-align: center;
+    color: #25a5a7;
 }
 
 h2 {
@@ -25,4 +26,9 @@ h3 {
 
 p {
     font-size: 1.7rem;
+}
+
+section {
+    margin: 10rem 0;
+    padding: 0 1rem;
 }
