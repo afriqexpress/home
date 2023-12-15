@@ -11,8 +11,9 @@ html {
     font-family: 'Noto Sans', sans-serif;
 }
 
-H1, h2, h3 {
+h1, h2, h3 {
     text-align: center;
+    color: #25a5a7;
 }
 
 h2 {
