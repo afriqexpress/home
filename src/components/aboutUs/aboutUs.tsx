@@ -1,4 +1,4 @@
-import "./aboutus.css";
+import "./aboutUs.css";
 import image from "/img/svg/AboutUs.gif";
 
 const AboutUs = () => (
