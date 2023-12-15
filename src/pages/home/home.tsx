@@ -21,8 +21,8 @@ const Home = () => {
         imageAlt="GIF of tech solutions"
         title="The internet revolution"
         text="Bring your business to the next level Bring your business to the next level Bring your business to the next level Bring your business to the next level"
-        url="#"
-        buttonText="Preregister"
+        // url="#"
+        // buttonText ="Preregister"
       />
       <Features />
       <Preregisters />

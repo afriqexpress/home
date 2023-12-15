@@ -1,4 +1,6 @@
-export const PartnersData = [
+export type Partner = {id: number, image?: string, title: string}
+
+export const PartnersData: Partner[] | [] = [
     // {
     //     id: 1,
     //     image: "",

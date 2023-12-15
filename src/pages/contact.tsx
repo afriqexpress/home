@@ -19,8 +19,8 @@ const Contact = () => {
         imageAlt="GIF of a girl doing tech."
         title="The internet revolution"
         text="Bring your business to the next level Bring your business to the next level Bring your business to the next level Bring your business to the next level"
-        url="#"
-        buttonText="Preregister"
+        // url="#"
+        // buttonText="Preregister"
       />
       <Footer />
     </>
