@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Header, { ContentType } from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Features from "../../components/features/features";
-import Navigation from "../../components/nav/nav";
+import Nav from "../../components/nav/nav";
 import headerImage from "/img/afriQPay.mp4";
 import PreregistrerForm from "../../components/preregisterForm/preregisterForm";
 import Partners from "../../components/partners/partners";
@@ -11,17 +11,16 @@ import partners from "./partners.json"
 import features from "./features.json"
 
 const AfriQPay = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <>
-      <Navigation
+      <Nav
         links={[
-          { link: "#PayFeatures", name: "Features" },
-          { link: "#Contact", name: "Contact" },
+          { link: "#features", name: "Features" },
+          { link: "#preregister", name: "Preregister now!", special: true }
         ]}
       />
       <Header

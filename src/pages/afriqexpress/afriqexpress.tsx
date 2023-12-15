@@ -19,8 +19,8 @@ const AfriQExpress = () => {
     <>
       <Nav
         links={[
-          { link: "#Features", name: "Features" },
-          { link: "#Contact", name: "Contact" },
+          { link: "#features", name: "Features" },
+          { link: "#preregister", name: "Preregister now!", special: true }
         ]}
       />
       <Header

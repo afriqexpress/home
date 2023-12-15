@@ -9,7 +9,7 @@ type Props = {
 
 const Features = ({ products }: Props) => (
     <section id="products">
-        <h2>Services</h2>
+        <h2>Products</h2>
         <ul className="products__list">
             {products.map((product) => (
             <div className="products__item">

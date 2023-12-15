@@ -9,7 +9,7 @@ type Props = {
 
 const Features = ({ features, text }: Props) =>
     <section id="features">
-        <h2>Onze Features</h2>
+        <h2>Our Features</h2>
         <p className="features__text">{text}</p>
         <div className="features__items">
             {features.map((feature, index) => (

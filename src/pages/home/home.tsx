@@ -12,7 +12,7 @@ const Home = () => {
       <Nav
         links={[
           { link: "/AboutUs", name: "About Us" },
-          { link: "#Features", name: "Products" },
+          { link: "#products", name: "Products" },
           { link: "#Contact", name: "Contact", special: true },
         ]}
       />
