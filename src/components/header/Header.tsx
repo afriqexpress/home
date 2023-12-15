@@ -1,26 +1,34 @@
 import "./Header.css";
 
+export enum ContentType {
+  IMAGE,
+  VIDEO
+}
 interface Props {
-  image: string;
-  imageAlt: string;
+  contentType: ContentType;
+  content: string;
+  contentAlt: string;
   title: string;
   text: string;
-  // url: string;
-  // buttonText: string;
+  url?: string;
+  buttonText?: string;
 }
 
-const Header = ({ image, imageAlt, title, text }: Props) => {
+const Header = ({ contentType, content, contentAlt, title, text, url, buttonText }: Props) => {
   return (
     <header className="header">
       <div className="header__inner">
-        <img className="header__image" src={image} alt={imageAlt} />
+        { contentType == ContentType.IMAGE ?
+          <img className="header__content" src={content} alt={contentAlt} /> :
+          <video className="header__content header__video" muted controls autoPlay={true} src={content} />
+        }
 
         <div className="header__content">
           <h1 className="header__title">{title}</h1>
           <p className="header__text">{text}</p>
-          {/* <a className="header__button" href={url}>
+          { url ? <a className="header__button" href={url}>
             {buttonText}
-          </a> */}
+          </a> : null }
         </div>
       </div>
     </header>

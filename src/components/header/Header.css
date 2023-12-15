@@ -27,11 +27,15 @@
     background: none;
 }
 
-.header__image {
+.header__content {
     margin: auto 1rem;
     max-height: 50rem;
     border-radius: 0.5rem;
     background: none;
+}
+
+.header__video {
+    width: 100%;
 }
 
 .header__content {
