@@ -1,5 +1,5 @@
 import Nav from "../../components/nav/nav";
-import Header from "../../components/header/Header";
+import Header, { ContentType } from "../../components/header/Header";
 import Features from "../../components/service/products";
 import Preregisters from "../../components/preregisters/preregisters";
 import Footer from "../../components/footer/Footer";
@@ -17,8 +17,9 @@ const Home = () => {
         ]}
       />
       <Header
-        image={headerImage}
-        imageAlt="GIF of tech solutions"
+        contentType={ContentType.IMAGE}
+        content={headerImage}
+        contentAlt="GIF of tech solutions"
         title="The internet revolution"
         text="Bring your business to the next level Bring your business to the next level Bring your business to the next level Bring your business to the next level"
         // url="#"

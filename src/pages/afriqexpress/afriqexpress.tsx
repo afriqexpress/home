@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Nav from "../../components/nav/nav";
-import Header from "../../components/afriqexpresspage/expressheader/ExpressHeader";
+import Header, { ContentType } from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Features from "../../components/features/features";
 import Partners from "../../components/partners/partners";
@@ -24,8 +24,9 @@ const AfriQExpress = () => {
         ]}
       />
       <Header
-        image={imageHeader}
-        imageAlt="Video of a explanation what AfriQExpress does"
+        contentType={ContentType.VIDEO}
+        content={imageHeader}
+        contentAlt="Video of a explanation what AfriQExpress does"
         title="AfriQExpress"
         text="Préinscrivez-vous ci-dessous pour rejoindre la première plateforme de trading et faire passer votre entreprise au niveau supérieur"
         url="#"

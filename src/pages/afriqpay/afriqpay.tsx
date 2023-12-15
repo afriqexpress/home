@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Header from "../../components/afriqpaypage/payheader/PayHeader";
+import Header, { ContentType } from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import Features from "../../components/features/features";
 import Navigation from "../../components/nav/nav";
@@ -25,8 +25,9 @@ const AfriQPay = () => {
         ]}
       />
       <Header
-        image={headerImage}
-        imageAlt="AfriQPay Logo"
+        contentType={ContentType.VIDEO}
+        content={headerImage}
+        contentAlt="AfriQPay Logo"
         title="Paiement sûr et facile"
         text="Avec notre nouvelle plateforme de paiement. Votre portefeuille dans votre téléphone. Payer et transférer de l'argent facilement à votre famille et vos amis"
         url="#"
