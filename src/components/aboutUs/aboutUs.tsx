@@ -1,7 +1,7 @@
-import "./aboutussection.css";
+import "./aboutus.css";
 import image from "/img/svg/AboutUs.gif";
 
-const AboutUsSection = () => (
+const AboutUs = () => (
     <>
         <section className="aboutus__mainwrapper">
             <div className="aboutus__wrapper">
@@ -15,4 +15,4 @@ const AboutUsSection = () => (
     </>
 );
 
-export default AboutUsSection;
+export default AboutUs;
