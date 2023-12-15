@@ -1,0 +1,45 @@
+#features {
+    width: 100%;
+}
+
+.features__text {
+    margin: 0 auto;
+    max-width: 75rem;
+}
+
+.features__items {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 110rem;
+    width: 100%;
+
+    justify-content: center;
+
+    gap: 2.5rem;
+
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.features__item {
+    max-width: 35rem;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__item__image {
+    max-width: 10rem;
+    width: 100%;
+}
+
+.features__item__title {
+    font-size: 2.5rem;
+}
+
+.features__item__text {
+    text-align: center;
+}

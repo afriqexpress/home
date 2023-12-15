@@ -18,24 +18,25 @@ const Preregisters = () => {
     const hasPreregisters = preregisters.length > 0;
 
     return hasPreregisters ? (
-        <div className="preregisters">
+        <section className="preregisters">
             <h2>Preregistered Companies</h2>
+            <p className="preregisters__text">These companies are interested like you.</p>
             <ul className="preregisters__list">
                 {preregisters.slice(0, 10).map((preregister) => {
                     return (
                         <li className="preregisters__item" key={preregister.id}>
                             {preregister.avatar ? (
-                                <img src={transformAvatarToUrl(preregister.avatar)} alt="Avatar" />
+                                <img className="preregisters__item__logo" src={transformAvatarToUrl(preregister.avatar)} alt="Avatar" />
                             ) : (
-                                <figure className="formavatar__preview--empty" />
+                                <figure className="preregisters__item__logo preregisters__item__logo--empty" />
                             )}
-                            <h3>{preregister.companyName}</h3>
+                            <h3 className="preregisters__item__name">{preregister.companyName}</h3>
                         </li>
                     );
                 })}
                 {preregisters.length > 10 && <li className="preregisters__item">and many more</li>}
             </ul>
-        </div>
+        </section>
     ) : null;
 };
 

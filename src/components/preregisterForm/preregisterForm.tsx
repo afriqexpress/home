@@ -70,7 +70,7 @@ const PreregistrerForm = ({ appName }: Props) => {
   };
 
     return (
-        <div className="preregisterForm">
+        <div className="preregisterForm" id="preregister">
             <img className="preregister__image" src={preregisterillustration} alt="Preregister Illustration" />
             <div className="preregister__wrapper">
                 <h2 className="preregisterForm__h2">Preregister</h2>
