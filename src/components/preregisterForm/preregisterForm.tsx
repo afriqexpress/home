@@ -70,33 +70,47 @@ const PreregistrerForm = ({ appName }: Props) => {
   };
 
     return (
-        <div className="preregisterForm" id="preregister">
+        <section id="preregister">
             <img className="preregister__image" src={preregisterillustration} alt="Preregister Illustration" />
-            <div className="preregister__wrapper">
-                <h2 className="preregisterForm__h2">Preregister</h2>
-
-                <div className="form__content">
-
-                    <div className="forminput__Container">
-                        <div className="forminput__group">
-                            <FormInput className="preregisterForm__input1" state={companyName} setState={setCompanyName} name="Company Name" validator={companyNameValidator} />
-                        </div>
-
-                        <div className="forminput__group">
-                            <FormInput state={phoneNumber} setState={setPhoneNumber} name="Phone Number" validator={phoneNumberValidator} />
-                        </div>
-                    </div>
-                </div>
-                <div className="form-avatar-container">
-                    <FormAvatar state={avatar} setState={setAvatar} />
-                </div>
+            <div className="preregister__form">
+                <h2 className="preregister__form__title">Preregister</h2>
+                <FormInput className="preregisterForm__input1" state={companyName} setState={setCompanyName} name="Company Name" validator={companyNameValidator} />
+                <FormInput state={phoneNumber} setState={setPhoneNumber} name="Phone Number" validator={phoneNumberValidator} />
+                <FormAvatar state={avatar} setState={setAvatar} />
 
                 <FormButton name="Submit" onClickCB={onSubmitButtonClick} />
                 {error ? <p className="form__error">{error}</p> : null}
                 {success ? <p className="form__success">Successfully preregistered!</p> : null}
             </div>
-        </div>
+        </section>
     );
 }
 
 export default PreregistrerForm;
+
+{/* <div className="preregisterForm" id="preregister">
+<img className="preregister__image" src={preregisterillustration} alt="Preregister Illustration" />
+<div className="preregister__wrapper">
+    <h2 className="preregisterForm__h2">Preregister</h2>
+
+    <div className="form__content">
+
+        <div className="forminput__Container">
+            <div className="forminput__group">
+                <FormInput className="preregisterForm__input1" state={companyName} setState={setCompanyName} name="Company Name" validator={companyNameValidator} />
+            </div>
+
+            <div className="forminput__group">
+                <FormInput state={phoneNumber} setState={setPhoneNumber} name="Phone Number" validator={phoneNumberValidator} />
+            </div>
+        </div>
+    </div>
+    <div className="form-avatar-container">
+        <FormAvatar state={avatar} setState={setAvatar} />
+    </div>
+
+    <FormButton name="Submit" onClickCB={onSubmitButtonClick} />
+    {error ? <p className="form__error">{error}</p> : null}
+    {success ? <p className="form__success">Successfully preregistered!</p> : null}
+</div>
+</div> */}
