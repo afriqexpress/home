@@ -20,8 +20,8 @@ const Home = () => {
         contentType={ContentType.IMAGE}
         content={headerImage}
         contentAlt="GIF of tech solutions"
-        title="The internet revolution"
-        text="Bring your business to the next level Bring your business to the next level Bring your business to the next level Bring your business to the next level"
+        title="La révolution Internet"
+        text="Amenez votre entreprise au niveau supérieur. Touchez des milliers de personnes en ligne. Avec notre application AfriQExpress, nous connectons toutes sortes d'entreprises à de plus en plus de clients que jamais. Avec AfriQPay, tous vos paiements sont effectués de la manière la plus simple."
         // url="#"
         // buttonText ="Preregister"
       />

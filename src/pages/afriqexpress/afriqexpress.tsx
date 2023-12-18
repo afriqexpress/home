@@ -7,8 +7,8 @@ import Partners from "../../components/partners/partners";
 import PreregistrerForm from "../../components/preregisterForm/preregisterForm";
 import imageHeader from "/img/afriQHome.mp4";
 import Preregisters from "../../components/preregisters/preregisters";
-import partners from "./partners.json"
-import features from "./features.json"
+import partners from "./partners.json";
+import features from "./features.json";
 
 const AfriQExpress = () => {
   useEffect(() => {
@@ -20,7 +20,7 @@ const AfriQExpress = () => {
       <Nav
         links={[
           { link: "#features", name: "Features" },
-          { link: "#preregister", name: "Preregister now!", special: true }
+          { link: "#preregister", name: "Preregister now!", special: true },
         ]}
       />
       <Header
@@ -30,10 +30,13 @@ const AfriQExpress = () => {
         title="AfriQExpress"
         text="Préinscrivez-vous ci-dessous pour rejoindre la première plateforme de trading et faire passer votre entreprise au niveau supérieur"
         url="#preregister"
-        buttonText="Preregister Now!"
+        buttonText="Pré-inscrivez-vous maintenant!"
       />
-      <Features features={features} text="Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi.Lorem ipsum dolor sit amet. Aut fugiat culpa aut minus aliquam in natus autem et labore officia sed laudantium repellat aut animi."/>
-      <Partners partners={partners}/>
+      <Features
+        features={features}
+        text="AfriQExpress est la prochaine et principale plateforme commerciale en ligne pour l'Afrique. Commencez à penser à l’international et avec la portée du Web. Ci-dessous, les caractéristiques et fonctionnalités de la plateforme sont décrites"
+      />
+      <Partners partners={partners} />
       <Preregisters />
       <PreregistrerForm appName="AFRIQEXPRESS" />
       <Footer />

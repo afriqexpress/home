@@ -1,27 +1,27 @@
 [
     {
       "image": "../img/svg/digitalmarketing.svg",
-      "title": "Digital Marketing",
+      "title": "Le marketing numérique",
       "text": "Boostez vos ventes et votre reconnaissance grâce à nos outils de marketing en ligne"
     },
     {
       "image": "../img/svg/searchengine.svg",
-      "title": "Search Engine",
+      "title": "Moteur de recherche",
       "text": "Options de recherche optimisées et moteur pour les meilleurs résultats"
     },
     {
       "image": "../img/svg/visible.svg",
-      "title": "Be Visible",
+      "title": "Montre toi",
       "text": "Créez votre présence en ligne et démarquez-vous de la foule. Mettez votre entreprise en ligne."
     },
     {
         "image": "../img/svg/onlinepayment.svg",
-        "title": "Online Payment",
-        "text": "featuretext"
+        "title": "Paiement en ligne",
+        "text": "Paiements et livraison en ligne faciles. Avec l'utilisation du code QR"
     },
     {
         "image": "../img/svg/delivery.svg",
-        "title": "Delivery",
-        "text": "Paiements et livraison en ligne faciles. Avec l'utilisation du code QR"
+        "title": "Livraison rapide",
+        "text": "Sur demande et livraison rapide à votre porte !"
     }
 ]
