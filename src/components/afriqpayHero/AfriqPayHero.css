@@ -1,0 +1,176 @@
+.afriqHero {
+    margin-top: 50px;
+    height: 600px;
+    background-color: #EFEDFF;
+    display: flex;
+    padding-top: 50px;
+    position: relative;
+}
+.afriq_text_container {
+    flex: 6;
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 50px;
+}
+.arriq_heading {
+    font-size: 28px;
+    color: #6C63FF;
+    font-weight: 700;
+}
+.afriq_text_container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.ariq_paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+}
+.afriq_button_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 10px;
+}
+.arriq_explore_btn {
+    background-color: #6C63FF;
+    color: #FFFFFF;
+    height: 40px;
+    width: 180px;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+.arriq_watch_btn {
+    background-color: transparent;
+    color: #6C63FF;
+    height: 40px;
+    width: 180px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 2px solid #6C63FF;
+    display: flex;
+    align-items: center;
+}
+.watch_image {
+    margin-left: 50px;
+    padding-right: 5px;
+}
+.afriq_image_container {
+    flex: 6;
+    margin-top: 50px;
+}
+.mobie_images_container {
+    position: absolute;
+    display: flex;
+    top: 100px;
+    right: 300px;
+    z-index: 99;
+}
+.main {
+    z-index: 1;
+}
+.side1 {
+    position: absolute;
+    top: 60px;
+    right: 150px;
+}
+.side2 {
+   position: absolute;
+   left: 150px;
+   top: 60px;
+
+}
+.basehero_container {
+    position: absolute;
+    bottom: 70px;
+}
+.sidein {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+.afriqHero_mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .afriqHero {
+        display: none;
+    }
+    .afriqHero_mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: #EFEDFF;
+        padding-bottom: 20px;
+    }
+    .mobile_afriq_image_container {
+        margin-top: 150px;
+        position: relative;
+    }
+    .small_mobile_container {
+        z-index: 1;
+        position: absolute;
+        bottom: 20px;
+        left: 5px;
+    }
+    .mobile_text_container {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile_afriq_button_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .mobile_arriq_heading {
+        font-size: 18px;
+        color: #6C63FF;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    .mobile_ariq_paragraph {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .mobile_arriq_explore_btn {
+        background-color: #6C63FF;
+        color: #FFFFFF;
+        height: 40px;
+        width: 150px;
+        border-radius: 5px;
+        border-style: none;
+        font-size: 12px;
+        cursor: pointer;
+    }
+    .mobile_arriq_watch_btn {
+        background-color: #FFFFFF;
+        color: #6C63FF;
+        height: 40px;
+        width: 150px;
+        border-radius: 5px;
+        font-size: 12px;
+        cursor: pointer;
+        border: 2px solid #6C63FF;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .mobile_watch_image {
+        margin-left: 50px;
+        height: 20px;
+        width: 15px;
+    }
+}

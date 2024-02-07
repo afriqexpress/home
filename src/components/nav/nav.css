@@ -22,10 +22,13 @@
 
     transform: translateY(-100%);
     transition: transform 500ms;
+    justify-content: space-between;
+    background-color: #F6F6F6
 }
 
 .navigation--visible {
     transform: translateY(0);
+    display: flex;
 }
 
 .navigation__logo {
@@ -38,8 +41,9 @@
     align-items: center;
 
     padding: 0.5rem 0;
-    margin-right: auto;
     background: none;
+    margin-left: 50px;
+
 }
 
 .navigation__logo img {
@@ -48,23 +52,23 @@
 }
 
 .navigation__item, .navigation__special {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-decoration: none;
     color: black;
     background: none;
 } 
 
 .navigation__item:hover {
-    color: #2557a7;
+    color: #6C63FF;
     
     transition: padding 0.2s;
     padding-bottom: 0.5rem;
-    border-bottom: 0.2rem solid #25a5a7;
+    border-bottom: 0.2rem solid #6C63FF;
 }
 
 
 .navigation__special {
-    background-color: #25a5a7;
+    background-color: #6C63FF;
 
     border-radius: 0.5rem;
 
@@ -123,8 +127,58 @@
 .hamburg_navigation .navigation__item:hover {
     padding-bottom: 0;
 }
+.dropdown-link {
+    text-decoration: none;
+    font-size: 14px;
+}
+.horizontal-line {
+    width: 120px;
+    background-color: #6C63FF;
+    height: 2px;
+    margin-top: 5px;
+}
+.contact_btn_nav {
+    width: 170px;
+    background-color: #6C63FF;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-right: 20px;
+    cursor: pointer;
 
-@media only screen and (max-width: 500px) {
+}
+.nav_links{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 400px;
+}
+.drop_down {
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 10px;
+    z-index: 999;
+    height: 70px;
+    width: 150px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.drop_down_logo {
+    margin-left: -70px;
+}
+
+
+@media only screen and (max-width: 767px) {
     .navigation__hamburg {
         display: inherit;
     }
@@ -139,5 +193,22 @@
         opacity: 1;
         transform: translateY(0);
         transition: transform 1s;
+        z-index: 1;
     }
+    .drop_down_logo {
+        display: none;
+    }
+    .mobile_logo {
+        display: block;
+        position: absolute;
+        top: 105px;
+        left: 290px;
+    }
+    .mobile_navigation__logo {
+        margin-left: 0;
+    }
+
 }
+
+
+

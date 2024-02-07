@@ -1,0 +1,128 @@
+.afriq_business {
+    background-color: #F5F5F9;
+    position: relative;
+    padding-bottom: 10px;
+}
+.business_heading_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 40%;
+    margin-left: 30%;
+
+}
+.business_heading {
+    color: #000000;
+    font-weight: 500;
+    font-size: 27px;
+    line-height: 40px;
+    text-align: center;
+}
+.business_info {
+    display: flex;
+}
+.business_text {
+    flex: 6;
+}
+.business_image {
+    flex: 6;
+}
+.smartphone_container {
+    position: relative;
+}
+.slide_image_container {
+    position: absolute;
+    top: 100px;
+    left: 270px;
+}
+.business_text_container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20%;
+    margin-top: 20px;
+}
+.business_text_heading {
+    color: #6C63FF;
+    font-size: 20px;
+    font-weight: 500;
+}
+.business_text_subheading {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.try_btn {
+    margin-left: 25%;
+    margin-top: 50px;
+    width: 200px;
+    background-color: #6C63FF;
+    font-size: 16px;
+    border-style: none;
+    color: #FFFFFF;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+.mobile_afriq_business {
+    display: none;
+}
+
+
+@media only screen and (max-width: 767px) { 
+    .mobile_afriq_business {
+        display: flex;
+        flex-direction: column;
+    }
+    .afriq_business {
+        display: none;
+    }
+    .mobile_hand {
+        width: 100%;
+    }
+    .mobile_business_heading {
+        color: #6C63FF;
+        font-size: 16px;
+        width: 70%;
+        margin-left: 15%;
+        text-align: center;
+    }
+    .mobile_business_heading_container {
+        display: flex;
+        align-items: center;
+        background-color: #FFFFFF;
+        padding: 20px;
+    }
+    .mobile_business_text_container {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .mobile_business_text_heading {
+        color: #6C63FF;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    .mobile_business_text_subheading {
+        color: #000000;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 25px;
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+    .mobile_business_info {
+        background-color: #FFFFFF;
+    }
+    .mobile_business_text {
+        height: 500px;
+    }
+
+}

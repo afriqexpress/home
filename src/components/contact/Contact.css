@@ -1,0 +1,219 @@
+.contact {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    height: 800px;
+    position: relative;
+}
+.contact_form {
+    background-color:#6C63FF;
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+.contact_headings {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.heading_contact {
+    color: #FFFFFF;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.subheading_contact {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 100;
+     margin-top: 10px;
+}
+.input_boxes {
+    margin-top: 50px;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    outline: none;
+    margin-left: 20px;
+    flex-wrap: wrap;
+}
+.input_boxes :focus {
+    outline: none;
+}
+.input {
+    height: 40px;
+    border-radius: 5px;
+    border-style: none;
+}
+.name_box {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.business_box {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    margin-top: 20px;
+} 
+.label {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+.fields_container {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 70px;
+}
+.message_box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.input_msg {
+    height: 130px;
+    border-radius: 5px;
+    border-style: none;
+    width: 400px;
+    outline: none;
+}
+.input_msg :focus {
+    outline: none;
+}
+.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+.submit_btn {
+    width: 250px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 17px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+.bubble_contact {
+    position: absolute;
+    top: 10px;
+    left: -50px;
+}
+.bubble_contact2 {
+    position: absolute;
+    top: 550px;
+    right: -120px;
+}
+
+@media only screen and (max-width: 767px) { 
+    .bubble_contact2 {
+      display: none;
+    }
+    .bubble_contact {
+        position: absolute;
+        top: 0px;
+        display: none;
+    }
+    .fields_container {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        flex-direction: column;
+        margin-left: 0 !important;
+    }
+    .input_msg {
+        height: 130px;
+        border-radius: 5px;
+        border-style: none;
+        outline: none;
+        width: 300px;
+    }
+    .input_boxes {
+        margin-top: 50px;
+        display: flex;
+        width: 90%;
+        align-items: center;
+        justify-content: space-between;
+        outline: none;
+        margin-left: 40px;
+    }
+    .business_box {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .contact {
+        position: relative;
+    }
+    .contact_form {
+        background-color: #6C63FF;
+        width: 100%;
+        height: 700px;
+        border-radius: 10px;
+        margin-top: 100px;
+        z-index: 999;
+        position: absolute;
+    }
+    .message_box {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-top: 10px !important;
+    }
+    .subheading_contact {
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 100;
+        margin-top: 10px;
+    }
+    .heading_contact {
+        color: #FFFFFF;
+        font-weight: 500;
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .submit_btn {
+        width:40%;
+        height: 40px;
+        border: 2px solid white;
+        background-color: transparent;
+        border-radius: 5px;
+        color: #FFFFFF;
+        font-size: 17px;
+        /* margin-right: 60px; */
+        cursor: pointer;
+        margin-left: 25%;
+    }
+    .label {
+        color: #FFFFFF;
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .input {
+        height: 30px;
+        border-style: none;
+    }
+    .submit {
+        margin-right: 50px;
+    }
+    .name_box {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin-left: 20px;
+   
+}
+}

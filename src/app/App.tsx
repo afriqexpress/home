@@ -9,6 +9,9 @@ import AfriQExpress from "../pages/afriqexpress/afriqexpress";
 import AfriQPay from "../pages/afriqpay/afriqpay";
 import AfriQTrans from "../pages/afriqtrans/afriqtrans";
 import AboutUs from "../pages/aboutus/aboutus";
+import NewAbout from "../pages/newaboutus/NewAbout";
+import AfriqPay from "../pages/afriqpaypage/AfriqPay";
+import AfriqPayExpress from "../pages/afriqpayexpress/AfriqPayExpress";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +34,18 @@ const router = createBrowserRouter([
     path: "/AfriQTrans",
     element: <AfriQTrans />,
   },
+  {
+    path: "/newabout",
+    element: <NewAbout />,
+  },
+  {
+    path:'/afriqpaypage',
+    element: <AfriqPay />
+  },
+  {
+    path:'afriqpayexpress',
+    element:<AfriqPayExpress />
+  }
 
 ]);
 
