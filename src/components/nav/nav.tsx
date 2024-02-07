@@ -36,15 +36,6 @@ const Navigation = ({ links }: Props) => {
         });
 
     }, []);
-    const handleScrollToSection = (name: string) => {
-        const targetSection = document.getElementById(name);
-
-        if (targetSection) {
-            targetSection.scrollIntoView({
-                behavior: 'smooth',
-            });
-        }
-    };
 
     return (
         <>
