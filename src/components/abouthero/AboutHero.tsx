@@ -1,6 +1,7 @@
 import "../herosection/HeroSection.css"
 import Hero from "./about_hero.png"
 import "./AboutHero.css"
+import SmallHero from "./small_hero.png"
 
 
 
@@ -23,10 +24,13 @@ function AboutHero() {
           </div>
           </div>
           <div className="desktop_image_container">
-            <img src={Hero} alt="" className="hero_img"/>
-            {/* <div  className="smallimage">
-                <img src={SmallHero} alt="" />
-            </div> */}
+            <div className="position_image">
+            <img src={Hero} alt="" className="about_hero_img"/>
+            </div>
+          
+            <div  className="smallimage">
+                <img src={SmallHero} alt="" className="small_hero" />
+            </div>
             </div>
           <div className="image_container">
             <img src={Hero} alt="" className="hero_img"/>

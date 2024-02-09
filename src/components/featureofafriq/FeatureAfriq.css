@@ -81,6 +81,9 @@
         gap: 20px; /* Adjust the gap as needed */
         margin-top: 50px;
     }
+    .mobile_feature_info::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+    }
     
     .mobile_payment_box {
         flex: 0 0 auto;

@@ -44,6 +44,9 @@
     font-size: 15px;
     cursor: pointer;
 }
+.arriq_explore_btn:hover {
+    background-color: #867FFF;
+}
 .arriq_watch_btn {
     background-color: transparent;
     color: #6C63FF;
@@ -55,6 +58,9 @@
     border: 2px solid #6C63FF;
     display: flex;
     align-items: center;
+}
+.arriq_watch_btn:hover {
+    background-color: #FFFFFF;
 }
 .watch_image {
     margin-left: 50px;

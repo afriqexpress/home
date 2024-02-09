@@ -3,10 +3,10 @@ import Logo from "./footerLogo.png"
 import Tel from "./tel.png"
 import Location from "./loc.png"
 import Mail from "./mail.png"
-import FB from "./fblogo.png"
-import Linked from "./linkedin_logo.png"
-import Pexel from "./pexel.png"
-import X from "./teiter_logo.png"
+// import FB from "./fblogo.png"
+// import Linked from "./linkedin_logo.png"
+// import Pexel from "./pexel.png"
+// import X from "./teiter_logo.png"
  
 function NewFooter() {
   return (
@@ -47,12 +47,12 @@ function NewFooter() {
         </div>
         <div className="social-links">
         <span className="about_heading">Follow us On</span>
-        <div className="social_links_container">
+        {/* <div className="social_links_container">
             <img src={FB} alt="" className="logo_image"/>
             <img src={Linked} alt="" className="logo_image"/>
             <img src={Pexel} alt="" className="logo_image"/>
              <img src={X} alt="" className="logo_image"/>
-        </div>
+        </div> */}
         </div>
         </div>
        <div style={{height:1,backgroundColor:'white',marginTop:30,width:"90%",marginLeft:'5%'}}></div>

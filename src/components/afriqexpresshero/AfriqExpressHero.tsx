@@ -2,8 +2,23 @@ import "./AfriqExpreshero.css"
 import Hero from "./arriqexpress.png"
 import Watch from "./watch.png"
 import ExpressHero from "./express_hero.png"
+import Payment from "./Payment_video.mp4"
+
+import Modal from 'react-modal';
+import { useState } from "react";
+import Close from "./red_icon.png"
 
 function AfriqExpressHero() {
+
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => {
+      setModalOpen(true);
+    };
+  
+    const closeModal = () => {
+      setModalOpen(false);
+    };
   return (
     <>
     <div className="afriqHero">
@@ -13,10 +28,30 @@ function AfriqExpressHero() {
         <span className="ariq_paragraph">bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business to  the next Level with us bring  your Business to  the next Level with us</span>
         <div className="afriq_button_container">
             <button className="arriq_explore_btn">Explore Now</button>
-            <button className="arriq_watch_btn"><img src={Watch} alt="" className="watch_image" />Watch</button>
+            <button className="arriq_watch_btn" onClick={openModal}><img src={Watch} alt="" className="watch_image" />Watch</button>
 
 
         </div>
+
+        <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        contentLabel="Watch Modal"
+        ariaHideApp={false}
+        className="modal"
+      >
+        {/* Modal Content */}
+        <div className="video_container">
+          {/* Your video or any other content goes here */}
+          <div className="close_btn" onClick={closeModal}>
+            <img src={Close} alt="" style={{width:15,height:15}} />
+          </div>
+          <video controls className="video">
+            <source src={Payment} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </Modal>
         </div>
     </div>
     <div className="afriq_image_container_express">

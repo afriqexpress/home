@@ -1,8 +1,11 @@
 .small_hero {
     position: absolute;
-    z-index: -1;
 }
-
+.smallimage {
+    position: absolute;
+    top: -90px;
+    left: 100px;
+}
 .desktop_hero {
     position: absolute;
     top: 100px;
@@ -15,12 +18,19 @@
     display: none;
 }
 .about_text_wrapper {
-    width: 72%;
-    margin-left: 15%;
-    margin-top: 5%;
+    width: 50%;
+    margin-left: 46%;
+    margin-top: 2%;
+}
+.position_image {
+    position: absolute;
+    z-index: 10;
 }
 .desktop_image_container {
     margin-left: 5%;
+    position: relative;
+    z-index: 10;
+    margin-top: 5%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -44,6 +54,9 @@
             width: 75%;
             margin-left: 16%;
             margin-top: 5%;
+        }
+        .smallimage {
+            display: none;
         }
     
 }

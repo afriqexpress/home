@@ -4,6 +4,7 @@ import Bubble from "./bubble_contact.png"
 
 function Contact() {
   return (
+    <>
     <div className="contact" id="contact">
         <div className="contact_form">
                 <div className="contact_headings">
@@ -37,14 +38,45 @@ function Contact() {
                     </div>
                 </div>
                 </div>
-                <div className="submit">
-                    <button className="submit_btn">Submit</button>
+                <div className="mobile_fields_container">
+                <div className="mobile_input_boxes">
+                    <div className="mobile_name_box">
+                        <label className="label">FIRST NAME <img src={Star}  /> </label>
+                        <input type="text"  className="mobile_input"/>
+
+                    </div>
+                    <div className="mobile_name_box_phone">
+                        <label className="label">PHONE NUMBER <img src={Star} /> </label>
+                        <input type="text"  className="mobile_input"/>
+
+                    </div>
+                    <div className="mobile_business_box">
+                        <label className="label">BUSINESS EMAIL <img src={Star}  /> </label>
+                        <input type="email"  className="mobile_input"/>
+
+                    </div>
+                    <div className="mobile_msg_box">
+                        <label className="label">MESSAGE <img src={Star}/> </label>
+                        <textarea  className="mobile_input_msg"/>
+                        </div>
+                        <div className="submit_mobile">
+                    <button className="submit_btn_mobile">Submit</button>
                 </div>
+
+                </div>
+               
+                <div>
+               
+                </div>
+    </div>
+                
         </div>
         <div className="bubble_contact">
                 <img src={Bubble} alt=""/>
             </div>
     </div>
+  
+    </>
   )
 }
 

@@ -136,6 +136,7 @@
         display: block;
         padding-bottom: 20px;
         padding-top: 20px;
+        height: 650px;
     }
     .mobile_image_container {
         margin-left: 35%;
@@ -190,14 +191,14 @@
 }
 .mobile_explore_btn {
     background-color: #6C63FF;
-    width: 30%;
-    height: 30px;
-    border-radius: 10px;
+    width: 40%;
+    height: 40px;
+    border-radius: 5px;
     border-style: none;
     color: #FFFFFF;
     font-size: 12px;
     margin-top: 20px;
-    margin-left: 35%;
+    margin-left: 30%;
 }
 .mobile_explore_btn :hover {
     background-color: #867FFF;

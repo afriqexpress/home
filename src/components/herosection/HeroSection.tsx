@@ -20,6 +20,14 @@ function HeroSection() {
   const moon = useParallax<HTMLDivElement>({
     scale: [1, 0.9, 'easeInQuad'],
   });
+
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
  
   return (
 
@@ -33,7 +41,7 @@ function HeroSection() {
                 <h3 className="heading">The Internet Revolution</h3>
                 <p className="paragraph">bring your Business to the next Level with us bring your Business to the next Level with us . bring your Business to the next Level with us bring your Business to the next Level with us</p>
                 <div className="frog" ref={frog.ref}>
-                <button  className="hero_contact_btn" >Contact Us</button>
+                <button  className="hero_contact_btn" onClick={handleScrollToContact} >Contact Us</button>
                 </div>
             </div>
             </div>

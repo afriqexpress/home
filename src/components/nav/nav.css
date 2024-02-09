@@ -199,6 +199,7 @@
         transform: translateY(0);
         transition: transform 1s;
         z-index: 99;
+        position: fixed;
     }
     .drop_down_logo {
         display: none;

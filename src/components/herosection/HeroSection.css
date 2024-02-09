@@ -110,7 +110,7 @@
         align-items: center;
     }
     .hero_section {
-        height: 700px;
+        min-height: 680px;
     }
     .horizontal-lines {
        display: none;
@@ -143,7 +143,7 @@
         font-size: 14px;
         border-radius: 5px;
         margin-top: 20px;
-        margin-left: 30%;
+        margin-left: 22%;
     }
     .bubble_image_container {
         display: none;

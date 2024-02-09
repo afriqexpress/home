@@ -3,3 +3,37 @@
     margin-top: 50px;
 
 }
+.modal {
+    width: 50% !important;
+    margin: auto !important;
+    display: flex;
+  
+
+ 
+
+}
+.video_container {
+    position: relative;
+    transition: 2000ms ease-in-out !important;
+
+}
+.video {
+    width: 100%;
+    margin-top: 21%;
+   
+}
+.close_btn {
+    position: absolute;
+    top: 23%;
+    right: -2%;
+    z-index: 10;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
