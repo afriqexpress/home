@@ -10,6 +10,7 @@ import Partner from "../../components/partner/Partner";
 import AfriQPay from "../../components/afriqpay/AfriqPay";
 import Contact from "../../components/contact/Contact";
 import NewFooter from "../../components/newfooter/NewFooter";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
       <Nav
         links={[
           { link: "/", name: "Home" },
-          { link: "#products", name: "Our Products" },
+          { link: "", name: "Our Products" },
           { link: "/newabout", name: "About US", special: true },
         ]}
       />
@@ -30,7 +31,10 @@ const Home = () => {
         // url="#"
         // buttonText ="Preregister"
       /> */}
-      <HeroSection />
+       <ParallaxProvider>
+       <HeroSection />
+       </ParallaxProvider>
+     
       <Partner />
       <AfriQPay />
       <Contact />

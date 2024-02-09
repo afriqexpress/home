@@ -1,7 +1,14 @@
 .hero_section {
-    /* height: 900x; */
+ 
     background-color: #6C63FF;
     position: relative;
+    min-height: 700px;
+    background-image: url("./grid.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
 }
 .lines {
    /* margin-top: 60px; */
@@ -18,6 +25,7 @@
     display: flex;
     width: 100%;
     margin-top: 50px;
+
 
 }
 .text_container {
@@ -45,13 +53,21 @@
     font-size: 18px;
     border-radius: 10px;
     margin-top: 20px;
+    cursor: pointer;
 }
 .hero_contact_btn:hover {
-    background-color: #6C63FF;
+    background-color: #FFFFFF;
+    color: #4236FF;
 }
 .image_container {
     flex: 6;
+    position: relative;;
 }
+.mage {
+    margin-right: 5%;
+}
+
+
 .bubble_image_container {
     position: absolute;
     right: 0;

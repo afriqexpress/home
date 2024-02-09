@@ -11,3 +11,39 @@
     margin-top: 50px;
     width: 30%;
 }
+
+@media only screen and (max-width: 767px) { 
+    .mobile_feature_afriq {
+        background-color: #FFFFFF;
+    }
+    .mobile_feature_info_express {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mobile_payment_box_express {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+    }
+    .payment_image {
+        height: 70px;
+        width: 150ox;
+    }
+    .mobile_payment_heading {
+        color: #6C63FF;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    .mobile_paragraph_span_express {
+        width: 60%;
+        font-size: 13px;
+        text-align: center;
+        color: #333333;
+        line-height: 25px;
+        margin-top: 5px;
+    }
+}

@@ -1,6 +1,6 @@
 import "./Contact.css"
 import Star from "./star.png"
-import Bubble from "./buble.png"
+import Bubble from "./bubble_contact.png"
 
 function Contact() {
   return (
@@ -17,7 +17,7 @@ function Contact() {
                         <input type="text"  className="input"/>
 
                     </div>
-                    <div className="name_box">
+                    <div className="name_box_phone">
                         <label className="label">PHONE NUMBER <img src={Star} style={{marginBottom:5,width:7,height:7}} /> </label>
                         <input type="text"  className="input"/>
 
@@ -40,13 +40,10 @@ function Contact() {
                 <div className="submit">
                     <button className="submit_btn">Submit</button>
                 </div>
-                <div className="bubble_contact">
-                <img src={Bubble} alt=""/>
-            </div>
-            <div className="bubble_contact2">
-                <img src={Bubble} alt=""/>
-            </div>
         </div>
+        <div className="bubble_contact">
+                <img src={Bubble} alt=""/>
+            </div>
     </div>
   )
 }

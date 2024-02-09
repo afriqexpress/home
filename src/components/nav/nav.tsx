@@ -5,6 +5,9 @@ import afriQExpressLogo from "./Afriqlogo.png";
 import hamburgIcon from "./menu.svg";
 import closeIcon from "./close.svg";
 import DropDown from "./dropdown.png"
+import { useLocation } from 'react-router-dom';
+
+
 
 interface Props {
     links: {
@@ -18,11 +21,24 @@ const Navigation = ({ links }: Props) => {
     const [hamburgOpen, setHamburgOpen] = useState<boolean>(false);
     const [showNav, setShowNav] = useState<boolean>(true);
     const [isDropdownVisible, setDropdownVisible] = useState(false);
+    const [mobileDrop,setmobileDrop] = useState(false)
+
+    const location = useLocation();
+
+    useEffect(() => {
+        setmobileDrop(false); // Close dropdown on page change
+      }, [location.pathname]);
 
     const toggleHamburg = () => setHamburgOpen(current => !current);
     const handleDropdownToggle = () => {
         setDropdownVisible(!isDropdownVisible);
     };
+    
+
+
+ 
+
+  
 
     useEffect(() => {
         let oldPosition = document.documentElement.scrollTop;
@@ -37,21 +53,48 @@ const Navigation = ({ links }: Props) => {
 
     }, []);
 
+
+    
+    const handleRemoveDropDown = ()=> {
+
+        isDropdownVisible === true &&
+        console.log("Clicked");
+        setDropdownVisible(false)
+        
+    } 
+
+    const handleScrollToContact = () => {
+        const contactSection = document.getElementById('contact');
+        
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
+      const handleMobileDropDown = ()=> {
+            setmobileDrop(!mobileDrop)
+            console.log("clicked");
+            
+      }
+
     return (
         <>
-            <nav className={showNav || hamburgOpen ? "navigation navigation--visible" : "navigation"}>
-                <a href='/' className="navigation__logo mobile_navigation__logo"><img src={afriQExpressLogo} alt="Brand Logo" /></a>
+            <nav className={showNav || hamburgOpen ? "navigation navigation--visible" : "navigation"} onClick={handleRemoveDropDown}
+            >
+                <a href='/' className="navigation__logo mobile_navigation__logo hover-dropdown"><img src={afriQExpressLogo} alt="Brand Logo" /></a>
 
                 <div className="nav_links">
                     {links.map((link, index) => {
                         return (
                             <>
-                                <a key={index} href={link.link}   className="navigation__item hamburg_navigation--visible" >{link.name}</a>
+                                <a key={index} href={link.link}   className="navigation__item hamburg_navigation--visible"   onMouseEnter={link.name === "Our Products" ? handleDropdownToggle : undefined}
+                               
+                                >{link.name}</a>
                                 {link.name === "Our Products" &&
                                     <>
                                     <div className="drop_down_logo">
                                     <img src={DropDown} alt="" className="arrow_logo"
-                                        onClick={handleDropdownToggle}
+                                     onMouseEnter={link.name === "Our Products" ? handleDropdownToggle : undefined}
                                     />
                                     </div>
                                       </>
@@ -69,18 +112,54 @@ const Navigation = ({ links }: Props) => {
                     })}
                     
                 </div>
-                <div className="contact_btn_nav navigation__item">Contact Us</div>
+                <div className="contact_btn_nav navigation__item"  onClick={handleScrollToContact}>Contact Us</div>
                 <button onClick={toggleHamburg} className="navigation__hamburg"><img src={hamburgOpen ? closeIcon : hamburgIcon} alt="" /></button>
 
 
             </nav>
 
             <nav className={hamburgOpen ? "hamburg_navigation hamburg_navigation--visible" : "hamburg_navigation"}>
-                {links.map((link, index) => {
+                {/* {links.map((link, index) => {
                     return (
-                        <a key={index} href={link.link} className={link.special ? "navigation__special navigation__item" : "navigation__item"} onClick={toggleHamburg} >{link.name}</a>
+                        <>
+                        <a key={index} href={link.link} className={link.special ? "navigation__special navigation__item" : "navigation__item"} onClick={toggleHamburg} >
+                            {link.name}
+
+                        </a>
+                        {link.name === "Our Products" &&
+                                    <div className="mobile_flex">
+                                          <div className="mobile_drop_down_container ">
+                                    <img src={DropDown} alt="" className="arrow_logo_mobile"
+                                     onClick={handleMobileDropDown}
+                                    />
+                                    </div>
+                                    {mobileDrop && 
+                                    <div>
+                                          <a href="/afriqpaypage" >AfriQPay</a>
+                                        <a href="/afriqpayexpress">AfriQExpress</a>
+                                    </div>
+                                    }
+                                      </div>
+                        }
+                        </>
                     );
-                })}
+                })} */}
+                <div className="mobile_links">
+                    <a className={`mobile_navigation__item ${location.pathname === '/' ? 'active' : ''}`} href="/">Home</a>
+                    <a className={`mobile_navigation__item ${location.pathname === '/newabout' ? 'active' : ''}`}  href="/newabout">About us</a>
+                    <a className={`mobile_navigation__item ${location.pathname === '/afriqpaypage' ? 'active' : ''}`} >our product <img src={DropDown} alt="" className="arrow_logo_mobile"
+                                     onClick={handleMobileDropDown}
+                                    /> </a>
+                                      {mobileDrop && 
+                                    <div className="mobile_deopDown">
+                                          <a href="/afriqpaypage" className={`mobile_navigation__item ${location.pathname === '/afriqpaypage' ? 'active' : ''}`}>AfriQPay</a>
+                                        <a href="/afriqpayexpress" className={`mobile_navigation__item ${location.pathname === '/afriqpayexpress' ? 'active' : ''}`}>AfriQExpress</a>
+                                    </div>
+                                    }
+                   
+                </div>
+                <div className="contact_btn_nav_mobile navigation__item"  onClick={handleScrollToContact}>Contact Us</div>
+
             </nav>
         </>
 

@@ -34,7 +34,7 @@
     display: flex;
     width: 50%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     outline: none;
     margin-left: 20px;
     flex-wrap: wrap;
@@ -50,12 +50,18 @@
 .name_box {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 40%;
+}
+.name_box_phone {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 3rem;
 }
 .business_box {
     display: flex;
     flex-direction: column;
-    width: 650px;
+    width: 85%;
     margin-top: 20px;
 } 
 .label {
@@ -104,15 +110,15 @@
     margin-right: 60px;
     cursor: pointer;
 }
+.submit_btn:hover{
+    background-color: #FFFFFF;
+    color: #6C63FF;
+}
 .bubble_contact {
     position: absolute;
-    top: 10px;
-    left: -50px;
-}
-.bubble_contact2 {
-    position: absolute;
-    top: 550px;
-    right: -120px;
+    top: 20px;
+    left: 0;
+    z-index: 0;
 }
 
 @media only screen and (max-width: 767px) { 
@@ -145,13 +151,19 @@
         align-items: center;
         justify-content: space-between;
         outline: none;
-        margin-left: 40px;
+        margin-left: 10%;
     }
     .business_box {
         display: flex;
         flex-direction: column;
         width: 300px;
         margin-top: 10px;
+        margin-left: 20px;
+    }
+    .name_box_phone {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
         margin-left: 20px;
     }
     .contact {
@@ -169,7 +181,7 @@
     .message_box {
         display: flex;
         flex-direction: column;
-        margin-left: 60px;
+        margin-left: 21%;
         margin-top: 10px !important;
     }
     .subheading_contact {
@@ -203,11 +215,11 @@
         margin-top: 10px;
     }
     .input {
-        height: 30px;
+        height: 40px;
         border-style: none;
     }
     .submit {
-        margin-right: 50px;
+        margin-right: 10%;
     }
     .name_box {
         display: flex;

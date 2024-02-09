@@ -84,14 +84,14 @@
     
     .mobile_payment_box {
         flex: 0 0 auto;
-        width: 250px;
+        width: 300px;
         white-space: normal;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     .mobile_paragraph_span {
-        width: 100%;
+        width: 80%;
         text-align: center;
         color: #333333;
         font-size: 12px;
@@ -115,10 +115,30 @@
         width: 70%;
         text-align: center;
     }
+    /* .dot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+    } */
+
     .dot {
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 20px;
-    }
+      }
+      
+      .dot-item {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ddd; /* Default color for inactive dots */
+        margin: 0 5px;
+        cursor: pointer;
+      }
+      
+      .dot-item.active {
+        background-color: #6C63FF; /* Color for active dot */
+      }
 }

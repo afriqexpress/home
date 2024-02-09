@@ -1,11 +1,12 @@
 import "./Partner.css"
 import Client from "./clint logo.png"
-import Bubble from "./partner_image.png"
+import Bubble from "./partner_bubble.png"
+import Bubble1 from "./partner_bibble1.png"
 export default function Partner() {
   return (
     <div className="partner_section">
          <div className="bubbleImage">
-                <img src={Bubble} alt="" />
+                <img src={Bubble1} alt="" />
         </div>
         <h3 className="partner-heading">Our Partners</h3>
        

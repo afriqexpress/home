@@ -62,8 +62,8 @@
     color: #6C63FF;
     
     transition: padding 0.2s;
-    padding-bottom: 0.5rem;
-    border-bottom: 0.2rem solid #6C63FF;
+    /* padding-bottom: 0.5rem; */
+    /* border-bottom: 0.2rem solid #6C63FF; */
 }
 
 
@@ -152,6 +152,11 @@
     cursor: pointer;
 
 }
+.contact_btn_nav:hover {
+    background-color: #867FFF;
+    text-decoration: none;
+    color: #FFFFFF;
+}
 .nav_links{
     display: flex;
     align-items: center;
@@ -160,7 +165,7 @@
 }
 .drop_down {
     position: absolute;
-    top: 50%;
+    top: 22%;
     left: 46%;
     transform: translate(-50%, -50%);
     background: #fff;
@@ -175,8 +180,8 @@
 }
 .drop_down_logo {
     margin-left: -70px;
+    margin-top: 5px;
 }
-
 
 @media only screen and (max-width: 767px) {
     .navigation__hamburg {
@@ -193,7 +198,7 @@
         opacity: 1;
         transform: translateY(0);
         transition: transform 1s;
-        z-index: 1;
+        z-index: 99;
     }
     .drop_down_logo {
         display: none;
@@ -207,6 +212,53 @@
     .mobile_navigation__logo {
         margin-left: 0;
     }
+    .mobile_flex {
+        margin-left: 10px;
+        margin-top: 5px;
+        position: relative;
+    }
+    .mobile_links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mobile_navigation__item {
+        margin-top: 10px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: black;
+        background: none;
+    }
+.contact_btn_nav_mobile {
+    width: 120px;
+    background-color: #6C63FF;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.mobile_deopDown {
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.mobileDrop_navigation__item {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    background: none;
+    margin-top: 5px;
+} 
+.active {
+    color: #6C63FF;
+}
 
 }
 

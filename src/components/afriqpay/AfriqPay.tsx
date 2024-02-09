@@ -8,11 +8,12 @@ import Frame2 from "./frame2.png"
 import Frame3 from "./frame3.png"
 import Frame4 from "./frame4.png"
 import Frame5 from "./frame5.png"
-import Bubble from "./buble.png"
 import Mobile from "./mobile_mobile.png"
 import Bucket from "./mobile_bucket.png"
 import MobileBase from "./base_mobille.png"
 import { useEffect, useState } from "react"
+import BubbleImage1 from "./bubble_image_afriq.png"
+import BubbleImage2 from "./bubble_image_afriq2.png"
 
 function AfriqPay() {
     const images = [Frame1, Frame2,Frame3,Frame4,Frame5];
@@ -67,23 +68,20 @@ function AfriqPay() {
                            className="frame_img"
                         />
                     </div>
-
-                </div>
-                <div className="background_image_container">
+                    <div className="background_image_container">
                     <img src={Background} alt="" className="background_image_container_img" />
                 </div>
                 <div className="base_image_container">
                     <img src={Base} alt=""className="base_image_container_img" />
                 </div>
+
+                </div>
             </div>
             <div className="bubble_image">
-                <img src={Bubble} alt=""/>
+                <img src={BubbleImage1} alt=""/>
             </div>
             <div className="bubble_image2">
-                <img src={Bubble} alt=""/>
-            </div>
-            <div className="bubble_image3">
-                <img src={Bubble} alt=""/>
+                <img src={BubbleImage2} alt=""/>
             </div>
         </div>
         <div className="afriq_mobile">

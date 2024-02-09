@@ -60,14 +60,18 @@
     color: #FFFFFF;
     font-size: 18px;
     margin-top: 50px;
+    cursor: pointer;
 
+}
+.explore_btn:hover {
+    background-color: #867FFF;
 }
 .afrix_image_container {
     flex: 4;
     position: relative;
 }
 .phone_image_container {
-    z-index: 1;
+    z-index: 99;
     position: absolute;
 }
 .frames {
@@ -77,14 +81,15 @@
 }
 .background_image_container {
     position: absolute;
-    bottom: 90px;
-    right: 10px;
+    top: 42%;
+    left: -49%;
+    z-index: -1;
 }
 .base_image_container {
     position: absolute;
-    right: 50px;
-    top: 570px;
-    z-index: 0;
+    left: -30%;
+    top: 95%;
+    z-index: -1;
 }
 .bubble_image {
     position: absolute;
@@ -193,6 +198,9 @@
     font-size: 12px;
     margin-top: 20px;
     margin-left: 35%;
+}
+.mobile_explore_btn :hover {
+    background-color: #867FFF;
 }
 }
    
