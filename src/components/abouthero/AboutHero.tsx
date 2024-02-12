@@ -13,6 +13,13 @@ import SmallHero from "./small_hero.png"
 
 
 function AboutHero() {
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
   return (
     <div className="hero_section">
         <div className="hero_container desktop_hero">
@@ -20,7 +27,7 @@ function AboutHero() {
             <div className="about_text_wrapper">
               <h3 className="heading">The Internet Revolution</h3>
               <p className="paragraph">bring your Business to the next Level with us bring your Business to the next Level with us . bring your Business to the next Level with us bring your Business to the next Level with us</p>
-              <button className="hero_contact_btn">Contact Us</button>
+              <button className="hero_contact_btn" onClick={handleScrollToContact}>Contact Us</button>
           </div>
           </div>
           <div className="desktop_image_container">

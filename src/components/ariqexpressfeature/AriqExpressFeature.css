@@ -15,6 +15,7 @@
 @media only screen and (max-width: 767px) { 
     .mobile_feature_afriq {
         background-color: #FFFFFF;
+        position: relative;
     }
     .mobile_feature_info_express {
         display: flex;
@@ -45,5 +46,28 @@
         color: #333333;
         line-height: 25px;
         margin-top: 5px;
+    }
+    .featureexpress_bubble {
+        position: absolute;
+        top: 4%;
+    }
+    .featureexpress_bubble2 {
+        position: absolute;
+        top: 45%;
+    }
+    .featureexpress_bubble3 {
+        position: absolute;
+        top: 10%;
+        right: 0;
+    }
+    .featureexpress_bubble4 {
+        position: absolute;
+        top: 30%;
+        right: 0;
+    }
+    .featureexpress_bubble5 {
+        position: absolute;
+        top: 70%;
+        right: 0;
     }
 }

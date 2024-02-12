@@ -4,6 +4,7 @@ import Group2 from "./Group2.png"
 import Bubble from "./bubble.png"
 import MobileGroup1 from "./MobileGroup1.png"
 import MobileGroup2 from "./MobileGroup2.png"
+import MobileBubble from "./Group 1000001328.png"
 
 function Info() {
   return (
@@ -62,7 +63,16 @@ function Info() {
             </div>
         </div>
         <div className="mobile_bubbleImage_container">
-            <img src={Bubble}/>
+            <img src={MobileBubble} alt=""/>
+            </div>
+            <div className="mobile_bubbleImage_container2">
+            <img src={MobileBubble} alt=""/>
+            </div>
+            <div className="mobile_bubbleImage_container3">
+            <img src={MobileBubble} alt=""/>
+            </div>
+            <div className="mobile_bubbleImage_container4">
+            <img src={MobileBubble} alt=""/>
             </div>
     </div>
     </>

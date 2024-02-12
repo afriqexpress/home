@@ -4,6 +4,7 @@ import Payment2 from "./shopping-online 2.png"
 import Payment3 from "./seo 1.png"
 import Payment4 from  "./shipped (1) 1.png"
 import Payment5 from "./vision 1.png"
+import Bubble from "./Group 1000001328.png"
 
 function AriqExpressFeature() {
   return (
@@ -95,6 +96,21 @@ function AriqExpressFeature() {
             <span>bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us</span>
        </div>
         </div>
+    </div>
+    <div className="featureexpress_bubble">
+        <img src={Bubble} alt=""/>
+    </div>
+    <div className="featureexpress_bubble2">
+        <img src={Bubble} alt=""/>
+    </div>
+    <div className="featureexpress_bubble3">
+        <img src={Bubble} alt=""/>
+    </div>
+    <div className="featureexpress_bubble4">
+        <img src={Bubble} alt=""/>
+    </div>
+    <div className="featureexpress_bubble5">
+        <img src={Bubble} alt=""/>
     </div>
    
 </div>

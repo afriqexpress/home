@@ -45,24 +45,33 @@ function Leaders() {
                 <div className="image-container">
                     <img src={Profile2} alt="" className="image" />
                     <div className="text-container">
-                        <p className="leader_text"> " bring your Business to the next Level with us bring your Business to the next Level with us
-                        bring your Business to the next Level with us bring your Business to the next Level with us "
+                    <p className="leader_text"> " bring your Business to the next Level <br />
+                         with us bring your Business to the next <br />
+                         Level with us bring your Business <br /> to the next
+                          Level with us bring your <br/> Business to the next <br />
+                           Level with us "
                         </p>
                     </div>
                 </div>
                 <div className="image-container">
                     <img src={Profile1} alt="" className="image" />
                     <div className="text-container">
-                    <p className="leader_text"> " bring your Business to the next Level with us bring your Business to the next Level with us
-                        bring your Business to the next Level with us bring your Business to the next Level with us "
+                    <p className="leader_text"> " bring your Business to the next Level <br />
+                         with us bring your Business to the next <br />
+                         Level with us bring your Business <br /> to the next
+                          Level with us bring your <br/> Business to the next <br />
+                           Level with us "
                         </p>
                     </div>
                 </div>
                 <div className="image-container">
                     <img src={Profile3} alt="" className="image" />
                     <div className="text-container">
-                    <p className="leader_text"> " bring your Business to the next Level with us bring your Business to the next Level with us
-                        bring your Business to the next Level with us bring your Business to the next Level with us "
+                    <p className="leader_text"> " bring your Business to the next Level <br />
+                         with us bring your Business to the next <br />
+                         Level with us bring your Business <br /> to the next
+                          Level with us bring your <br/> Business to the next <br />
+                           Level with us "
                         </p>
                     </div>
                 </div>

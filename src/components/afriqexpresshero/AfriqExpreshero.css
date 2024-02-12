@@ -37,3 +37,17 @@
     cursor: pointer;
 
 }
+.modal_mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .modal {
+        display: none;
+    }
+    .modal_mobile {
+        width: 95% !important;
+        margin: auto !important;
+        display: flex;
+      }
+}

@@ -46,6 +46,8 @@
     height: 40px;
     border-radius: 5px;
     border-style: none;
+    font-size: 16px;
+    font-family: Lexend;
 }
 .name_box {
     display: flex;
@@ -88,6 +90,8 @@
     border-style: none;
     width: 400px;
     outline: none;
+    font-size: 16px;
+    font-family: Lexend;
 }
 .input_msg :focus {
     outline: none;
@@ -120,7 +124,15 @@
     left: 0;
     z-index: 0;
 }
+.bubble_contact2 {
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+}
 .mobile_fields_container {
+    display: none;
+}
+.mobileBubble_contact {
     display: none;
 }
 
@@ -132,6 +144,16 @@
         position: absolute;
         top: 0px;
         display: none;
+    }
+      .mobileBubble_contact {
+        display: block;     
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+    .mobile_bubble_contact {
+        height: 50px;
     }
     .fields_container {
         display: none;
@@ -146,8 +168,8 @@
     .contact {
         width: 100%;
         padding: 0;
-        height: 600px;
-        margin-top: 100px;
+        height: 680px;
+        margin-top: 0px;
     }
     .mobile_input_boxes {
         display: flex;
@@ -166,11 +188,16 @@
         width: 100%;
         height: 40px;
         outline: none;
+        font-size: 14px;
+        font-family: Lexend;
     }
     .mobile_input_msg {
         width: 100%;
         height: 100px;
         outline: none;
+        font-size: 14px;
+        font-family: Lexend;
+        padding: 5px;
     }
     .mobile_input_msg:focus {
         outline: none;
@@ -180,6 +207,12 @@
     }
     .mobile_input :focus {
         outline: none;
+    }
+    .label {
+        color: #FFFFFF;
+        font-size: 11px;
+        margin-bottom: 10px;
+    
     }
     .mobile_name_box_phone {
         display: flex;

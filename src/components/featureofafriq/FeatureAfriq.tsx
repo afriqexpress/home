@@ -2,6 +2,8 @@ import "./FeatureAfriq.css"
 import QR from "./qr-code 1.png"
 import Transact from "./transaction-history.png"
 import Transfer from "./money-transfer.png"
+import Bubble from "./Group 1000001328.png"
+import Bubble2 from "./Group 1000001329.png"
 // import Dots from "./Dots.png"
 import { useState, useEffect, useRef } from 'react';
 
@@ -106,11 +108,12 @@ function FeatureAfriq() {
           />
         ))}
       </div>
-
-      =
-        {/* <div className="dot">
-          <img src={Dots}/>
-        </div> */}
+      <div className="feature_mobile_bubble_image">
+        <img src={Bubble} alt="" />
+      </div>
+      <div className="feature_mobile_bubble_image2">
+        <img src={Bubble2} alt="" />
+      </div>
         </div>
        </>
   )

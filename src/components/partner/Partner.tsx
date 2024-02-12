@@ -2,6 +2,8 @@ import "./Partner.css"
 import Client from "./clint logo.png"
 import Bubble from "./partner_bubble.png"
 import Bubble1 from "./partner_bibble1.png"
+import  BubbleMobile1 from "./partner_left_mobile.png"
+
 export default function Partner() {
   return (
     <div className="partner_section">
@@ -19,6 +21,12 @@ export default function Partner() {
         </div>
         <div className="bubbleImage2">
                 <img src={Bubble} alt="" />
+        </div>
+        <div className="bubbleImage1Mobile1">
+                <img src={BubbleMobile1} alt="" />
+        </div>
+        <div className="bubbleImage1Mobile2">
+                <img src={BubbleMobile1} alt="" />
         </div>
     </div>
   )

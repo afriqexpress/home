@@ -142,17 +142,28 @@
         margin-left: 35%;
         position: absolute;
         margin-top: 20px;
+        z-index: 1;
+    }
+    .mobile_phone_image_container {
+        position: relative;
+    }
+    .mobile_frames_images {
+        position: absolute;
+        top: 0;
+        z-index: 999;
     }
   .mobile_background_image_container {
     position: absolute;
     top: 114px;
     left: -65px;
+    z-index: -1;
   }
   .mobile_base_image_container {
     position: absolute;
     top: 270px;
     z-index: 99;
     left: -60px;
+    z-index: 0;
   }
   .mobile_afriq_heading {
     color: #000000;
@@ -169,6 +180,7 @@
     margin-top: 10px;
     width: 50%;
     margin-left: 25%;
+    text-align: center;
 }
 .mobile_text_wrapped {
     margin-top: 350px;

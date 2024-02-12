@@ -14,6 +14,7 @@ import MobileBase from "./base_mobille.png"
 import { useEffect, useState } from "react"
 import BubbleImage1 from "./bubble_image_afriq.png"
 import BubbleImage2 from "./bubble_image_afriq2.png"
+import BubbleimageMobile from "./Group 1000001333.png"
 
 function AfriqPay() {
     const images = [Frame1, Frame2,Frame3,Frame4,Frame5];
@@ -87,13 +88,18 @@ function AfriqPay() {
         <div className="afriq_mobile">
           <div className="mobile_heading">
                 <h3 className="mobile_afriq_heading">AfriQPay</h3>
-                 <h3 className="mobile_afriq_heading2">Simple , Fast & Secure</h3>
+                 <p className="mobile_afriq_heading2">Simple , Fast & Secure</p>
           </div>
           <div className="mobile_image_container">
           <div>
                 <div className="mobile_phone_image_container">
                     <img src={Mobile} alt=""  className="mobile_mobile_img" />
-                    <div className="mobile_frames">
+                    <div className="mobile_frames_images">
+                    <img
+                            src={images[currentImageIndex]}
+                            alt={`Image ${currentImageIndex + 1}`}
+                           className="frame_img"
+                        />
                     </div>
 
                 </div>
@@ -123,6 +129,9 @@ function AfriqPay() {
                     <span className="mobile_afriq_para">bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business</span>
                     </div>
                     <button className="mobile_explore_btn">Explore</button>
+                    <div className="mobile_bubble_explore">
+                        <img src={BubbleimageMobile} />
+                    </div>
 
         </div>
         </>

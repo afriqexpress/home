@@ -11,6 +11,15 @@ import Close from "./red_icon.png"
 function AfriqExpressHero() {
 
     const [isModalOpen, setModalOpen] = useState(false);
+    const [ismobileModalopen, setIsmobileModalOpen] = useState(false)
+
+    const mobileOpenModal = ()=> {
+        setIsmobileModalOpen(true)
+    }
+
+    const closeMobileModal = ()=> {
+        setIsmobileModalOpen(false)
+    }
 
     const openModal = () => {
       setModalOpen(true);
@@ -42,7 +51,6 @@ function AfriqExpressHero() {
       >
         {/* Modal Content */}
         <div className="video_container">
-          {/* Your video or any other content goes here */}
           <div className="close_btn" onClick={closeModal}>
             <img src={Close} alt="" style={{width:15,height:15}} />
           </div>
@@ -70,12 +78,31 @@ function AfriqExpressHero() {
 
                 </div>
             </div>
+            <Modal
+        isOpen={ismobileModalopen}
+        onRequestClose={closeModal}
+        contentLabel="Watch Modal"
+        ariaHideApp={false}
+        className="modal_mobile"
+      >
+        {/* Modal Content */}
+        <div className="video_container">
+          {/* Your video or any other content goes here */}
+          <div className="close_btn" onClick={closeMobileModal}>
+            <img src={Close} alt="" style={{width:15,height:15}} />
+          </div>
+          <video controls className="video">
+            <source src={Payment} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </Modal>
             <div className="mobile_text_container">
             <span className="mobile_arriq_heading">AfriQPay</span>
                 <span className="mobile_ariq_paragraph">bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business to  the next Level with us</span>
                 <div className="mobile_afriq_button_container">
                     <button className="mobile_arriq_explore_btn">Explore Now</button>
-                    <button className="mobile_arriq_watch_btn"><img src={Watch} alt="" className="mobile_watch_image" /><span style={{marginLeft:10}}>Watch</span></button>
+                    <button className="mobile_arriq_watch_btn" onClick={mobileOpenModal}><img src={Watch} alt="" className="mobile_watch_image" /><span style={{marginLeft:10}}>Watch</span></button>
 
 
                 </div>

@@ -46,7 +46,7 @@ function NewFooter() {
         </div>
         </div>
         <div className="social-links">
-        <span className="about_heading">Follow us On</span>
+        {/* <span className="about_heading">Follow us On</span> */}
         {/* <div className="social_links_container">
             <img src={FB} alt="" className="logo_image"/>
             <img src={Linked} alt="" className="logo_image"/>
