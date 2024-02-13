@@ -52,8 +52,12 @@
         }
         .about_text_wrapper {
             width: 75%;
-            margin-left: 16%;
+            margin-left: 12.5%;
             margin-top: 5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
         .smallimage {
             display: none;

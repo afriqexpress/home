@@ -1,9 +1,9 @@
 import "./App.css";
 import {
   createBrowserRouter,
-  RouterProvider,
+  RouterProvider
 } from "react-router-dom";
-
+import { AnimatePresence, motion } from "framer-motion";
 import Home from "../pages/home/home";
 import AfriQExpress from "../pages/afriqexpress/afriqexpress";
 import AfriQPay from "../pages/afriqpay/afriqpay";
@@ -51,8 +51,21 @@ const router = createBrowserRouter([
 
 
 function App() {
+  const slideInTransition = {
+    initial: { opacity: 0, },
+    animate: { opacity: 1,},
+    exit: { opacity: 0, },
+    transition: { delay: 0.3, ease: "easeInOut" ,duration: 1 }, // Adjust the delay and ease as needed
+  };
   return (
-    <RouterProvider router={router} />
+    // <AnimatePresence>
+    // <RouterProvider router={router}/>
+    // </AnimatePresence>
+    <AnimatePresence>
+    <motion.div  {...slideInTransition}  >
+      <RouterProvider router={router}/>
+    </motion.div>
+  </AnimatePresence>
   );
 }
 

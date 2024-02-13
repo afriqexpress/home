@@ -39,3 +39,11 @@ section {
     padding: 0 1rem;
 }
 
+body .react-bubbly-transitions__bubbly-link {
+    color: #af44fd;
+  }
+
+  body .react-bubbly-transitions__bubbly-link.active {
+    text-decoration: underline;
+  }
+

@@ -69,16 +69,21 @@
 .afriq_image_container {
     flex: 6;
     margin-top: 50px;
+    position: relative;
 }
 .mobie_images_container {
     position: absolute;
     display: flex;
-    top: 100px;
-    right: 300px;
-    z-index: 0;
+    z-index: 1;
+    top: 0%;
+    left: 25%;
 }
-.main {
+.visible {
     z-index: 0;
+    /* Add any other styles you want to apply when the component is visible */
+  }
+.main {
+    z-index: 1;
 }
 .basehero_container {
     position: absolute;
@@ -198,3 +203,15 @@
         display: flex;
       }
 }
+
+
+@media only screen and (min-width: 1920px) { 
+    .mobie_images_container {
+        position: absolute;
+        display: flex;
+        z-index: 1;
+        top: 0%;
+        left: 18%;
+    }
+}
+

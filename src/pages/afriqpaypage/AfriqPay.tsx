@@ -5,10 +5,9 @@ import FeatureAfriq from "../../components/featureofafriq/FeatureAfriq"
 import Nav from "../../components/nav/nav"
 import NewFooter from "../../components/newfooter/NewFooter"
 
-
 function AfriqPay() {
   return (
-   <>
+    <>
     <Nav
         links={[
           { link: "/", name: "Home" },
@@ -21,7 +20,7 @@ function AfriqPay() {
       <AfriqBusiness />
       <Contact />
       <NewFooter />
-   </>
+      </>
   )
 }
 

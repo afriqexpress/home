@@ -7,16 +7,14 @@
     width: 50% !important;
     margin: auto !important;
     display: flex;
-  
-
- 
-
 }
+  
 .video_container {
     position: relative;
     transition: 2000ms ease-in-out !important;
-
+  
 }
+
 .video {
     width: 100%;
     margin-top: 21%;

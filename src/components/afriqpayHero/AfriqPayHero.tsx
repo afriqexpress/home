@@ -12,10 +12,12 @@ import Payment from "../afriqexpresshero/Payment_video.mp4"
 import Modal from 'react-modal';
 import Close from "../afriqexpresshero/red_icon.png"
 import { useState } from "react"
+import { motion } from "framer-motion"
 
 function AfriqPayHero() {
     const [isModalOpen, setModalOpen] = useState(false);
     const [ismobileModalopen, setIsmobileModalOpen] = useState(false)
+    const [isMobileImagesVisible, setMobileImagesVisible] = useState(false);
 
     const mobileOpenModal = ()=> {
         setIsmobileModalOpen(true)
@@ -27,13 +29,15 @@ function AfriqPayHero() {
 
     const openModal = () => {
       setModalOpen(true);
+      setMobileImagesVisible(!isMobileImagesVisible);
     };
   
     const closeModal = () => {
       setModalOpen(false);
+      setMobileImagesVisible(!isMobileImagesVisible);
     };
     return (
-        <>
+        <motion.div exit={{ opacity: 0 }}>
         <div className="afriqHero">
             <div className="afriq_text_container">
                 <div className="afriq_text_container">
@@ -52,7 +56,7 @@ function AfriqPayHero() {
                 <div className="bucket_image_container">
                     <img src={Bucket} alt="" />
                 </div>
-                <div className="mobie_images_container">
+                <div  className={`mobie_images_container ${isMobileImagesVisible ? 'visible' : ''}`}>
                     <div className="side1">
                         <img src={Side2} alt="" />
                         <div className="sidein">
@@ -134,7 +138,7 @@ function AfriqPayHero() {
                 </div>
             </div>
         </div>
-        </>
+        </motion.div>
     )
 }
 

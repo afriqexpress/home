@@ -130,6 +130,8 @@
 .dropdown-link {
     text-decoration: none;
     font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
 }
 .horizontal-line {
     width: 120px;
@@ -165,7 +167,7 @@
 }
 .drop_down {
     position: absolute;
-    top: 22%;
+    top: 25%;
     left: 46%;
     transform: translate(-50%, -50%);
     background: #fff;
@@ -243,12 +245,17 @@
     font-size: 15px;
     cursor: pointer;
 }
+.contact_btn_nav_mobile:hover {
+    background-color: #867FFF;
+    text-decoration: none;
+    color: #FFFFFF;
+}
 .mobile_deopDown {
     display: flex;
     flex-direction: column;
-    height: 40px;
+    /* height: 40px; */
     align-items: center;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 .mobileDrop_navigation__item {
     font-size: 1.2rem;

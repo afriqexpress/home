@@ -3,7 +3,6 @@ import Hero from "./arriqexpress.png"
 import Watch from "./watch.png"
 import ExpressHero from "./express_hero.png"
 import Payment from "./Payment_video.mp4"
-
 import Modal from 'react-modal';
 import { useState } from "react";
 import Close from "./red_icon.png"
@@ -41,15 +40,15 @@ function AfriqExpressHero() {
 
 
         </div>
-
+    
         <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
         contentLabel="Watch Modal"
         ariaHideApp={false}
-        className="modal"
+        className={`modal ${isModalOpen ? 'fadeIn' : ''}`}
       >
-        {/* Modal Content */}
+         <div className="modal-overlay">
         <div className="video_container">
           <div className="close_btn" onClick={closeModal}>
             <img src={Close} alt="" style={{width:15,height:15}} />
@@ -59,7 +58,22 @@ function AfriqExpressHero() {
             Your browser does not support the video tag.
           </video>
         </div>
+        </div>
       </Modal>
+        {/* {isModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <div className="close-btn" onClick={closeModal}>
+              <img src={Close} alt="" style={{ width: 15, height: 15 }} />
+            </div>
+            <video controls className="video">
+              <source src={Payment} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      )} */}
+
         </div>
     </div>
     <div className="afriq_image_container_express">

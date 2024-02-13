@@ -77,6 +77,22 @@ const Navigation = ({ links }: Props) => {
             
       }
 
+      const handleLinkMouseEnter = () => {
+        setDropdownVisible(true);
+      };
+    
+      const handleLinkMouseLeave = () => {
+        setDropdownVisible(false);
+      };
+    
+      const handleDropdownMouseEnter = () => {
+        setDropdownVisible(true);
+      };
+    
+      const handleDropdownMouseLeave = () => {
+        setDropdownVisible(false);
+      };
+
     return (
         <>
             <nav className={showNav || hamburgOpen ? "navigation navigation--visible" : "navigation"} onClick={handleRemoveDropDown}
@@ -87,12 +103,17 @@ const Navigation = ({ links }: Props) => {
                     {links.map((link, index) => {
                         return (
                             <>
-                                <a key={index} href={link.link}   className="navigation__item hamburg_navigation--visible"   onMouseEnter={link.name === "Our Products" ? handleDropdownToggle : undefined}
-                               
+                                <a key={index} href={link.link}   className="navigation__item hamburg_navigation--visible" 
+                                //   onMouseEnter={link.name === "Our Products" ? handleDropdownToggle : undefined}
+                                onMouseEnter={link.name === 'Our Products' ? handleLinkMouseEnter : undefined}
+                                onMouseLeave={handleLinkMouseLeave}
                                 >{link.name}</a>
                                 {link.name === "Our Products" &&
                                     <>
-                                    <div className="drop_down_logo">
+                                    <div className="drop_down_logo"
+                                      onMouseEnter={handleDropdownMouseEnter}
+                                      onMouseLeave={handleDropdownMouseLeave}
+                                    >
                                     <img src={DropDown} alt="" className="arrow_logo"
                                      onMouseEnter={link.name === "Our Products" ? handleDropdownToggle : undefined}
                                     />
@@ -100,11 +121,14 @@ const Navigation = ({ links }: Props) => {
                                       </>
                                 }
                                 {isDropdownVisible && (
-                                    <div className="drop_down navigation__item navigation--visible">
+                                    <div className="drop_down navigation__item navigation--visible"
+                                    onMouseEnter={handleDropdownMouseEnter}
+                                    onMouseLeave={handleDropdownMouseLeave}
+                                    >
                                         {/* Your dropdown content goes here */}
                                         <a href="/afriqpaypage" className="dropdown-link">AfriQPay</a>
-                                        <hr className="horizontal-line"/>
-                                        <a href="/afriqpayexpress" className="dropdown-link">AfriQExpress</a>
+                                        {/* <hr className="horizontal-line"/>
+                                        <a href="/afriqpayexpress" className="dropdown-link">AfriQExpress</a> */}
                                     </div>
                                 )}
                             </>
@@ -153,7 +177,7 @@ const Navigation = ({ links }: Props) => {
                                       {mobileDrop && 
                                     <div className="mobile_deopDown">
                                           <a href="/afriqpaypage" className={`mobile_navigation__item ${location.pathname === '/afriqpaypage' ? 'active' : ''}`}>AfriQPay</a>
-                                        <a href="/afriqpayexpress" className={`mobile_navigation__item ${location.pathname === '/afriqpayexpress' ? 'active' : ''}`}>AfriQExpress</a>
+                                        {/* <a href="/afriqpayexpress" className={`mobile_navigation__item ${location.pathname === '/afriqpayexpress' ? 'active' : ''}`}>AfriQExpress</a> */}
                                     </div>
                                     }
                    
