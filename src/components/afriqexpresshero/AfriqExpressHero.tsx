@@ -60,19 +60,6 @@ function AfriqExpressHero() {
         </div>
         </div>
       </Modal>
-        {/* {isModalOpen && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <div className="close-btn" onClick={closeModal}>
-              <img src={Close} alt="" style={{ width: 15, height: 15 }} />
-            </div>
-            <video controls className="video">
-              <source src={Payment} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-      )} */}
 
         </div>
     </div>

@@ -19,7 +19,7 @@ const Home = () => {
         links={[
           { link: "/", name: "Home" },
           { link: "", name: "Our Products" },
-          { link: "/newabout", name: "About US", special: true },
+          { link: "/aboutus", name: "About US", special: true },
         ]}
       />
       {/* <Header

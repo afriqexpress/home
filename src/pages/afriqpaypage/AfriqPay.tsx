@@ -12,7 +12,7 @@ function AfriqPay() {
         links={[
           { link: "/", name: "Home" },
           { link: "#products", name: "Our Products" },
-          { link: "/newabout", name: "About US", special: true },
+          { link: "/aboutus", name: "About US", special: true },
         ]}
       />
       <AfriqPayHero />

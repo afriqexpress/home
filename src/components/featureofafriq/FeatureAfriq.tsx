@@ -4,7 +4,6 @@ import Transact from "./transaction-history.png"
 import Transfer from "./money-transfer.png"
 import Bubble from "./Group 1000001328.png"
 import Bubble2 from "./Group 1000001329.png"
-// import Dots from "./Dots.png"
 import { useState, useEffect, useRef } from 'react';
 
 function FeatureAfriq() {
@@ -103,7 +102,7 @@ function FeatureAfriq() {
         {[0, 1, 2].map((index) => (
           <div
             key={index}
-            className={`dot-item ${index === activeDot ? 'active' : ''}`}
+            className={`dot-item ${index === 1 ? 'first-item' : ''} ${index === activeDot ? 'active' : ''}`}
             onClick={() => handleDotClick(index)}
           />
         ))}

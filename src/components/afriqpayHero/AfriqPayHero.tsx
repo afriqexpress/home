@@ -81,9 +81,9 @@ function AfriqPayHero() {
         onRequestClose={closeModal}
         contentLabel="Watch Modal"
         ariaHideApp={false}
-        className="modal"
+        className={`modal ${isModalOpen ? 'fadeIn' : ''}`}
       >
-        {/* Modal Content */}
+         <div className="modal-overlay">
         <div className="video_container">
           <div className="close_btn" onClick={closeModal}>
             <img src={Close} alt="" style={{width:15,height:15}} />
@@ -93,7 +93,8 @@ function AfriqPayHero() {
             Your browser does not support the video tag.
           </video>
         </div>
-            </Modal>
+        </div>
+      </Modal>
 
         </div>
         <div className="afriqHero_mobile">

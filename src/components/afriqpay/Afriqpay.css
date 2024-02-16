@@ -49,6 +49,7 @@
     margin-top: 10px;
     font-family: 'Lexend', sans-serif;
     color: #333333;
+    display: block;
 }
 .explore_btn {
     background-color: #6C63FF;
@@ -189,16 +190,19 @@
     font-size: 13px;
     line-height: 20px;
     margin-left: 10px;
-    font-weight: 400;
+    font-weight: 600;
+    color: #111111;
 }
 .mobile_afriq_para {
     font-size: 12px;
     font-weight: 100;
     line-height: 20px;
-    margin-top: 10px;
+    margin-top: 5px;
     font-family: 'Lexend', sans-serif;
     color: #333333;
     text-align: left;
+    display: block;
+    margin-left: 25px;
 }
 .mobile_explore_btn {
     background-color: #6C63FF;
@@ -213,6 +217,10 @@
 }
 .mobile_explore_btn :hover {
     background-color: #867FFF;
+}
+.mobile_text_wraper {
+    display: block;
+    margin-top: 10px;
 }
 }
    

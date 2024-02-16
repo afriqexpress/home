@@ -6,9 +6,7 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import Home from "../pages/home/home";
 import AfriQExpress from "../pages/afriqexpress/afriqexpress";
-import AfriQPay from "../pages/afriqpay/afriqpay";
 import AfriQTrans from "../pages/afriqtrans/afriqtrans";
-import AboutUs from "../pages/aboutus/aboutus";
 import NewAbout from "../pages/newaboutus/NewAbout";
 import AfriqPay from "../pages/afriqpaypage/AfriqPay";
 import AfriqPayExpress from "../pages/afriqpayexpress/AfriqPayExpress";
@@ -18,14 +16,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
-  {
-    path: "/AboutUs",
-    element: <AboutUs />,
-  },
-  {
-    path: "/AfriQPay",
-    element: <AfriQPay />,
-  },
+  // {
+  //   path: "/AboutUs",
+  //   element: <AboutUs />,
+  // },
+  // {
+  //   path: "/AfriQPay",
+  //   element: <AfriQPay />,
+  // },
   {
     path: "/AfriQExpress",
     element: <AfriQExpress />,
@@ -35,11 +33,11 @@ const router = createBrowserRouter([
     element: <AfriQTrans />,
   },
   {
-    path: "/newabout",
+    path: "/aboutus",
     element: <NewAbout />,
   },
   {
-    path:'/afriqpaypage',
+    path:'/afriqpay',
     element: <AfriqPay />
   },
   {

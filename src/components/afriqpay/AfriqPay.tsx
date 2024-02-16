@@ -1,5 +1,5 @@
 import "./Afriqpay.css"
-import Dot from "./Ellipse.png"
+import Dot from "./Line 316.png"
 import Phone from "./phone.png"
 import Background from "./background.png"
 import Base from "./base-image.png"
@@ -40,17 +40,17 @@ function AfriqPay() {
                     <h3 className="afriq_heading2">Simple , Fast & Secure</h3>
                     <div className="text_wrapped">
                     <div className="text_wraper">
-                        <img src={Dot} alt="" style={{ width: 12, height: 12, objectFit: 'contain' }} />
+                        <img src={Dot} alt="" style={{ width: 25, height: 20, objectFit: 'contain' }} />
                         <span className="sub_heading">Send Money to Anyone, Anytime</span>
                     </div>
                     <span className="afriq_para">bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business</span>
                     <div className="text_wraper">
-                        <img src={Dot} alt="" style={{ width: 12, height: 12, objectFit: 'contain' }} />
+                        <img src={Dot} alt="" style={{ width: 25, height: 20, objectFit: 'contain' }} />
                         <span className="sub_heading">Maintain Your Payment History</span>
                     </div>
-                    <span className="afriq_para">bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business</span>
+                    <span className="afriq_para">bring  your Business to  the next Level with us bring  your <br /> Business to  the next Level with us . bring  your Business</span>
                     <div className="text_wraper">
-                        <img src={Dot} alt="" style={{ width: 12, height: 12, objectFit: 'contain' }} />
+                        <img src={Dot} alt="" style={{ width: 25, height: 20, objectFit: 'contain' }} />
                         <span className="sub_heading">Maintain Your Payment History</span>
                     </div>
                     <span className="afriq_para">bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business</span>
@@ -113,17 +113,18 @@ function AfriqPay() {
           </div>
           <div className="mobile_text_wrapped">
                     <div className="mobile_text_wraper">
-                        <img src={Dot} alt="" style={{ width: 10, height: 10, objectFit: 'contain' }} />
+                        <img src={Dot} alt="" style={{ width: 20, height: 10, objectFit: 'contain' }} />
                         <span className="mobile_sub_heading">Send Money to Anyone, Anytime</span>
                     </div>
                     <span className="mobile_afriq_para">bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business</span>
                     <div className="mobile_text_wraper">
-                        <img src={Dot} alt="" style={{ width: 10, height: 10, objectFit: 'contain' }} />
+                        <img src={Dot} alt="" style={{ width: 20, height: 10, objectFit: 'contain' }} />
                         <span className="mobile_sub_heading">Maintain Your Payment History</span>
                     </div>
-                    <span className="mobile_afriq_para">bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business</span>
+                    <span className="mobile_afriq_para">bring  your Business to  the next Level with us bring <br />
+                     your Business to  the next Level with us bring  your Business</span>
                     <div className="mobile_text_wraper">
-                        <img src={Dot} alt="" style={{ width: 10, height: 10, objectFit: 'contain' }} />
+                        <img src={Dot} alt="" style={{ width: 20, height: 10, objectFit: 'contain' }} />
                         <span className="mobile_sub_heading">Maintain Your Payment History</span>
                     </div>
                     <span className="mobile_afriq_para">bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business</span>

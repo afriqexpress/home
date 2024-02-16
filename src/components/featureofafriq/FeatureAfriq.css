@@ -141,6 +141,15 @@
         margin: 0 5px;
         cursor: pointer;
       }
+
+      .first-item {
+        width: 30px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: #ddd; /* Default color for inactive dots */
+        margin: 0 5px;
+        cursor: pointer;
+      }
       
       .dot-item.active {
         background-color: #6C63FF; /* Color for active dot */

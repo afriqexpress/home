@@ -41,7 +41,7 @@ function NewFooter() {
         <div className="product">
         <span className="about_heading">Products</span>
             {/* <span className="sub_text">AfriQExpress</span> */}
-            <a href="/afriqpaypage" className="sub_text">AfriQPay</a>
+            <a href="/afriqpay" className="sub_text">AfriQPay</a>
 
         </div>
         </div>

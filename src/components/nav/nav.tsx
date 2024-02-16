@@ -126,7 +126,7 @@ const Navigation = ({ links }: Props) => {
                                     onMouseLeave={handleDropdownMouseLeave}
                                     >
                                         {/* Your dropdown content goes here */}
-                                        <a href="/afriqpaypage" className="dropdown-link">AfriQPay</a>
+                                        <a href="/afriqpay" className="dropdown-link">AfriQPay</a>
                                         {/* <hr className="horizontal-line"/>
                                         <a href="/afriqpayexpress" className="dropdown-link">AfriQExpress</a> */}
                                     </div>
@@ -170,13 +170,13 @@ const Navigation = ({ links }: Props) => {
                 })} */}
                 <div className="mobile_links">
                     <a className={`mobile_navigation__item ${location.pathname === '/' ? 'active' : ''}`} href="/">Home</a>
-                    <a className={`mobile_navigation__item ${location.pathname === '/newabout' ? 'active' : ''}`}  href="/newabout">About us</a>
-                    <a className={`mobile_navigation__item ${location.pathname === '/afriqpaypage' ? 'active' : ''}`} >our product <img src={DropDown} alt="" className="arrow_logo_mobile"
+                    <a className={`mobile_navigation__item ${location.pathname === '/aboutus' ? 'active' : ''}`}  href="/aboutus">About us</a>
+                    <a className={`mobile_navigation__item ${location.pathname === '/afriqpay' ? 'active' : ''}`} >our product <img src={DropDown} alt="" className="arrow_logo_mobile"
                                      onClick={handleMobileDropDown}
                                     /> </a>
                                       {mobileDrop && 
                                     <div className="mobile_deopDown">
-                                          <a href="/afriqpaypage" className={`mobile_navigation__item ${location.pathname === '/afriqpaypage' ? 'active' : ''}`}>AfriQPay</a>
+                                          <a href="/afriqpay" className={`mobile_navigation__item ${location.pathname === '/afriqpay' ? 'active' : ''}`}>AfriQPay</a>
                                         {/* <a href="/afriqpayexpress" className={`mobile_navigation__item ${location.pathname === '/afriqpayexpress' ? 'active' : ''}`}>AfriQExpress</a> */}
                                     </div>
                                     }
