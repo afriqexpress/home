@@ -1,6 +1,6 @@
 .info {
-    height: 800px;
     position: relative;
+    padding-bottom: 20px;
 }
 
 .info_one {
@@ -22,8 +22,8 @@
     font-weight: 200;
 }
 .text_wrap {
-    width: 65%;
-    margin-left: 18%;
+    /* width: 65%; */
+    margin-left: 6%;
     margin-top: 30px;
 }
 .image_info {
@@ -45,7 +45,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        ;position: relative;
+        position: relative;
     }
     .mobile_info_one {
         display: flex;

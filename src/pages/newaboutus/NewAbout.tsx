@@ -12,8 +12,8 @@ function NewAbout() {
           <Nav
         links={[
           { link: "/", name: "Home" },
-          { link: "#products", name: "Our Products" },
-          { link: "/newabout", name: "About US", special: true },
+          { link: "#products", name: "Nos Produits" },
+          { link: "/aboutus", name: "A propos de nous", special: true },
         ]}
       />
       <AboutHero />

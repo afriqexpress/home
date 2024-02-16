@@ -38,8 +38,10 @@ function HeroSection() {
             <div className="text_container">
               <div className="moon" ref={moon.ref}>
               <div className="text_wrapper">
-                <h3 className="heading">The Internet Revolution</h3>
-                <p className="paragraph">bring your Business to the next Level with us bring your Business to the next Level with us . bring your Business to the next Level with us bring your Business to the next Level with us</p>
+                <h3 className="heading">Réinventer le Quotidien : La Révolution Logicielle</h3>
+                <p className="paragraph">
+                À afriQExpress, nous transcendons les défis technologiques. Notre mission ? Créer des solutions logicielles sur mesure qui répondent aux problèmes les plus épineux, simplifiant la complexité pour libérer votre potentiel. Innovation et simplicité nous guident, propulsant votre parcours vers un futur sans limites.
+                </p>
                 <div className="frog" ref={frog.ref}>
                 <button  className="hero_contact_btn" onClick={handleScrollToContact} >Contact Us</button>
                 </div>

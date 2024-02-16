@@ -10,8 +10,10 @@ function Leaders() {
     return (
         <div className="leaders">
             <div className="leader_texts">
-                <h3 className="leader_heading">Our Leadership Team</h3>
-                <span className="leader_sunheading">bring your Business to the next Level with us bring your Business to the next Level with us</span>
+                <h3 className="leader_heading">Notre équipe</h3>
+                <span className="leader_sunheading">
+                Notre équipe est prête à faire passer votre entreprise au niveau supérieur
+                </span>
             </div>
             <div className="photo_container">
                 <div className="image-container">

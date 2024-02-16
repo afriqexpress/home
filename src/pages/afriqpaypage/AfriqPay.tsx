@@ -11,8 +11,8 @@ function AfriqPay() {
     <Nav
         links={[
           { link: "/", name: "Home" },
-          { link: "#products", name: "Our Products" },
-          { link: "/aboutus", name: "About US", special: true },
+          { link: "#products", name: "Nos Produits" },
+          { link: "/aboutus", name: "A propos de nous", special: true },
         ]}
       />
       <AfriqPayHero />

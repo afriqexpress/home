@@ -12,15 +12,17 @@ function AfriqBusiness() {
         <>
             <div className="afriq_business">
                 <div className="business_heading_container">
-                    <h4 className="business_heading" >Get Many More Features with AfriQPay Business </h4>
+                    <h4 className="business_heading" >
+                    Débloquer un monde de fonctionnalités avancées avec AfriQPay Business
+                         </h4>
                 </div>
                 <div className="business_info">
                     <div className="business_text">
                         <div className="business_text_container">
                             <div className="business_text_heading_container">
-                           <div className="flex"><span className="number">1. </span> <span className="business_text_heading">Generate your own QRcode to get paid</span></div>
+                           <div className="flex"><span className="number">1. </span> <span className="business_text_heading">Générer un QR Code pour Être Payé</span></div>
                                 <span className="business_text_subheading">
-                                bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us
+                                Transformez votre entreprise avec notre générateur de QR Code. Créez un code unique pour votre entreprise et permettez à vos clients de vous payer en un scan. Rapide, élégant, et sans contact
                                 </span>
                             </div>
 
@@ -35,17 +37,17 @@ function AfriqBusiness() {
                                 <img src={Promote} alt="" />
                             </div>
                             <div className="business_text_heading_container">
-                           <div className="flex"><span className="number">2. </span> <span className="business_text_heading">Promote your products with us</span></div>
-                                <span className="business_text_subheading" style={{marginLeft:100}}>
-                                bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us
+                           <div className="flex"><span className="number">2. </span> <span className="business_text_heading">Promouvoir Vos Produits</span></div>
+                                <span className="business_text_subheading" style={{marginLeft:190}}>
+                                Notre application ne se limite pas à gérer votre argent. Utilisez notre plateforme pour promouvoir vos produits directement auprès des utilisateurs de l'application, augmentant ainsi votre visibilité et vos ventes
                                 </span>
                             </div>
                         </div>
                         <div className="business_text_container">
                             <div className="business_text_heading_container">
-                           <div className="flex"><span className="number">3. </span> <span className="business_text_heading">Ask for money by sharing ULR Links</span></div>
+                           <div className="flex"><span className="number">3. </span> <span className="business_text_heading">Toutes les Banques en Un Seul Endroit</span></div>
                                 <span className="business_text_subheading">
-                                bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us
+                                Rassemblez tous vos comptes bancaires en une seule application pour une expérience de gestion de l'argent sans précédent. Visualisez vos soldes, transférez de l'argent entre comptes, et bien plus, sans jamais avoir à changer d'application
                                 </span>
                             </div>
 
@@ -60,9 +62,9 @@ function AfriqBusiness() {
                                 <img src={MobileGirl} alt="" />
                             </div>
                             <div className="business_text_heading_container">
-                           <div className="flex"><span className="number">4. </span> <span className="business_text_heading">with AfriQPay insight in your business transactions</span></div>
-                                <span className="business_text_subheading">
-                                bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us
+                           <div className="flex"><span className="number">4. </span> <span className="business_text_heading">Aperçu de Vos Transactions</span></div>
+                                <span className="business_text_subheading" style={{marginLeft:150}}>
+                                Gardez le contrôle de vos finances avec un aperçu détaillé de toutes vos transactions. Notre application vous offre une transparence totale, vous permettant de suivre chaque dépense et réception d'argent, pour une meilleure gestion financière
                                 </span>
                             </div>
                         </div>
@@ -101,17 +103,19 @@ function AfriqBusiness() {
 
             <div className="mobile_afriq_business">
                 <div className="mobile_business_heading_container">
-                    <h4 className="mobile_business_heading" >Get Many More Features with AfriQPay Business </h4>
+                    <h4 className="mobile_business_heading" >
+                    Débloquer un monde de fonctionnalités avancées avec AfriQPay Business
+                         </h4>
                 </div>
                 <div className="mobile_feature_image">
                     <img src={Mobile1} alt="" />
                 </div>
                 <div className="mobile_feature_subheading">
-                    <span>Generate your own QRcode to get paid</span>
+                    <span>Générer un QR Code pour Être Payé</span>
                 </div>
                 <div className="mobile_feature_texts">
                     <span>
-                    bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business Business to  the next Level with us . bring  your Business
+                    Transformez votre entreprise avec notre générateur de QR Code. Créez un code unique pour votre entreprise et permettez à vos clients de vous payer en un scan. Rapide, élégant, et sans contact
                     </span>
 
                 </div>
@@ -121,11 +125,12 @@ function AfriqBusiness() {
                     <img src={Mobile2} alt="" />
                 </div>
                 <div className="mobile_feature_subheading">
-                    <span>Generate your own QRcode to get paid</span>
+                    <span>Promouvoir Vos Produits</span>
                 </div>
                 <div className="mobile_feature_texts">
                     <span>
-                    bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business Business to  the next Level with us . bring  your Business
+                    Notre application ne se limite pas à gérer votre argent. Utilisez notre plateforme pour promouvoir vos produits directement auprès des utilisateurs de l'application, augmentant ainsi votre visibilité et vos ventes
+                   
                     </span>
 
                 </div>
@@ -135,11 +140,12 @@ function AfriqBusiness() {
                     <img src={Mobile3} alt="" />
                 </div>
                 <div className="mobile_feature_subheading">
-                    <span>Generate your own QRcode to get paid</span>
+                    <span>Toutes les Banques en Un Seul Endroit</span>
                 </div>
                 <div className="mobile_feature_texts">
                     <span>
-                    bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business Business to  the next Level with us . bring  your Business
+                    Rassemblez tous vos comptes bancaires en une seule application pour une expérience de gestion de l'argent sans précédent. Visualisez vos soldes, transférez de l'argent entre comptes, et bien plus, sans jamais avoir à changer d'application
+                   
                     </span>
 
                 </div>
@@ -149,11 +155,12 @@ function AfriqBusiness() {
                     <img src={Mobile4} alt="" />
                 </div>
                 <div className="mobile_feature_subheading">
-                    <span>Generate your own QRcode to get paid</span>
+                    <span>Aperçu de Vos Transactions</span>
                 </div>
                 <div className="mobile_feature_texts">
                     <span>
-                    bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business Business to  the next Level with us . bring  your Business
+                    Gardez le contrôle de vos finances avec un aperçu détaillé de toutes vos transactions. Notre application vous offre une transparence totale, vous permettant de suivre chaque dépense et réception d'argent, pour une meilleure gestion financière
+                    
                     </span>
 
                 </div>

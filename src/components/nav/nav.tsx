@@ -105,17 +105,17 @@ const Navigation = ({ links }: Props) => {
                             <>
                                 <a key={index} href={link.link}   className="navigation__item hamburg_navigation--visible" 
                                 //   onMouseEnter={link.name === "Our Products" ? handleDropdownToggle : undefined}
-                                onMouseEnter={link.name === 'Our Products' ? handleLinkMouseEnter : undefined}
+                                onMouseEnter={link.name === 'Nos Produits' ? handleLinkMouseEnter : undefined}
                                 onMouseLeave={handleLinkMouseLeave}
                                 >{link.name}</a>
-                                {link.name === "Our Products" &&
+                                {link.name === "Nos Produits" &&
                                     <>
                                     <div className="drop_down_logo"
                                       onMouseEnter={handleDropdownMouseEnter}
                                       onMouseLeave={handleDropdownMouseLeave}
                                     >
                                     <img src={DropDown} alt="" className="arrow_logo"
-                                     onMouseEnter={link.name === "Our Products" ? handleDropdownToggle : undefined}
+                                     onMouseEnter={link.name === "Nos Produits" ? handleDropdownToggle : undefined}
                                     />
                                     </div>
                                       </>
@@ -136,7 +136,7 @@ const Navigation = ({ links }: Props) => {
                     })}
                     
                 </div>
-                <div className="contact_btn_nav navigation__item"  onClick={handleScrollToContact}>Contact Us</div>
+                <div className="contact_btn_nav navigation__item"  onClick={handleScrollToContact}>Contactez-nous</div>
                 <button onClick={toggleHamburg} className="navigation__hamburg"><img src={hamburgOpen ? closeIcon : hamburgIcon} alt="" /></button>
 
 
@@ -170,8 +170,8 @@ const Navigation = ({ links }: Props) => {
                 })} */}
                 <div className="mobile_links">
                     <a className={`mobile_navigation__item ${location.pathname === '/' ? 'active' : ''}`} href="/">Home</a>
-                    <a className={`mobile_navigation__item ${location.pathname === '/aboutus' ? 'active' : ''}`}  href="/aboutus">About us</a>
-                    <a className={`mobile_navigation__item ${location.pathname === '/afriqpay' ? 'active' : ''}`} >our product <img src={DropDown} alt="" className="arrow_logo_mobile"
+                    <a className={`mobile_navigation__item ${location.pathname === '/aboutus' ? 'active' : ''}`}  href="/aboutus">A propos de nous</a>
+                    <a className={`mobile_navigation__item ${location.pathname === '/afriqpay' ? 'active' : ''}`} >Nos Produits <img src={DropDown} alt="" className="arrow_logo_mobile"
                                      onClick={handleMobileDropDown}
                                     /> </a>
                                       {mobileDrop && 
@@ -182,7 +182,7 @@ const Navigation = ({ links }: Props) => {
                                     }
                    
                 </div>
-                <div className="contact_btn_nav_mobile navigation__item"  onClick={handleScrollToContact}>Contact Us</div>
+                <div className="contact_btn_nav_mobile navigation__item"  onClick={handleScrollToContact}>Contactez-nous</div>
 
             </nav>
         </>

@@ -21,13 +21,15 @@ function AboutHero() {
     }
   };
   return (
-    <div className="hero_section">
+    <div className="about_hero_section">
         <div className="hero_container desktop_hero">
           <div className="text_container">
             <div className="about_text_wrapper">
-              <h3 className="heading">The Internet Revolution</h3>
-              <p className="paragraph">bring your Business to the next Level with us bring your Business to the next Level with us . bring your Business to the next Level with us bring your Business to the next Level with us</p>
-              <button className="hero_contact_btn" onClick={handleScrollToContact}>Contact Us</button>
+              <h3 className="heading">Qui sommes-nous !</h3>
+              <p className="paragraph_about">
+              Nous sommes afriQExpress, l'incarnation de l'innovation et de la résolution de problèmes à travers le prisme de la technologie SaaS. En tant qu'entreprise dédiée à transformer les défis en opportunités, nous développons des solutions logicielles qui non seulement répondent aux besoins actuels de nos clients mais anticipent également les tendances futures du marché.
+              </p>
+              <button className="hero_contact_btn" onClick={handleScrollToContact}>Contactez-nous</button>
           </div>
           </div>
           <div className="desktop_image_container">

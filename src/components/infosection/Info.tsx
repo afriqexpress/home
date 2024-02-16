@@ -12,9 +12,11 @@ function Info() {
     <div className="info">
         <div className="info_one">
             <div className="text_info">
-                <h3 className="info_heading">we provide tech solution</h3>
+                <h3 className="info_heading">Innovateurs en Technologie SaaS</h3>
                 <div className="text_wrap">
-                <span className="info_para">bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us</span>
+                <span className="info_para">
+                Chez afriQExpress, nous ne nous contentons pas d'offrir des logiciels ; nous transformons radicalement la manière dont les entreprises opèrent. Nos solutions SaaS sur mesure sont conçues pour répondre aux défis spécifiques de chaque client, en alliant innovation constante et facilité d'intégration.
+                </span>
                 </div>
             </div>
             <div className="image_info">
@@ -27,9 +29,11 @@ function Info() {
                     <img src={Group2} alt="" style={{marginLeft:70,marginTop:50,zIndex:99,position:'absolute'}}/>
             </div>
             <div className="text_info">
-                <h3 className="info_heading">we provide tech solution</h3>
+                <h3 className="info_heading">Innovateurs en Technologie SaaS</h3>
                 <div className="text_wrap">
-                <span className="info_para">bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us</span>
+                <span className="info_para">
+                En tant que partenaire stratégique, afriQExpress va au-delà du simple fournisseur de logiciels. Nous nous engageons à comprendre les ambitions uniques de votre entreprise et à les accompagner avec des solutions SaaS évolutives. Notre approche centrée sur le client et notre expertise technologique assurent que votre entreprise reste à l'avant-garde de l'innovation, prête à saisir chaque opportunité de croissance
+                </span>
                 </div>
             </div>
         </div>
@@ -43,9 +47,12 @@ function Info() {
                     <img src={MobileGroup1} alt=""/>
             </div>
             <div className="text_info">
-                <h3 className="mobile_info_heading">we provide tech solution</h3>
+                <h3 className="mobile_info_heading">Innovateurs en Technologie SaaS</h3>
                 <div className="mobile_text_wrap">
-                <span className="mobile_info_para">bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us</span>
+                <span className="mobile_info_para">
+                Chez afriQExpress, nous ne nous contentons pas d'offrir des logiciels ; nous transformons radicalement la manière dont les entreprises opèrent. Nos solutions SaaS sur mesure sont conçues pour répondre aux défis spécifiques de chaque client, en alliant innovation constante et facilité d'intégration.
+                    
+                    </span>
                 </div>
             </div>
           
@@ -56,9 +63,12 @@ function Info() {
                     <img src={MobileGroup2} alt=""/>
             </div>
             <div className="mobile_text_info">
-                <h3 className="mobile_info_heading">we provide tech solution</h3>
+                <h3 className="mobile_info_heading">Innovateurs en Technologie SaaS</h3>
                 <div className="mobile_text_wrap2">
-                <span className="mobile_info_para">bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us</span>
+                <span className="mobile_info_para">
+                En tant que partenaire stratégique, afriQExpress va au-delà du simple fournisseur de logiciels. Nous nous engageons à comprendre les ambitions uniques de votre entreprise et à les accompagner avec des solutions SaaS évolutives. Notre approche centrée sur le client et notre expertise technologique assurent que votre entreprise reste à l'avant-garde de l'innovation, prête à saisir chaque opportunité de croissance
+                    
+                    </span>
                 </div>
             </div>
         </div>

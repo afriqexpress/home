@@ -1,3 +1,14 @@
+
+.about_hero_section {
+    background-color: #6C63FF;
+    position: relative;
+    min-height: 700px;
+    background-image: url("../herosection/grid.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .small_hero {
     position: absolute;
 }
@@ -13,6 +24,15 @@
     width: 100%;
     margin-top: 50px;
     flex-direction: row-reverse;
+}
+.paragraph_about {
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 38px;
+    text-align: left;
+    margin-top: 10px;
+    font-weight: 100;
+    /* width: 120%; */
 }
 .image_container {
     display: none;
@@ -36,6 +56,9 @@
 @media only screen and (max-width: 767px) {
     .desktop_hero{
         display: none;
+    }
+    .about_hero_section  {
+        height: 920px;
     }
     .hero_container {
             flex-direction: column-reverse;
@@ -61,6 +84,15 @@
         }
         .smallimage {
             display: none;
+        }
+        .paragraph_about {
+            color: #FFFFFF;
+            font-size: 16px;
+            line-height: 30px;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: 100;
+            width: 100%;
         }
     
 }

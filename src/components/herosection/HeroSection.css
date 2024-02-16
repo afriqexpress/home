@@ -43,6 +43,8 @@
     text-align: left;
     margin-top: 10px;
     font-weight: 100;
+    width: 120%;
+    /* width: 600px; */
 }
 .hero_contact_btn {
     border: 2px solid #FFFFFF;
@@ -75,7 +77,7 @@
 .heading {
     color: #FFFFFF;
     text-align: left;
-    font-size: 40px;
+    font-size: 36px;
     font-weight:600;
 }
 .hozontal_line_image{
@@ -110,7 +112,7 @@
         align-items: center;
     }
     .hero_section {
-        min-height: 680px;
+        min-height: 920px;
     }
     .horizontal-lines {
        display: none;
@@ -123,11 +125,12 @@
     }
     .paragraph {
         color: #FFFFFF;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 30px;
         text-align: center;
         margin-top: 10px;
         font-weight: 100;
+        width: 100%;
     }
     .text_wrapper {
         width: 75%;

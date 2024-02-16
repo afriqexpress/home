@@ -19,15 +19,16 @@ function NewFooter() {
             <div className="address_container">
             <div className="logo_text">
                 <img src={Tel} alt=""/>
-                <span className="text">(+280)70559093</span>
+                <span className="text">(+228) 91606958, (+31) 618874429</span>   
             </div>
             <div className="logo_text">
                 <img src={Mail} alt=""/>
-                <span className="text">afriqexpress@gmail.com</span>
+                <span className="text">afriqxpress@gmail.com</span>
             </div>
             <div className="logo_text">
                 <img src={Location} alt=""/>
-                <span className="text">Bangalore Chruch street ,Roman Building ,RJ Road 123340</span>
+                <span className="text">Paasheuvelweg8, 1105BH <br />
+                Amsterdam Adoboukome 88, rue, Lome</span>
             </div>
             </div>
             </div>
@@ -35,11 +36,11 @@ function NewFooter() {
         </div>
         <div className="product_wraper">
         <div className="about">
-            <span className="about_heading">About Us</span>
-            <span className="sub_text">Who We Are</span>
+            <span className="about_heading">A propos de nous</span>
+            <span className="sub_text">Qui sommes-nous</span>
         </div>
         <div className="product">
-        <span className="about_heading">Products</span>
+        <span className="about_heading">Produits</span>
             {/* <span className="sub_text">AfriQExpress</span> */}
             <a href="/afriqpay" className="sub_text">AfriQPay</a>
 
@@ -56,7 +57,7 @@ function NewFooter() {
         </div>
         </div>
        <div style={{height:1,backgroundColor:'white',marginTop:30,width:"90%",marginLeft:'5%'}}></div>
-       <div className="disclaimer_text">© 2020 AfriQExpress. All rights reserved. AfriqExpress.net is a registered trademark of AfriQExpress.</div>
+       <div className="disclaimer_text">© 2020 AfriQExpress. Tous droits réservés. AfriqExpress.net est une marque déposée d'AfriQExpress</div>
     </div>
   )
 }

@@ -42,58 +42,76 @@ function FeatureAfriq() {
     <>
     <div className="feature_afriq">
         <div className="feature_heading_container">
-        <h3 className="feature_heading">Features of AfriQPay</h3>
-        <span className="feature_sub_heading">bring your Business to the next Level with us bring your Business to the next Level with us</span>
+        <h3 className="feature_heading">Découvrez AfriQPay</h3>
+        <span className="feature_sub_heading">
+        Découvrez comment nous rendons les transactions financières non seulement possibles mais également agréables, à tout moment et partout
+
+          </span>
         </div>
         <div className="feature_info">
             <div className="payment_box">
                 <img src={QR} alt="" />
-                <span className="payment_heading">Payent History</span>
+                <span className="payment_heading">Scanner et Payer</span>
                 <div className="paragraph_span">
-                <span>bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us</span>
+                <span>
+                Oubliez les longues numéros de compte et les erreurs de transfert. Avec QR Pay, un simple scan suffit pour régler vos achats, factures ou rembourser un ami, combinant commodité et sécurité.
+                  </span>
            </div>
             </div>
             <div className="payment_box">
                 <img src={Transfer} alt="" />
-                <span className="payment_heading">Payent History</span>
+                <span className="payment_heading">Envoyer de l'Argent</span>
                 <div className="paragraph_span">
-                <span>bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us</span>
+                <span>
+                Envoyez de l'argent instantanément avec juste quelques clics. Notre application assure que votre argent atteint sa destination rapidement et en toute sécurité
+          
+                  </span>
            </div>
             </div>
             <div className="payment_box">
                 <img src={Transact} alt="" />
-                <span className="payment_heading">Payent History</span>
+                <span className="payment_heading">Demander de l'Argent</span>
                 <div className="paragraph_span">
-                <span>bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us</span>
+                <span>
+                Avec la fonctionnalité de demande d'argent, recevez les paiements que vous attendez de manière simple et directe. Parfait pour partager les frais entre amis ou recevoir des paiements pour services rendus
+                  </span>
            </div>
             </div>
         </div>
        </div>
        <div className="mobile_feature_afriq">
         <div className="feature_heading_container mobile_feature_heading_container">
-        <h3 className="feature_heading mobile_feature_heading">Features of AfriQPay</h3>
-        <span className="feature_sub_heading mobile_feature_sub_heading">For any kind or quarry please flee free to contact us</span>
+        <h3 className="feature_heading mobile_feature_heading">Découvrez AfriQPay</h3>
+        <span className="feature_sub_heading mobile_feature_sub_heading">
+        Découvrez comment nous rendons les transactions financières non seulement possibles mais également agréables, à tout moment et partout
+        </span>
         </div>
         <div className="mobile_feature_info" ref={featureRef}>
             <div className="mobile_payment_box">
                 <img src={QR} alt="" />
-                <span className="mobile_payment_heading">Payent History</span>
+                <span className="mobile_payment_heading">Scanner et Payer</span>
                 <div className="mobile_paragraph_span">
-                <span>bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us</span>
+                <span>
+                Oubliez les longues numéros de compte et les erreurs de transfert. Avec QR Pay, un simple scan suffit pour régler vos achats, factures ou rembourser un ami, combinant commodité et sécurité.
+                </span>
            </div>
             </div>
             <div className="mobile_payment_box">
                 <img src={Transfer} alt="" />
-                <span className="mobile_payment_heading">Payent History</span>
+                <span className="mobile_payment_heading">Envoyer de l'Argent</span>
                 <div className="mobile_paragraph_span">
-                <span>bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us</span>
+                <span>
+                Envoyez de l'argent instantanément avec juste quelques clics. Notre application assure que votre argent atteint sa destination rapidement et en toute sécurité
+                </span>
            </div>
             </div>
             <div className="mobile_payment_box">
                 <img src={Transact} alt="" />
-                <span className="mobile_payment_heading">Payent History</span>
+                <span className="mobile_payment_heading">Demander de l'Argent</span>
                 <div className="mobile_paragraph_span">
-                <span>bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us bring your Business to the next Level with us</span>
+                <span>
+                Avec la fonctionnalité de demande d'argent, recevez les paiements que vous attendez de manière simple et directe. Parfait pour partager les frais entre amis ou recevoir des paiements pour services rendus
+                </span>
            </div>
             </div>
         </div>

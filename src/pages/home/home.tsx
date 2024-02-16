@@ -6,7 +6,7 @@ import Nav from "../../components/nav/nav";
 // import headerImage from "/img/svg/tech.gif";
 // import products from "./products.json";
 import HeroSection from "../../components/herosection/HeroSection"
-import Partner from "../../components/partner/Partner";
+// import Partner from "../../components/partner/Partner";
 import AfriQPay from "../../components/afriqpay/AfriqPay";
 import Contact from "../../components/contact/Contact";
 import NewFooter from "../../components/newfooter/NewFooter";
@@ -18,8 +18,8 @@ const Home = () => {
       <Nav
         links={[
           { link: "/", name: "Home" },
-          { link: "", name: "Our Products" },
-          { link: "/aboutus", name: "About US", special: true },
+          { link: "", name: "Nos Produits" },
+          { link: "/aboutus", name: "A propos de nous", special: true },
         ]}
       />
       {/* <Header
@@ -35,7 +35,7 @@ const Home = () => {
        <HeroSection />
        </ParallaxProvider>
      
-      <Partner />
+      {/* <Partner /> */}
       <AfriQPay />
       <Contact />
       <NewFooter />
