@@ -10,20 +10,22 @@
 .text_info {
     flex: 6;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .info_heading {
     color: #6C63FF;
 }
 .info_para {
     color: #333333;
-    font-size: 22px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 35px;
     margin-top: 20px;
     font-weight: 200;
 }
 .text_wrap {
     /* width: 65%; */
-    margin-left: 6%;
     margin-top: 30px;
 }
 .image_info {
@@ -97,16 +99,19 @@
         line-height: 25px;
         margin-top: 20px;
         font-weight: 200;
+        margin-top: 10px;
     }
     .mobile_text_wrap {
         width: 80%;
         margin-left: 10%;
         text-align: center;
+        margin-top: 10px;
 
     }
     .mobile_text_wrap2 {
         width: 80%;
         text-align: center;
+        margin-top: 10px;
 
     }
 }

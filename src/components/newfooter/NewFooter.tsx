@@ -27,8 +27,8 @@ function NewFooter() {
             </div>
             <div className="logo_text">
                 <img src={Location} alt=""/>
-                <span className="text">Paasheuvelweg8, 1105BH <br />
-                Amsterdam Adoboukome 88, rue, Lome</span>
+                <span className="text">Paasheuvelweg8, 1105BH  Amsterdam  <br />
+                   Adoboukome 88, rue, Lome</span>
             </div>
             </div>
             </div>
@@ -37,7 +37,7 @@ function NewFooter() {
         <div className="product_wraper">
         <div className="about">
             <span className="about_heading">A propos de nous</span>
-            <span className="sub_text">Qui sommes-nous</span>
+            <a href="/aboutus" className="sub_text">Qui sommes-nous</a>
         </div>
         <div className="product">
         <span className="about_heading">Produits</span>
