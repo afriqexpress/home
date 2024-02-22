@@ -26,7 +26,7 @@ function AboutHero() {
           <div className="text_container">
             <div className="about_text_wrapper">
               <h3 className="heading">Qui sommes-nous !</h3>
-              <p className="paragraph">
+              <p className="paragraph_about">
               Nous sommes afriQExpress, l'incarnation de l'innovation et de la résolution de problèmes à travers le prisme de la technologie SaaS. En tant qu'entreprise dédiée à transformer les défis en opportunités, nous développons des solutions logicielles qui non seulement répondent aux besoins actuels de nos clients mais anticipent également les tendances futures du marché.
               </p>
               <button className="hero_contact_btn" onClick={handleScrollToContact}>Contactez-nous</button>

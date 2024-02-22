@@ -111,6 +111,16 @@
 .photo_container_mobile::-webkit-scrollbar {
   display: none; /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
 }
+.photo_container_mobile {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+/* Firefox specific styling */
+.photo_container_mobile:hover {
+  scrollbar-color: transparent transparent;
+}
+
 
 .image-container {
     flex: 0 0 auto; /* Disable flex-grow, flex-shrink, and set flex-basis to auto */

@@ -79,12 +79,20 @@
         overflow-x: auto;
         white-space: nowrap;
         display: flex;
-        gap: 20px; /* Adjust the gap as needed */
+        gap: 20px; 
         margin-top: 50px;
     }
     .mobile_feature_info::-webkit-scrollbar {
         display: none; /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
     }
+    .mobile_feature_info {
+        scrollbar-width: thin;
+        scrollbar-color: transparent transparent;
+    }
+    .mobile_feature_info:hover {
+        scrollbar-color: transparent transparent;
+      }
+      
     
     .mobile_payment_box {
         flex: 0 0 auto;

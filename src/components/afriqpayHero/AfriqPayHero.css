@@ -30,8 +30,8 @@
 .afriq_button_container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 90%;
+    /* justify-content: space-between;
+    width: 90%; */
     margin-top: 10px;
 }
 .arriq_explore_btn {
@@ -58,6 +58,7 @@
     border: 2px solid #6C63FF;
     display: flex;
     align-items: center;
+    margin-left: 10%;
 }
 .arriq_watch_btn:hover {
     background-color: #FFFFFF;

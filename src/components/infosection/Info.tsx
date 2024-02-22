@@ -26,7 +26,7 @@ function Info() {
         </div>
         <div className="info_one">
             <div className="image_info">
-                    <img src={Group2} alt="" style={{marginLeft:70,marginTop:50,zIndex:99,position:'absolute'}}/>
+                    <img src={Group2} alt="" style={{marginLeft:0,marginTop:50,zIndex:99,position:'absolute'}}/>
             </div>
             <div className="text_info">
                 <h3 className="info_heading">Innovateurs en Technologie SaaS</h3>
