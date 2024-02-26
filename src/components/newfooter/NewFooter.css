@@ -85,8 +85,9 @@
     }
     .footer {
         background-color: #012D73;
-        height: 600px;
+        height: 520px;
         margin-top: 50px;
+        padding-bottom: 10px;
     
 }
 .disclaimer_text {
@@ -118,11 +119,12 @@
     margin-left: 100px;
 }
 .address_info {
-    margin-left: 40px;
+    margin-left: 0px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 10px;
 }
 .about {
     flex: 3;
@@ -138,5 +140,8 @@
     margin-left: 30px;
     font-weight: 100;
     opacity: 0.7;
+}
+.footerLogo {
+    height: 60px;
 }
 }

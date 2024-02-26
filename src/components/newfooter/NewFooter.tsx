@@ -1,5 +1,5 @@
 import "./NewFooter.css"
-import Logo from "./footerLogo.png"
+import Logo from "./Logo_Transparency (1).png"
 import Tel from "./tel.png"
 import Location from "./loc.png"
 import Mail from "./mail.png"
@@ -19,7 +19,7 @@ function NewFooter() {
             <div className="address_container">
             <div className="logo_text">
                 <img src={Tel} alt=""/>
-                <span className="text">(+228) 91606958, (+31) 618874429</span>   
+                <span className="text">(+228)  9783864, (+31) 618874429</span>   
             </div>
             <div className="logo_text">
                 <img src={Mail} alt=""/>
@@ -57,7 +57,7 @@ function NewFooter() {
         </div>
         </div>
        <div style={{height:1,backgroundColor:'white',marginTop:30,width:"90%",marginLeft:'5%'}}></div>
-       <div className="disclaimer_text">© 2020 AfriQExpress. Tous droits réservés. AfriqExpress.net est une marque déposée d'AfriQExpress</div>
+       <div className="disclaimer_text">© {new Date().getFullYear()}  AfriQExpress. Tous droits réservés. AfriqExpress.net est une marque déposée d'AfriQExpress</div>
     </div>
   )
 }

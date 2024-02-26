@@ -14,9 +14,8 @@ function Contact() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    console.log(name, phone_number);
 
-    const prodBaseUrl = "http://afriqpay-api.afriqexpress.net/api/v1/";
+    // const prodBaseUrl = "http://afriqpay-api.afriqexpress.net/api/v1";
 
 
 
@@ -44,11 +43,18 @@ function Contact() {
     const handleSubmit = async (e: any) => {
         e.preventDefault();
 
+        // Validate fields
+        if (!name || !phone_number || !message) {
+            toast.error('Un ou plusieurs champs obligatoires ne sont pas remplis.');
+            return;
+        }
+
         try {
-            const response = await axios.post(`${prodBaseUrl}send_home_message/send_home_message/`,
+
+            const response = await axios.post('http://afriqpay-api.afriqexpress.net/api/v1/send_home_message/',
                 {
                     name,
-                    email,
+                    email: email || null,
                     phone_number,
                     message,
                 },
@@ -58,19 +64,24 @@ function Contact() {
                     },
                 }
             );
-
-            console.log(name, phone_number, email, message);
             if (response) {
                 toast.success('Form submitted successfully!');
                 console.log('Form submitted successfully!');
                 console.log(response);
+                setName('');
+                setPhoneNumber('');
+                setEmail('');
+                setMessage('');
 
-            } else {
-                toast.error('Form submission failed. Please try again.');
+            }
+            else {
+
+                toast.error("Quelque chose n'a pas fonctionné, réessayez plus tard ou envoyez-nous directement un courriel à afriqxpress@gmail.com.");
                 console.error('Form submission failed. Please try again.');
+
             }
         } catch (error) {
-            toast.error('An error occurred. Please try again.');
+            toast.error("Quelque chose n'a pas fonctionné, réessayez plus tard ou envoyez-nous directement un courriel à afriqxpress@gmail.com");
             console.error('An error occurred. Please try again.', error);
         }
     };
@@ -121,7 +132,7 @@ function Contact() {
                         <button className="submit_btn" onClick={handleSubmit}>Soumettre</button>
                     </div>
                     <div className="mobile_fields_container">
-                    
+
                         <div className="mobile_input_boxes">
                             <div className="mobile_name_box">
                                 <label className="label">Prénom  <img src={Star} /> </label>
