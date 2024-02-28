@@ -51,7 +51,7 @@ function Contact() {
 
         try {
 
-            const response = await axios.post('http://afriqpay-api.afriqexpress.net/api/v1/send_home_message/',
+            const response = await axios.post('https://afriqpay-api.afriqexpress.net/api/v1/send_home_message/',
                 {
                     name,
                     email: email || null,

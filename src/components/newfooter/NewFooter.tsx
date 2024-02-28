@@ -1,5 +1,5 @@
 import "./NewFooter.css"
-import Logo from "./Logo_Transparency (1).png"
+import Logo from "./Footer_Logo.png"
 import Tel from "./tel.png"
 import Location from "./loc.png"
 import Mail from "./mail.png"
