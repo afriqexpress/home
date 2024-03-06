@@ -7,12 +7,15 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useState } from "react"
 import axios from 'axios';
+import { useTranslation } from "react-i18next"
 
 function Contact() {
     const [name, setName] = useState('');
     const [phone_number, setPhoneNumber] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
+
+    const { t } = useTranslation();
 
 
     // const prodBaseUrl = "http://afriqpay-api.afriqexpress.net/api/v1";
@@ -98,18 +101,18 @@ function Contact() {
                 />
                 <div className="contact_form">
                     <div className="contact_headings">
-                        <h3 className="heading_contact">Nous Contacter</h3>
-                        <span className="subheading_contact">Pour toute question, n'hésitez pas à nous contacter.</span>
+                        <h3 className="heading_contact">{t('Nous Contacter')}</h3>
+                        <span className="subheading_contact">{t("Pour toute question, n'hésitez pas à nous contacter.")}</span>
                     </div>
                     <div className="fields_container">
                         <div className="input_boxes">
                             <div className="name_box">
-                                <label className="label">Prénom <img src={Star} style={{ marginBottom: 5, width: 7, height: 7 }} /> </label>
+                                <label className="label">{t("Prénom")} <img src={Star} style={{ marginBottom: 5, width: 7, height: 7 }} /> </label>
                                 <input type="text" className="input" name="name" value={name} onChange={handleChange} required />
 
                             </div>
                             <div className="name_box_phone">
-                                <label className="label">Numéro de téléphone <img src={Star} style={{ marginBottom: 5, width: 7, height: 7 }} /> </label>
+                                <label className="label">{t("Numéro de téléphone")} <img src={Star} style={{ marginBottom: 5, width: 7, height: 7 }} /> </label>
                                 <input type="text" className="input" name="phone_number" value={phone_number} onChange={handleChange} required />
 
                             </div>
@@ -129,7 +132,7 @@ function Contact() {
                         </div>
                     </div>
                     <div className="submit">
-                        <button className="submit_btn" onClick={handleSubmit}>Soumettre</button>
+                        <button className="submit_btn" onClick={handleSubmit}>{t("Soumettre")}</button>
                     </div>
                     <div className="mobile_fields_container">
 
@@ -140,7 +143,7 @@ function Contact() {
 
                             </div>
                             <div className="mobile_name_box_phone">
-                                <label className="label">Numéro de téléphone <img src={Star} /> </label>
+                                <label className="label">{t("Numéro de téléphone")} <img src={Star} /> </label>
                                 <input type="text" className="mobile_input" name="phone_number" value={phone_number} onChange={handleChange} required />
 
                             </div>
@@ -154,7 +157,7 @@ function Contact() {
                                 <textarea className="mobile_input_msg" name="message" value={message} onChange={handleChange} required />
                             </div>
                             <div className="submit_mobile">
-                                <button className="submit_btn_mobile" onClick={handleSubmit}>Soumettre</button>
+                                <button className="submit_btn_mobile" onClick={handleSubmit}>{t("Soumettre")}</button>
                             </div>
 
                         </div>

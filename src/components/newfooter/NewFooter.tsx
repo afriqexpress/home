@@ -3,12 +3,15 @@ import Logo from "./Footer_Logo.png"
 import Tel from "./tel.png"
 import Location from "./loc.png"
 import Mail from "./mail.png"
+import { useTranslation } from "react-i18next"
 // import FB from "./fblogo.png"
 // import Linked from "./linkedin_logo.png"
 // import Pexel from "./pexel.png"
 // import X from "./teiter_logo.png"
  
 function NewFooter() {
+    const { t } = useTranslation();
+
   return (
     
     <div className="footer">
@@ -36,11 +39,11 @@ function NewFooter() {
         </div>
         <div className="product_wraper">
         <div className="about">
-            <span className="about_heading">A propos de nous</span>
-            <a href="/aboutus" className="sub_text">Qui sommes-nous</a>
+            <span className="about_heading">{t("A propos de nous")}</span>
+            <a href="/aboutus" className="sub_text">{t("Qui sommes-nous")}</a>
         </div>
         <div className="product">
-        <span className="about_heading">Produits</span>
+        <span className="about_heading">{t("Produits")}</span>
             {/* <span className="sub_text">AfriQExpress</span> */}
             <a href="/afriqpay" className="sub_text">AfriQPay</a>
 
@@ -57,7 +60,7 @@ function NewFooter() {
         </div>
         </div>
        <div style={{height:1,backgroundColor:'white',marginTop:30,width:"90%",marginLeft:'5%'}}></div>
-       <div className="disclaimer_text">© {new Date().getFullYear()}  AfriQExpress. Tous droits réservés. AfriqExpress.net est une marque déposée d'AfriQExpress</div>
+       <div className="disclaimer_text">© {new Date().getFullYear()}  {t("AfriQExpress. Tous droits réservés. AfriqExpress.net est une marque déposée d'AfriQExpress")}</div>
     </div>
   )
 }

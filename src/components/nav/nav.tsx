@@ -6,6 +6,7 @@ import hamburgIcon from "./menu.svg";
 import closeIcon from "./close.svg";
 import DropDown from "./dropdown.png"
 import { useLocation } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
 
 
 
@@ -18,6 +19,7 @@ interface Props {
 }
 
 const Navigation = ({ links }: Props) => {
+    const { t } = useTranslation();
     const [hamburgOpen, setHamburgOpen] = useState<boolean>(false);
     const [showNav, setShowNav] = useState<boolean>(true);
     const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -105,10 +107,10 @@ const Navigation = ({ links }: Props) => {
                             <>
                                 <a key={index} href={link.link}   className="navigation__item hamburg_navigation--visible" 
                                 //   onMouseEnter={link.name === "Our Products" ? handleDropdownToggle : undefined}
-                                onMouseEnter={link.name === 'Nos Produits' ? handleLinkMouseEnter : undefined}
+                                onMouseEnter={link.name === t('Nos Produits') ? handleLinkMouseEnter : undefined}
                                 onMouseLeave={handleLinkMouseLeave}
                                 >{link.name}</a>
-                                {link.name === "Nos Produits" &&
+                                {link.name === t("Nos Produits") &&
                                     <>
                                     <div className="drop_down_logo"
                                       onMouseEnter={handleDropdownMouseEnter}
@@ -136,7 +138,7 @@ const Navigation = ({ links }: Props) => {
                     })}
                     
                 </div>
-                <div className="contact_btn_nav navigation__item"  onClick={handleScrollToContact}>Contactez-nous</div>
+                <div className="contact_btn_nav navigation__item"  onClick={handleScrollToContact}>{t('Contactez-nous')}</div>
                 <button onClick={toggleHamburg} className="navigation__hamburg"><img src={hamburgOpen ? closeIcon : hamburgIcon} alt="" /></button>
 
 
@@ -170,8 +172,8 @@ const Navigation = ({ links }: Props) => {
                 })} */}
                 <div className="mobile_links">
                     <a className={`mobile_navigation__item ${location.pathname === '/' ? 'active' : ''}`} href="/">Home</a>
-                    <a className={`mobile_navigation__item ${location.pathname === '/aboutus' ? 'active' : ''}`}  href="/aboutus">A propos de nous</a>
-                    <a className={`mobile_navigation__item ${location.pathname === '/afriqpay' ? 'active' : ''}`} >Nos Produits <img src={DropDown} alt="" className="arrow_logo_mobile"
+                    <a className={`mobile_navigation__item ${location.pathname === '/aboutus' ? 'active' : ''}`}  href="/aboutus">{t('A propos de nous')}</a>
+                    <a className={`mobile_navigation__item ${location.pathname === '/afriqpay' ? 'active' : ''}`} >{t('Nos Produits')} <img src={DropDown} alt="" className="arrow_logo_mobile"
                                      onClick={handleMobileDropDown}
                                     /> </a>
                                       {mobileDrop && 
@@ -182,7 +184,7 @@ const Navigation = ({ links }: Props) => {
                                     }
                    
                 </div>
-                <div className="contact_btn_nav_mobile navigation__item"  onClick={handleScrollToContact}>Contactez-nous</div>
+                <div className="contact_btn_nav_mobile navigation__item"  onClick={handleScrollToContact}>{t('Contactez-nous')}</div>
 
             </nav>
         </>

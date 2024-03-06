@@ -15,11 +15,16 @@ import { useEffect, useState } from "react"
 import BubbleImage1 from "./bubble_image_afriq.png"
 import BubbleImage2 from "./bubble_image_afriq2.png"
 import BubbleimageMobile from "./Group 1000001333.png"
+import Mockup from "./mobile_mobile.png"
+import { useTranslation } from "react-i18next"
 
 function AfriqPay() {
     const images = [Frame1, Frame2, Frame3, Frame4, Frame5];
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const { t } = useTranslation();
+
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -37,20 +42,20 @@ function AfriqPay() {
                 <div className="afrix_text_container">
                     <div className="afriz_text_wraper">
                         <h3 className="afriq_heading">AfriQPay</h3>
-                        <h3 className="afriq_heading2">Simple,Rapide & Sécurisé</h3>
+                        <h3 className="afriq_heading2">{t('Simple, Rapide & Sécurisé')}</h3>
                         <div className="text_wrapped">
                             <div className="text_wraper">
                                 <img src={Dot} alt="" style={{ width: 25, height: 20, objectFit: 'contain' }} />
-                                <span className="sub_heading">Les Transferts Instantanés</span>
+                                <span className="sub_heading">{t('Les Transferts Instantanés')}</span>
                             </div>
                             <span className="afriq_para">
-                            facilitent la gestion de vos finances. En quelques clics, envoyez de l'argent à vos amis, votre famille, ou toute autre personne en quelques secondes.
+                            {t("facilitent la gestion de vos finances. En quelques clics, envoyez de l'argent à vos amis, votre famille, ou toute autre personne en quelques secondes.")}
                             </span>
                             <div className="text_wraper">
                                 <img src={Dot} alt="" style={{ width: 25, height: 20, objectFit: 'contain' }} />
-                                <span className="sub_heading">Les Demandes Intelligentes</span>
+                                <span className="sub_heading">{t('Les Demandes Intelligentes')}</span>
                             </div>
-                            <span className="afriq_para">révolutionnent la manière dont vous partagez les dépenses.</span>
+                            <span className="afriq_para">{t("révolutionnent la manière dont vous partagez les dépenses.")}</span>
                             {/* <div className="text_wraper">
                                 <img src={Dot} alt="" style={{ width: 25, height: 20, objectFit: 'contain' }} />
                                 <span className="sub_heading">Maintain Your Payment History</span>
@@ -58,7 +63,7 @@ function AfriqPay() {
                             <span className="afriq_para">bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business</span> */}
                         </div>
                     </div>
-                    <button className="explore_btn"><a style={{textDecoration:'none',color:'white'}}  href="/afriqpay">Explorer</a></button>
+                    <button className="explore_btn"><a style={{textDecoration:'none',color:'white'}}  href="/afriqpay">{t('Explorer')}</a></button>
                 </div>
 
                 <div className="afrix_image_container">
@@ -90,12 +95,15 @@ function AfriqPay() {
             <div className="afriq_mobile">
                 <div className="mobile_heading">
                     <h3 className="mobile_afriq_heading">AfriQPay</h3>
-                    <p className="mobile_afriq_heading2">Simple , Rapide & Sécurisé</p>
+                    <p className="mobile_afriq_heading2">{t("Simple, Rapide & Sécurisé")}</p>
                 </div>
                 <div className="mobile_image_container">
                     <div>
                         <div className="mobile_phone_image_container">
-                            <img src={Mobile} alt="" className="mobile_mobile_img" />
+                            <div style={{position:'absolute',left:-7,top:-10,zIndex:1}}>
+                            <img src={Mockup} alt="" className="mobile_mobile_img" />
+                            </div>
+                            <img src={Mobile} alt="" />
                             <div className="mobile_frames_images">
                                 <img
                                     src={images[currentImageIndex]}
@@ -116,23 +124,23 @@ function AfriqPay() {
                 <div className="mobile_text_wrapped">
                     <div className="mobile_text_wraper">
                         <img src={Dot} alt="" style={{ width: 20, height: 10, objectFit: 'contain' }} />
-                        <span className="mobile_sub_heading">Les Transferts Instantanés</span>
+                        <span className="mobile_sub_heading">{t("Les Transferts Instantanés")}</span>
                     </div>
                     <span className="mobile_afriq_para">
-                    facilitent la gestion de vos finances. En quelques clics, envoyez de l'argent à vos amis, votre famille, ou toute autre personne en quelques secondes.
+                    {t("facilitent la gestion de vos finances. En quelques clics, envoyez de l'argent à vos amis, votre famille, ou toute autre personne en quelques secondes.")}
                         </span>
                     <div className="mobile_text_wraper">
                         <img src={Dot} alt="" style={{ width: 20, height: 10, objectFit: 'contain' }} />
-                        <span className="mobile_sub_heading">Les Demandes Intelligentes</span>
+                        <span className="mobile_sub_heading">{t("Les Demandes Intelligentes")}</span>
                     </div>
-                    <span className="mobile_afriq_para">révolutionnent la manière dont vous partagez les dépenses</span>
+                    <span className="mobile_afriq_para">{t("révolutionnent la manière dont vous partagez les dépenses.")}</span>
                     {/* <div className="mobile_text_wraper">
                         <img src={Dot} alt="" style={{ width: 20, height: 10, objectFit: 'contain' }} />
                         <span className="mobile_sub_heading">Maintain Your Payment History</span>
                     </div>
                     <span className="mobile_afriq_para">bring  your Business to  the next Level with us bring  your Business to  the next Level with us . bring  your Business</span> */}
                 </div>
-                <button className="mobile_explore_btn"><a style={{textDecoration:'none',color:'white'}}  href="/afriqpay">Explorer</a></button>
+                <button className="mobile_explore_btn"><a style={{textDecoration:'none',color:'white'}}  href="/afriqpay">{t("Explorer")}</a></button>
                 <div className="mobile_bubble_explore">
                     <img src={BubbleimageMobile} />
                 </div>

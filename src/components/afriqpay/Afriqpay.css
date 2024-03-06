@@ -146,6 +146,10 @@
         margin-top: 80px;
         z-index: 1;
     }
+    .mobile_mobile_img {
+        width:150px;
+        height: 320px;
+    }
     .mobile_phone_image_container {
         position: relative;
     }
@@ -156,13 +160,13 @@
     }
   .mobile_background_image_container {
     position: absolute;
-    top: 114px;
+    top: 134px;
     left: -65px;
     z-index: -1;
   }
   .mobile_base_image_container {
     position: absolute;
-    top: 270px;
+    top: 290px;
     z-index: 99;
     left: -60px;
     z-index: 0;

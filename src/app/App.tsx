@@ -10,6 +10,8 @@ import AfriQTrans from "../pages/afriqtrans/afriqtrans";
 import NewAbout from "../pages/newaboutus/NewAbout";
 import AfriqPay from "../pages/afriqpaypage/AfriqPay";
 import AfriqPayExpress from "../pages/afriqpayexpress/AfriqPayExpress";
+import { I18nextProvider } from "react-i18next";
+import i18n from "../../i18n";
 
 const router = createBrowserRouter([
   {
@@ -59,11 +61,13 @@ function App() {
     // <AnimatePresence>
     // <RouterProvider router={router}/>
     // </AnimatePresence>
+    <I18nextProvider i18n={i18n}>
     <AnimatePresence>
     <motion.div  {...slideInTransition}  >
       <RouterProvider router={router}/>
     </motion.div>
   </AnimatePresence>
+  </I18nextProvider>
   );
 }
 
