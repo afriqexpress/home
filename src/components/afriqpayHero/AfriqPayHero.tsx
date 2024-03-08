@@ -13,11 +13,14 @@ import Modal from 'react-modal';
 import Close from "../afriqexpresshero/red_icon.png"
 import { useState } from "react"
 import { motion } from "framer-motion"
+import { useTranslation } from "react-i18next"
 
 function AfriqPayHero() {
     const [isModalOpen, setModalOpen] = useState(false);
     const [ismobileModalopen, setIsmobileModalOpen] = useState(false)
     const [isMobileImagesVisible, setMobileImagesVisible] = useState(false);
+
+    const { t } = useTranslation();
 
     const mobileOpenModal = ()=> {
         setIsmobileModalOpen(true)
@@ -43,11 +46,11 @@ function AfriqPayHero() {
                 <div className="afriq_text_container">
                 <span className="arriq_heading">AfriQPay</span>
                 <span className="ariq_paragraph">
-                Conçue pour simplifier chaque aspect de vos transactions monétaires, notre solution transforme votre smartphone en un puissant portefeuille électronique, permettant des opérations fluides, rapides et sécurisées.
+                {t("Conçue pour simplifier chaque aspect de vos transactions monétaires, notre solution transforme votre smartphone en un puissant portefeuille électronique, permettant des opérations fluides, rapides et sécurisées.")}
                 </span>
                 <div className="afriq_button_container">
-                    <button className="arriq_explore_btn" onClick={() => window.open('https://afriqpay.afriqexpress.net/')} >Explorer</button>
-                    <button className="arriq_watch_btn" onClick={openModal}><img src={Watch} alt="" className="watch_image" />Regarder</button>
+                    <button className="arriq_explore_btn" onClick={() => window.open('https://afriqpay.afriqexpress.net/')} >{t("Explorer")}</button>
+                    <button className="arriq_watch_btn" onClick={openModal}><img src={Watch} alt="" className="watch_image" />{t("Regarder")}</button>
 
 
                 </div>
@@ -119,7 +122,7 @@ function AfriqPayHero() {
         className="modal_mobile"
       >
       
-        <div className="video_container">
+        <div className="video_container" style={{marginTop:50}}>
         
           <div className="close_btn" onClick={closeMobileModal}>
             <img src={Close} alt="" style={{width:15,height:15}} />
@@ -133,11 +136,11 @@ function AfriqPayHero() {
             <div className="mobile_text_container">
             <span className="mobile_arriq_heading">AfriQPay</span>
                 <span className="mobile_ariq_paragraph">
-                Conçue pour simplifier chaque aspect de vos transactions monétaires, notre solution transforme votre smartphone en un puissant portefeuille électronique, permettant des opérations fluides, rapides et sécurisées.
+                {t("Conçue pour simplifier chaque aspect de vos transactions monétaires, notre solution transforme votre smartphone en un puissant portefeuille électronique, permettant des opérations fluides, rapides et sécurisées.")}
                 </span>
                 <div className="mobile_afriq_button_container">
-                    <button className="mobile_arriq_explore_btn" onClick={() => window.open('https://afriqpay.afriqexpress.net/')}>Explorer</button>
-                    <button className="mobile_arriq_watch_btn" onClick={mobileOpenModal}><img src={Watch} alt="" className="mobile_watch_image" /><span style={{marginLeft:10}}>Regarder</span></button>
+                    <button className="mobile_arriq_explore_btn" onClick={() => window.open('https://afriqpay.afriqexpress.net/')}>{t("Explorer")}</button>
+                    <button className="mobile_arriq_watch_btn" onClick={mobileOpenModal}><img src={Watch} alt="" className="mobile_watch_image" /><span style={{marginLeft:10}}>{t("Regarder")}</span></button>
 
 
                 </div>
