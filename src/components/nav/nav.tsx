@@ -19,28 +19,34 @@ interface Props {
 }
 
 const Navigation = ({ links }: Props) => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [hamburgOpen, setHamburgOpen] = useState<boolean>(false);
     const [showNav, setShowNav] = useState<boolean>(true);
     const [isDropdownVisible, setDropdownVisible] = useState(false);
-    const [mobileDrop,setmobileDrop] = useState(false)
+    const [mobileDrop, setmobileDrop] = useState(false)
 
     const location = useLocation();
 
+    const handleLanguageChange = (language: any) => {
+        i18n.changeLanguage(language);
+        localStorage.setItem('selectedLanguage', language);
+        console.log(`Language changed to: ${language}`);
+    };
+
     useEffect(() => {
         setmobileDrop(false); // Close dropdown on page change
-      }, [location.pathname]);
+    }, [location.pathname]);
 
     const toggleHamburg = () => setHamburgOpen(current => !current);
     const handleDropdownToggle = () => {
         setDropdownVisible(!isDropdownVisible);
     };
-    
 
 
- 
 
-  
+
+
+
 
     useEffect(() => {
         let oldPosition = document.documentElement.scrollTop;
@@ -56,44 +62,44 @@ const Navigation = ({ links }: Props) => {
     }, []);
 
 
-    
-    const handleRemoveDropDown = ()=> {
+
+    const handleRemoveDropDown = () => {
 
         isDropdownVisible === true &&
-        console.log("Clicked");
+            console.log("Clicked");
         setDropdownVisible(false)
-        
-    } 
+
+    }
 
     const handleScrollToContact = () => {
         const contactSection = document.getElementById('contact');
-        
+
         if (contactSection) {
-          contactSection.scrollIntoView({ behavior: 'smooth' });
+            contactSection.scrollIntoView({ behavior: 'smooth' });
         }
-      };
+    };
 
-      const handleMobileDropDown = ()=> {
-            setmobileDrop(!mobileDrop)
-            console.log("clicked");
-            
-      }
+    const handleMobileDropDown = () => {
+        setmobileDrop(!mobileDrop)
+        console.log("clicked");
 
-      const handleLinkMouseEnter = () => {
+    }
+
+    const handleLinkMouseEnter = () => {
         setDropdownVisible(true);
-      };
-    
-      const handleLinkMouseLeave = () => {
+    };
+
+    const handleLinkMouseLeave = () => {
         setDropdownVisible(false);
-      };
-    
-      const handleDropdownMouseEnter = () => {
+    };
+
+    const handleDropdownMouseEnter = () => {
         setDropdownVisible(true);
-      };
-    
-      const handleDropdownMouseLeave = () => {
+    };
+
+    const handleDropdownMouseLeave = () => {
         setDropdownVisible(false);
-      };
+    };
 
     return (
         <>
@@ -105,27 +111,27 @@ const Navigation = ({ links }: Props) => {
                     {links.map((link, index) => {
                         return (
                             <>
-                                <a key={index} href={link.link}   className="navigation__item hamburg_navigation--visible" 
-                                //   onMouseEnter={link.name === "Our Products" ? handleDropdownToggle : undefined}
-                                onMouseEnter={link.name === t('Nos Produits') ? handleLinkMouseEnter : undefined}
-                                onMouseLeave={handleLinkMouseLeave}
+                                <a key={index} href={link.link} className="navigation__item hamburg_navigation--visible"
+                                    //   onMouseEnter={link.name === "Our Products" ? handleDropdownToggle : undefined}
+                                    onMouseEnter={link.name === t('Nos Produits') ? handleLinkMouseEnter : undefined}
+                                    onMouseLeave={handleLinkMouseLeave}
                                 >{link.name}</a>
                                 {link.name === t("Nos Produits") &&
                                     <>
-                                    <div className="drop_down_logo"
-                                      onMouseEnter={handleDropdownMouseEnter}
-                                      onMouseLeave={handleDropdownMouseLeave}
-                                    >
-                                    <img src={DropDown} alt="" className="arrow_logo"
-                                     onMouseEnter={link.name === "Nos Produits" ? handleDropdownToggle : undefined}
-                                    />
-                                    </div>
-                                      </>
+                                        <div className="drop_down_logo"
+                                            onMouseEnter={handleDropdownMouseEnter}
+                                            onMouseLeave={handleDropdownMouseLeave}
+                                        >
+                                            <img src={DropDown} alt="" className="arrow_logo"
+                                                onMouseEnter={link.name === "Nos Produits" ? handleDropdownToggle : undefined}
+                                            />
+                                        </div>
+                                    </>
                                 }
                                 {isDropdownVisible && (
                                     <div className="drop_down navigation__item navigation--visible"
-                                    onMouseEnter={handleDropdownMouseEnter}
-                                    onMouseLeave={handleDropdownMouseLeave}
+                                        onMouseEnter={handleDropdownMouseEnter}
+                                        onMouseLeave={handleDropdownMouseLeave}
                                     >
                                         {/* Your dropdown content goes here */}
                                         <a href="/afriqpay" className="dropdown-link">AfriQPay</a>
@@ -133,12 +139,18 @@ const Navigation = ({ links }: Props) => {
                                         <a href="/afriqpayexpress" className="dropdown-link">AfriQExpress</a> */}
                                     </div>
                                 )}
+                                
                             </>
+                            
                         );
                     })}
                     
+                   
                 </div>
-                <div className="contact_btn_nav navigation__item"  onClick={handleScrollToContact}>{t('Contactez-nous')}</div>
+                <button style={{ backgroundColor: '#6C63FF', color: '#FFFFFF', borderStyle: 'none', height: 30, width: 130, fontSize: 15, padding: 2, borderRadius: 5, cursor: 'pointer', border: '1px solid #FFFFFF',position:'absolute',right:250 }} onClick={() => handleLanguageChange(i18n.language === 'en' ? 'fr' : 'en')}>
+                        {i18n.language === 'en' ? t('Switch to French') : t('Switch to English')}
+                </button>
+                <div className="contact_btn_nav navigation__item" onClick={handleScrollToContact}>{t('Contactez-nous')}</div>
                 <button onClick={toggleHamburg} className="navigation__hamburg"><img src={hamburgOpen ? closeIcon : hamburgIcon} alt="" /></button>
 
 
@@ -172,19 +184,19 @@ const Navigation = ({ links }: Props) => {
                 })} */}
                 <div className="mobile_links">
                     <a className={`mobile_navigation__item ${location.pathname === '/' ? 'active' : ''}`} href="/">Home</a>
-                    <a className={`mobile_navigation__item ${location.pathname === '/aboutus' ? 'active' : ''}`}  href="/aboutus">{t('A propos de nous')}</a>
+                    <a className={`mobile_navigation__item ${location.pathname === '/aboutus' ? 'active' : ''}`} href="/aboutus">{t('A propos de nous')}</a>
                     <a className={`mobile_navigation__item ${location.pathname === '/afriqpay' ? 'active' : ''}`} >{t('Nos Produits')} <img src={DropDown} alt="" className="arrow_logo_mobile"
-                                     onClick={handleMobileDropDown}
-                                    /> </a>
-                                      {mobileDrop && 
-                                    <div className="mobile_deopDown">
-                                          <a href="/afriqpay" className={`mobile_navigation__item ${location.pathname === '/afriqpay' ? 'active' : ''}`}>AfriQPay</a>
-                                        {/* <a href="/afriqpayexpress" className={`mobile_navigation__item ${location.pathname === '/afriqpayexpress' ? 'active' : ''}`}>AfriQExpress</a> */}
-                                    </div>
-                                    }
-                   
+                        onClick={handleMobileDropDown}
+                    /> </a>
+                    {mobileDrop &&
+                        <div className="mobile_deopDown">
+                            <a href="/afriqpay" className={`mobile_navigation__item ${location.pathname === '/afriqpay' ? 'active' : ''}`}>AfriQPay</a>
+                            {/* <a href="/afriqpayexpress" className={`mobile_navigation__item ${location.pathname === '/afriqpayexpress' ? 'active' : ''}`}>AfriQExpress</a> */}
+                        </div>
+                    }
+
                 </div>
-                <div className="contact_btn_nav_mobile navigation__item"  onClick={handleScrollToContact}>{t('Contactez-nous')}</div>
+                <div className="contact_btn_nav_mobile navigation__item" onClick={handleScrollToContact}>{t('Contactez-nous')}</div>
 
             </nav>
         </>
