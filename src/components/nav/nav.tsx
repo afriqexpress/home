@@ -147,7 +147,7 @@ const Navigation = ({ links }: Props) => {
                     
                    
                 </div>
-                <button style={{ backgroundColor: '#6C63FF', color: '#FFFFFF', borderStyle: 'none', height: 30, width: 130, fontSize: 15, padding: 2, borderRadius: 5, cursor: 'pointer', border: '1px solid #FFFFFF',position:'absolute',right:250 }} onClick={() => handleLanguageChange(i18n.language === 'en' ? 'fr' : 'en')}>
+                <button style={{ backgroundColor: '#6C63FF', color: '#FFFFFF', borderStyle: 'none', height: 25, width: 100, fontSize: 12, padding: 2, borderRadius: 5, cursor: 'pointer', border: '1px solid #FFFFFF',position:'absolute',left:150 }} onClick={() => handleLanguageChange(i18n.language === 'en' ? 'fr' : 'en')}>
                         {i18n.language === 'en' ? t('Switch to French') : t('Switch to English')}
                 </button>
                 <div className="contact_btn_nav navigation__item" onClick={handleScrollToContact}>{t('Contactez-nous')}</div>
@@ -157,6 +157,7 @@ const Navigation = ({ links }: Props) => {
             </nav>
 
             <nav className={hamburgOpen ? "hamburg_navigation hamburg_navigation--visible" : "hamburg_navigation"}>
+                
                 {/* {links.map((link, index) => {
                     return (
                         <>
