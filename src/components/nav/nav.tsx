@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 
 import "./nav.css";
-import afriQExpressLogo from "./Afriqlogo.png";
+import afriQExpressLogo from "./nav_logo.png";
 import hamburgIcon from "./menu.svg";
 import closeIcon from "./close.svg";
 import DropDown from "./dropdown.png"
 import { useLocation } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
+import English from "./eng.png"
 
 
 
@@ -147,9 +148,15 @@ const Navigation = ({ links }: Props) => {
                     
                    
                 </div>
-                <button style={{ backgroundColor: '#6C63FF', color: '#FFFFFF', borderStyle: 'none', height: 25, width: 100, fontSize: 12, padding: 2, borderRadius: 5, cursor: 'pointer', border: '1px solid #FFFFFF',position:'absolute',left:150 }} onClick={() => handleLanguageChange(i18n.language === 'en' ? 'fr' : 'en')}>
-                        {i18n.language === 'en' ? t('Switch to French') : t('Switch to English')}
-                </button>
+                <div className="language_btn navigation__item" onClick={() => handleLanguageChange(i18n.language === 'en' ? 'fr' : 'en')}>
+                        {i18n.language === 'en' ? <div className="french_btn">
+                            <img src={English} alt="" />
+                            <p>Fre</p>
+                        </div> : <div className="eng_btn">
+                        <img src={English} alt="" />
+                        <p>Eng</p>
+                            </div>}
+                </div>
                 <div className="contact_btn_nav navigation__item" onClick={handleScrollToContact}>{t('Contactez-nous')}</div>
                 <button onClick={toggleHamburg} className="navigation__hamburg"><img src={hamburgOpen ? closeIcon : hamburgIcon} alt="" /></button>
 
@@ -189,16 +196,27 @@ const Navigation = ({ links }: Props) => {
                     <a className={`mobile_navigation__item ${location.pathname === '/afriqpay' ? 'active' : ''}`} >{t('Nos Produits')} <img src={DropDown} alt="" className="arrow_logo_mobile"
                         onClick={handleMobileDropDown}
                     /> </a>
+                   
                     {mobileDrop &&
                         <div className="mobile_deopDown">
                             <a href="/afriqpay" className={`mobile_navigation__item ${location.pathname === '/afriqpay' ? 'active' : ''}`}>AfriQPay</a>
                             {/* <a href="/afriqpayexpress" className={`mobile_navigation__item ${location.pathname === '/afriqpayexpress' ? 'active' : ''}`}>AfriQExpress</a> */}
                         </div>
+                        
                     }
 
                 </div>
+                
                 <div className="contact_btn_nav_mobile navigation__item" onClick={handleScrollToContact}>{t('Contactez-nous')}</div>
-
+                <div className="mobile_language_btn" onClick={() => handleLanguageChange(i18n.language === 'en' ? 'fr' : 'en')}>
+                        {i18n.language === 'en' ? <div className="mobile_french_btn">
+                            <img src={English} alt="" />
+                            <p>Fre</p>
+                        </div> : <div className="mobile_eng_btn">
+                        <img src={English} alt="" />
+                        <p>Eng</p>
+                            </div>}
+                </div>
             </nav>
         </>
 

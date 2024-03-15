@@ -150,7 +150,7 @@
     border-radius: 5px;
     font-size: 15px;
     margin-top: 10px;
-    margin-right: 20px;
+    margin-right: 150px;
     cursor: pointer;
 
 }
@@ -184,6 +184,45 @@
     margin-left: -50px;
     margin-top: 5px;
 }
+.language_btn {
+    background-color: #FFFFFF;
+    color: #FFFFFF;
+    border-style: none;
+    width: 120px;
+    font-size: 12px;
+    padding: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    position: absolute;
+    right: 30px;
+    top: 18px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.language_btn:hover {
+    background-color: #FFFFFF;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.french_btn {
+    width:100%;
+  color: #6C63FF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.eng_btn {
+    width: 100%;
+    color: #6C63FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 
 @media only screen and (max-width: 767px) {
     .navigation__hamburg {
@@ -249,6 +288,25 @@
     background-color: #867FFF;
     text-decoration: none;
     color: #FFFFFF;
+}
+.mobile_language_btn {
+    border: 0.7px solid #6C63FF;
+    width: 120px;
+    border-radius: 5px;
+}
+.mobile_french_btn {
+    width:100%;
+    color: #6C63FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.mobile_eng_btn {
+    width:100%;
+    color: #6C63FF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .mobile_deopDown {
     display: flex;
