@@ -49,7 +49,7 @@ function AfriqPayHero() {
                 {t("Conçue pour simplifier chaque aspect de vos transactions monétaires, notre solution transforme votre smartphone en un puissant portefeuille électronique, permettant des opérations fluides, rapides et sécurisées.")}
                 </span>
                 <div className="afriq_button_container">
-                    <button className="arriq_explore_btn" onClick={() => window.open('https://afriqpay.afriqexpress.net/')} >{t("Explorer")}</button>
+                    {/* <button className="arriq_explore_btn" onClick={() => window.open('https://afriqpay.afriqexpress.net/')} >{t("Explorer")}</button> */}
                     <button className="arriq_watch_btn" onClick={openModal}><img src={Watch} alt="" className="watch_image" />{t("Regarder")}</button>
 
 
@@ -139,7 +139,7 @@ function AfriqPayHero() {
                 {t("Conçue pour simplifier chaque aspect de vos transactions monétaires, notre solution transforme votre smartphone en un puissant portefeuille électronique, permettant des opérations fluides, rapides et sécurisées.")}
                 </span>
                 <div className="mobile_afriq_button_container">
-                    <button className="mobile_arriq_explore_btn" onClick={() => window.open('https://afriqpay.afriqexpress.net/')}>{t("Explorer")}</button>
+                    {/* <button className="mobile_arriq_explore_btn" onClick={() => window.open('https://afriqpay.afriqexpress.net/')}>{t("Explorer")}</button> */}
                     <button className="mobile_arriq_watch_btn" onClick={mobileOpenModal}><img src={Watch} alt="" className="mobile_watch_image" /><span style={{marginLeft:10}}>{t("Regarder")}</span></button>
 
 
