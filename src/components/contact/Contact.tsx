@@ -138,7 +138,7 @@ function Contact() {
 
                         <div className="mobile_input_boxes">
                             <div className="mobile_name_box">
-                                <label className="label">Prénom  <img src={Star} /> </label>
+                                <label className="label">{t("Prénom")}<img src={Star} /> </label>
                                 <input type="text" className="mobile_input" name="name" value={name} onChange={handleChange} required />
 
                             </div>

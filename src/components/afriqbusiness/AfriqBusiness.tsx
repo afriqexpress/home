@@ -7,6 +7,8 @@ import Mobile1 from "./mobile1.png"
 import Mobile2 from "./mobile_2.png"
 import Mobile3 from "./mobile_3.png"
 import Mobile4 from "./mobile_4.png"
+import Image5 from "./5th_img.png"
+import Mobile5 from "./mobile5.png"
 import { useTranslation } from "react-i18next"
 
 function AfriqBusiness() {
@@ -71,6 +73,21 @@ function AfriqBusiness() {
                                 </span>
                             </div>
                         </div>
+
+                        <div className="business_text_container">
+                            <div className="business_text_heading_container">
+                           <div className="flex"><span className="business_text_heading">{t("AfriQStore intrusif")}</span></div>
+                                <span className="business_text_subheading">
+                                {t("L'aspect le plus innovant d'afriQPay réside dans ses modules complémentaires de transaction, qui transforment l'application en une plateforme polyvalente adaptée à différents secteurs. c'est-à-dire la réservation d'hôtel, la gestion des restaurants, l'assurance et la gestion des stocks")}
+                                </span>
+                            </div>
+
+                            <div className="business_image_container">
+                                <img src={Image5} alt="" style={{width:'80%'}} />
+                            </div>
+                        </div>
+
+                        
 
 
 
@@ -163,6 +180,20 @@ function AfriqBusiness() {
                 <div className="mobile_feature_texts">
                     <span>
                     {t("Gardez le contrôle de vos finances avec un aperçu détaillé de toutes vos transactions. Notre application vous offre une transparence totale, vous permettant de suivre chaque dépense et réception d'argent, pour une meilleure gestion financière")}
+                    
+                    </span>
+
+                </div>
+
+                <div className="mobile_feature_image">
+                    <img src={Mobile5} alt="" />
+                </div>
+                <div className="mobile_feature_subheading">
+                    <span>{t("AfriQStore intrusif")}</span>
+                </div>
+                <div className="mobile_feature_texts">
+                    <span>
+                    {t("L'aspect le plus innovant d'afriQPay réside dans ses modules complémentaires de transaction, qui transforment l'application en une plateforme polyvalente adaptée à différents secteurs. c'est-à-dire la réservation d'hôtel, la gestion des restaurants, l'assurance et la gestion des stocks")}
                     
                     </span>
 
