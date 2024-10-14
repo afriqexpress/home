@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import "./nav.css";
-import afriQExpressLogo from "./nav_logo.png";
+// import afriQExpressLogo from "./nav_logo.png";
 import hamburgIcon from "./menu.svg";
 import closeIcon from "./close.svg";
 import DropDown from "./dropdown.png"
@@ -106,7 +106,8 @@ const Navigation = ({ links }: Props) => {
         <>
             <nav className={showNav || hamburgOpen ? "navigation navigation--visible" : "navigation"} onClick={handleRemoveDropDown}
             >
-                <a href='/' className="navigation__logo mobile_navigation__logo hover-dropdown"><img src={afriQExpressLogo} alt="Brand Logo" /></a>
+                {/* <a href='/' className="navigation__logo mobile_navigation__logo hover-dropdown"><img src={afriQExpressLogo} alt="Brand Logo" /></a> */}
+                <h3>!tec</h3>
 
                 <div className="nav_links">
                     {links.map((link, index) => {
